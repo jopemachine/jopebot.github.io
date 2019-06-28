@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 1주차 첫 번째 차시 결과"
+title: "모각코 1주차 결과"
 subtitle: '2019-06-28 1주차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
@@ -30,7 +30,6 @@ C Lion에서 알고리즘 문제 풀이를 위한 새 프로젝트를 생성했�
 ![](/img/posts/2019-06-28-Mogacko01_Result/ScreenClip2.png)
 
 위와 같이 C Lion을 설치하고, 프로젝트를 이동하는데 생각보다 시간이 소요되어, 오늘은 여기서 마쳐야 했다.
-
 
 
 
