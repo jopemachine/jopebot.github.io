@@ -134,6 +134,16 @@ comments: true
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+<script type="text/javascript">
+    function addCommentStyles(){
+        $('.post-content').addClass("comment-positive01");
+    }
+    window.onload = function(){
+        setTimeout(function(){
+            addCommentStyles();
+        }, 3000);
+    }
+</script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
 
