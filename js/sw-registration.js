@@ -9,7 +9,7 @@
 // SW Version Upgrade Ref: <https://youtu.be/Gb9uI67tqV0>
 
 function handleRegistration(registration){
-  console.log('Service Worker Registered. ', registration)
+  // console.log('Service Worker Registered. ', registration)
   /**
    * ServiceWorkerRegistration.onupdatefound
    * The service worker registration's installing worker changes.
