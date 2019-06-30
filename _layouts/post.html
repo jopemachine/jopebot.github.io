@@ -138,6 +138,7 @@ comments: true
 <!-- disqus 公共JS代码 end -->
 {% endif %}
 
+{% include EVScript.html %}
 
 {% if site.anchorjs %}
 <!-- async load function -->
@@ -149,14 +150,6 @@ comments: true
       o.src = u;
       if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
       s.parentNode.insertBefore(o, s);
-    }
-    function addCommentStyles(){
-        $('.post-content').addClass("comment-positive01");
-    }
-    window.onload = function(){
-        setTimeout(function(){
-            addCommentStyles();
-        }, 3000);
     }
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->

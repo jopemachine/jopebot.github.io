@@ -3,10 +3,10 @@
     "title": "Hux Blog",
     "author": "Hux <huxpro@gmail.com>",
     "version": "1.7.0",
-    "homepage": "http://jopebot.github.io",
+    "homepage": "http://jopemachine.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jopebot/jopebot.github.io"
+        "url": "https://github.com/jopemachine/jopemachine.github.io"
     },
     "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
     "devDependencies": {
