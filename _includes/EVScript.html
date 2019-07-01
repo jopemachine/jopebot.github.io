@@ -1,12 +1,12 @@
 <script>
     function addCommentStyles(){
-        $('.post-content').addClass("comment-positive01");
+        $('#post-list').addClass("comment-positive01");
     }
     window.onload = function(){
         console.log("실행됨!");
 
         setTimeout(function(){
-            console.log($('.post-content').length);
+            console.log($('#post-list').length);
             addCommentStyles();
         }, 3000);
     }
