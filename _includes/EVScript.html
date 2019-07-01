@@ -3,7 +3,10 @@
         $('.post-content').addClass("comment-positive01");
     }
     window.onload = function(){
+        console.log("실행됨!");
+
         setTimeout(function(){
+            console.log($('.post-content').length);
             addCommentStyles();
         }, 3000);
     }
