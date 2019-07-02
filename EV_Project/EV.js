@@ -1,4 +1,4 @@
 // for test
 function addCommentStyles(){
-    $('.post-content').addClass("comment-positive01");
+    $('.post-content').css('color', '#a8ffc4');
 }
