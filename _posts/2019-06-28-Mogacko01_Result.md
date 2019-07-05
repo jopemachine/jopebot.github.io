@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "모각코 1주차 결과"
-subtitle: '2019-06-28, 1주차 모각코 결과'
+title: "모각코 1회차 결과"
+subtitle: '2019-06-28, 1회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
