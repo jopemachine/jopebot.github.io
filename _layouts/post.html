@@ -170,16 +170,24 @@ a.crossDomain=!0:"object"===typeof b&&(b.crossDomain=!0));e&&("object"===typeof 
 
     var url = siteURL + pageURL;
     
-    (function() {
-        var embededd_js = document.createElement('script');
-        embededd_js.type = 'text/javascript'; 
-        embededd_js.async = true;
+    $.ajax({
+      crossOrigin: true,
+      type: "GET",
+      url : "http://evcommentservice.ga/php-Action/URLVerification.php",
+      data : {
+          UserName : userName,
+          PageIdentifier : pageIdentifier,
+          SiteURL : siteURL,
+      },
+      dataType:"HTML",
 
-        // 아래처럼 하면 스크립트 파일을 수정하지 못하게 할 수 있음
-        // embededd_js.src = 'http://127.0.0.1/script.js';
-        embededd_js.src = 'http://evcommentservice.ga/script.js';
-        document.getElementById('EV-Start').appendChild(embededd_js);
-    })();
+      success : function(response) {
+          $('#EV-Start').append(response);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+          console.log("Ajax 수신에 실패했습니다!" + jqXHR.responseText);
+      }
+  });
 
 </script>
 
