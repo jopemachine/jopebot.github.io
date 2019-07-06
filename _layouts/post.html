@@ -149,7 +149,10 @@ comments: true
 
 {% if site.ev_username %}
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- jQuery 최신 버전과, ajax-cross-origin를 필요로 함 -->
+<!-- 실제로 서비스를 한다면 cross-origin 대신 SSL 인증서를 발급받아 HTTPS 프로토콜을 사용해야함 -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script>
 
 <!-- 서버로 무조건 데이터 전송하고 검증은 서버에서 함 -->
 <script type="text/javascript">
