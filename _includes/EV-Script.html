@@ -1,0 +1,26 @@
+<!-- include this file to your site -->
+{% if site.ev_username %}
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- 서버로 무조건 데이터 전송하고 검증은 서버에서 함 -->
+<script type="text/javascript">
+
+    var blogOwner = "{{site.ev_username}}";
+    var pageIdentifier = "{{page.id}}";
+    var siteURL = "{{site.url}}";
+    var evMode = "{{site.ev_mode}}";
+
+    (function() {
+        var embededd_js = document.createElement('script');
+        embededd_js.type = 'text/javascript';
+        embededd_js.async = true;
+
+        // 아래처럼 하면 스크립트 파일을 수정하지 못하게 할 수 있음
+        embededd_js.src = 'https://evcommentservice.ga/script.js';
+        document.getElementById('EV-Start').appendChild(embededd_js);
+    })();
+
+</script>
+
+{% endif %}
