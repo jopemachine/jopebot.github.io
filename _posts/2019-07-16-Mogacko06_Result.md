@@ -10,7 +10,7 @@ tags:
 ---
 
 <i>Posting Time : 19-07-16, 16:51</i><br>
-<i>Updating Time : 19-07-16, 21:53</i><br>
+<i>Updating Time : 19-07-16, 22:09</i><br>
 
 ---
 
@@ -144,6 +144,16 @@ $URLID = $_POST['URLID'];
 
 require_once('../MySQLConection.php');
 
+class Post{
+  public $PostTitle;
+  public $Positiveness;
+
+  function __construct($_PostTitle, $_Positiveness){
+    $this->PostTitle = $_PostTitle;
+    $this->Positiveness = $_Positiveness;
+  }
+}
+
 class Positiveness{
 
   public static function WarnNoComments(){
@@ -181,16 +191,15 @@ while($tableName = mysqli_fetch_array($allTableName)){
 
   // 평균을 따로 구할 필요 없이 MySQL 내장 함수로 평균 값을 조회할 수 있다.
   $calcPositivenessAvg = "
-    SELECT AVG(EmotionalAnalysisValue) FROM " . $tableName[0]"
-  ";
+    SELECT AVG(EmotionalAnalysisValue) FROM `" . $tableName[0] . "`";
 
-  $selectTitleRet = mysqli_query($connect_object, $selectTitle);
-  $calcPositivenessAvgRet = mysqli_query($connect_object, $calcPositivenessAvg);
+  $selectTitleRet = mysqli_query($connect_object, $selectTitle) or die("Error Occured in selecting Title");
+  $calcPositivenessAvgRet = mysqli_query($connect_object, $calcPositivenessAvg) or die("Error Occured in calcPositivenessAvg");
 
-  $positivenessValueAvg = mysqli_fetch_array($allTableName);
+  $positivenessValueAvg = mysqli_fetch_array($calcPositivenessAvgRet);
   $title = mysqli_fetch_array($selectTitleRet);
 
-  $pq->insert($title[0], $positivenessValueAvg[0]);
+  $pq->insert(new Post($title[0], $positivenessValueAvg[0]), $positivenessValueAvg[0]);
 }
 
 // DB에 따로 테이블로 두긴 양이 너무 적어 (10개로 고정) 코드에 넣었다
@@ -239,7 +248,7 @@ while($pq->valid()){
   $labels .= '\''. $iterator->PostTitle . '\',';
   $backgroundColorStr .= '\''. $backgroundColorsArr[$index] . '\',';
   $borderColorsStr .= '\''. $borderColorsArr[$index] . '\',';
-  $data .= $iterator->CommentNumber . ',';
+  $data .= $iterator->Positiveness . ',';
   $pq->next();
   $index++;
 }
@@ -253,7 +262,7 @@ $barGraphScipts = sprintf("
       data: {
           labels: [%s],
           datasets: [{
-              label: '긍정적인 댓글이 많았던 순으로 정렬',
+              label: '좋은 평가를 받은 게시글 순으로 정렬',
               data: [%s],
               backgroundColor: [%s],
               borderColor: [%s],
@@ -283,7 +292,6 @@ echo sprintf('
     </div>
   </div>
   ', $barGraphScipts);
-
 {% endhighlight %}
 
 Popular Posting 서비스 코드도 작성해야 하는데, 서버를 테스트 해 볼 수가 없어, 아직 세션 버그를 고치지 못했다.
