@@ -10,7 +10,7 @@ tags:
 ---
 
 <i>Posting Time : 19-07-16, 16:51</i><br>
-<i>Updating Time : 19-07-16, 16:51</i><br>
+<i>Updating Time : 19-07-16, 21:53</i><br>
 
 ---
 
@@ -49,39 +49,46 @@ class CommentBuilder{
 
   // Comment 객체를 인자로 받음
   function __construct($_comment){
-    $comment = $_comment;
+    $this->comment = $_comment;
   }
 
   public function build(){
-    return $comment;
+    return $this->comment;
   }
 
   function setCommentUserID($_CommentUserId){
-    $comment->$CommentUserId = $_CommentUserId;
+    $this->comment->CommentUserId = $_CommentUserId;
+    return $this;
   }
 
   function setContent($_Content){
-    $comment->$Content = $_Content;
+    $this->comment->Content = $_Content;
+    return $this;
   }
 
   function setDateTime($_DateTime){
-    $comment->$DateTime = $_DateTime;
+    $this->comment->DateTime = $_DateTime;
+    return $this;
   }
 
   function setProfileImageFileName($_ProfileImageFileName){
-    $comment->$ProfileImageFileName = $_ProfileImageFileName;
+    $this->comment->ProfileImageFileName = $_ProfileImageFileName;
+    return $this;
   }
 
   function setPageID($_PageID){
-    $comment->$PageID = $_PageID;
+    $this->comment->PageID = $_PageID;
+    return $this;
   }
 
   function setURL($_URL){
-    $comment->$URL = $_URL;
+    $this->comment->URL = $_URL;
+    return $this;
   }
 
   function setPostTitle($_PostTitle){
-    $comment->$PostTitle = $_PostTitle;
+    $this->comment->PostTitle = $_PostTitle;
+    return $this;
   }
 
 }
