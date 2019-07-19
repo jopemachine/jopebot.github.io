@@ -34,6 +34,11 @@ tags:
 
 아래 사이트에서 시뮬레이션을 돌려보면서 공부하니, 좀 더 빨리 알고리즘에 대해 이해할 수 있었다.
 
+https://www.cs.usfca.edu/~galles/visualization/RadixSort.html
+
+![](/img/posts/2019-07-19-Mogacko07_Result/ScreenClip.png)
+
+<br>
 
 <h2>감정 분석값에 따른 CSS 스타일 적용 (PHP)</h2>
 
