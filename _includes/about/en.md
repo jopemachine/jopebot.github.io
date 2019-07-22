@@ -1,8 +1,9 @@
 ##### My Programming Languages Spectrum
 
+|      | 💔️     | ❤️ ️                          | ❤️❤️ ️                   | ❤️❤️❤️ ️ |
+| ---- | ----- | --------------------------- | --------------------- | ---- |
+| 😅    |       | ``Assembly``                | `Python`              |      |
+| 🧐    | `VBA` | `Batchfile`,  `Shell`,  `C` | `Js`,  `C++`          |      |
+| 😏    |       |                             | `PHP`,  `C#`,  `Java` |      |
+| 🤓    |       |                             |                       |      |
 
-##### Talks
-
-- [Link Test][1]
-
-[1]:https://github.com/jopemachine/jopemachine.github.io
