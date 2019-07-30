@@ -65,7 +65,7 @@ netease_comment: false
 
 # EV Project settings
 ev_username: jopemachine
-ev_mode : none
+ev_mode : full
 
 # Analytics settings
 # Baidu Analytics
