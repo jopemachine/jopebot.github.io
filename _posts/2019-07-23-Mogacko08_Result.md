@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 8회차 결과"
+title: "<굿즈패키지: 호크니(Hockney)>관람후기 "
 subtitle: '2019-07-23, 8회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

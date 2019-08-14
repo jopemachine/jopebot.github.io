@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 4회차 결과"
+title: "윌 스미스가 하드캐리하여 의도치 않게 원작을 뛰어넘은 실사영화"
 subtitle: '2019-07-09, 4회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 6회차 결과"
+title: "그냥 힐링영화. 너무나 아름다운 자연..."
 subtitle: '2019-07-16, 6회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

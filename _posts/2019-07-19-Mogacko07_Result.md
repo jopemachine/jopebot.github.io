@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 7회차 결과"
+title: "주전장은 바로 지금 이 땅에서! 우리가 해야한다. "
 subtitle: '2019-07-19, 7회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

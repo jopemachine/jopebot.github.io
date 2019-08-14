@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 2회차 결과"
+title: "<안녕, 티라노: 영원히, 함께> 패밀리시사회"
 subtitle: '2019-07-02, 2회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

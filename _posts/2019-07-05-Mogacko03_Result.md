@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "모각코 3회차 결과"
+title: "여름방학 꿀잼 애니메이션 영화 <원더랜드>"
 subtitle: '2019-07-05, 3회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
