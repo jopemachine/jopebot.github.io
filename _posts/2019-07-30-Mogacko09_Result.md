@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "영화 <우리집> 후기"
+title: "모각코 9회차 결과"
 subtitle: '2019-07-30, 9회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

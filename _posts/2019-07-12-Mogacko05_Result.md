@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "처음써보는 라이온킹 후기 & 평점"
+title: "모각코 5회차 결과"
 subtitle: '2019-07-12, 5회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"

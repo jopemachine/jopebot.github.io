@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "도심 속의 방 후기"
+title: "모각코 10회차 결과"
 subtitle: '2019-08-02, 10회차 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
