@@ -65,13 +65,6 @@ comments: true
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
 
-                <!-- iframe이 들어갈 영역 -->
-                {% if site.ev_username %}
-                <div>
-                    <div id="EV-Start" class="EV-Start"></div>
-                </div>
-                {% endif %}
-
             </div>
 
     <!-- Side Catalog Container -->
@@ -144,8 +137,6 @@ comments: true
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
-
-{% include EV-Script.html %}
 
 {% if site.anchorjs %}
 <!-- async load function -->
