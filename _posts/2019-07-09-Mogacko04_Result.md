@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "모각코 4회차 결과"
-subtitle: '2019-07-09, 4회차 모각코 결과'
+title: "2019 모각코 4회차 결과"
+subtitle: '2019-07-09, 4회차 2019 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 tags:
-  - 모각코
+  - 2019 모각코
 ---
 
 <i>Posting Time : 19-07-09, 16:52</i><br>
@@ -20,7 +20,7 @@ tags:
 
 씬을 로드할 때 특정 오브젝트를 활성화 시키는 이벤트를 구현하려 했다.
 
-오늘 모각코 시간에 작성한 플래그 클래스는 아래와 같다.
+오늘 2019 모각코 시간에 작성한 플래그 클래스는 아래와 같다.
 
 데이터 로드에 LitJson을 사용했다.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "모각코 10회차 결과"
-subtitle: '2019-08-02, 10회차 모각코 결과'
+title: "2019 모각코 10회차 결과"
+subtitle: '2019-08-02, 10회차 2019 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 tags:
-  - 모각코
+  - 2019 모각코
 ---
 
 <i>Posting Time : 19-08-02, 16:51</i><br>

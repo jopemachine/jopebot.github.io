@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "모각코 9회차 결과"
-subtitle: '2019-07-30, 9회차 모각코 결과'
+title: "2019 모각코 9회차 결과"
+subtitle: '2019-07-30, 9회차 2019 모각코 결과'
 author: "jopemachine"
 header-img: "img/post-bg-infinity.jpg"
 header-mask: 0.3
 tags:
-  - 모각코
+  - 2019 모각코
 ---
 
 <i>Posting Time : 19-07-30, 16:56</i><br>
@@ -20,7 +20,7 @@ tags:
 
 ![](/img/posts/2019-07-30-Mogacko09_Result/ScreenClip2.png)
 
-모각코 시작할 땐 C++ 공부도 함께 진행하려 했으나, JS 강의 복습해야 하는 양이 생각보다 많아서,
+2019 모각코 시작할 땐 C++ 공부도 함께 진행하려 했으나, JS 강의 복습해야 하는 양이 생각보다 많아서,
 
 C++ 공부는 나중에 따로 해야할 것 같다.
 
