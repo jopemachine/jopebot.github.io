@@ -63,10 +63,6 @@ duoshuo_share: false
 # Netease settings
 netease_comment: false
 
-# EV Project settings
-# ev_username: jopemachine
-# ev_mode : debug
-
 # Analytics settings
 # Baidu Analytics
 # ba_track_id: [your track id]
