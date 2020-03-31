@@ -74,7 +74,7 @@ ga_domain: jopemachine.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "I'm a senior in Chungnam National University. \nI'm oriented toward full-stack development and interested in especially about front-developing (like react). \nLately, I also get to be interested in how to apply 'Functional coding style' in my code."
+sidebar-about-description: "Oriented toward full-stack development and interested in especially front-developing. Lately, also got to be interested in how to apply 'Functional coding style'"
 sidebar-avatar: /img/profile.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
