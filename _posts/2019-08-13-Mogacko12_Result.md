@@ -22,7 +22,7 @@ tags:
 
 (ts는 셋팅 파일을 참조하는 QTextStream이다.)
 
-{% highlight cpp %}
+~~~
 
     ts << "\n# Desc\n";
 
@@ -48,7 +48,7 @@ tags:
               + ui->referenceTbl->item(i, 1)->text() << "\n";
     }
 
-{% endhighlight %}
+~~~
 
 그 외 Recursive Traversal 이란 셋팅 Flag를 추가해 체크되어 있을 때만 (true일 때)
 
@@ -62,7 +62,7 @@ tags:
 
 (Desc, Issue, Ref URLs는 다른 탭에서 셋팅함)
 
-{% highlight cpp %}
+~~~
 
 // ==============================+===============================================================
 // @ Author : jopemachine
@@ -82,5 +82,5 @@ tags:
 //  3. 메모 3
 // ==============================+===============================================================
 
-{% endhighlight %}
+~~~
 
