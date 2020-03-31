@@ -7,7 +7,9 @@ comments: true
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
-<!-- Post Header -->
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="{{ "/css/post.css" }}" />
+
 {% include intro-header.html type='post' %}
 
 <!-- Post Content -->
@@ -21,7 +23,8 @@ comments: true
                 col-md-10 col-md-offset-1
                 post-container"
                  style="
-                font-family: Jeju Gothic"
+                font-family: Jeju Gothic
+                "
                 >
                 <!-- Multi-Lingual -->
                 {% if page.multilingual %}
