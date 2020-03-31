@@ -1,2 +1,4 @@
-.post-container p { margin-top : 1px; margin-bottom : 1px;}
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+.post-container p { margin-top : 1px; margin-bottom : 1px; }
 .highlighter-rouge { margin-top : 12px; margin-bottom: 12px; }
+.post-container p { font-family: 'Jeju Gothic' }
