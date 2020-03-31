@@ -48,7 +48,7 @@ tags:
               + ui->referenceTbl->item(i, 1)->text() << "\n";
     }
 
-{% endhighlight %}
+</block>
 
 그 외 Recursive Traversal 이란 셋팅 Flag를 추가해 체크되어 있을 때만 (true일 때)
 
@@ -61,8 +61,6 @@ tags:
 위와 같은 셋팅으로 실행하면 cpp, h 파일의 위에 아래와 같은 주석이 추가할 수 있다.
 
 (Desc, Issue, Ref URLs는 다른 탭에서 셋팅함)
-
-</block>
 
 // ==============================+===============================================================
 // @ Author : jopemachine
