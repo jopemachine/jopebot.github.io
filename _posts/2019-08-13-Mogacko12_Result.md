@@ -22,7 +22,7 @@ tags:
 
 (ts는 셋팅 파일을 참조하는 QTextStream이다.)
 
-{% highlight cpp %}
+<block>
 
     ts << "\n# Desc\n";
 
@@ -62,7 +62,7 @@ tags:
 
 (Desc, Issue, Ref URLs는 다른 탭에서 셋팅함)
 
-{% highlight cpp %}
+</block>
 
 // ==============================+===============================================================
 // @ Author : jopemachine
