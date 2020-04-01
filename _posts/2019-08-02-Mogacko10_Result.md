@@ -9,11 +9,6 @@ tags:
   - 2019 모각코
 ---
 
-<i>Posting Time : 19-08-02, 16:51</i><br>
-<i>Updating Time : 19-08-02, 16:51</i><br>
-
----
-
 <h2>추가한 계산기 로직</h2>
 
 1 - TextIndicator 수정

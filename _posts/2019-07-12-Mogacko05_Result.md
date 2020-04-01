@@ -9,11 +9,6 @@ tags:
   - 2019 모각코
 ---
 
-<i>Posting Time : 19-07-12, 16:56</i><br>
-<i>Updating Time : 19-07-12, 16:56</i><br>
-
----
-
 <h2>Pagination</h2>
 
 오늘 제일 먼저 한 것은 Pagination의 프로토 타입을 구현해 본 것이다.

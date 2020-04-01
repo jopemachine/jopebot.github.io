@@ -9,16 +9,9 @@ tags:
   - 2019 모각코
 ---
 
-<i>Posting Time : 19-08-06, 16:51</i><br>
-<i>Updating Time : 19-08-06, 16:51</i><br>
-
----
-
 <h2>Currying 에 대해</h2>
 
-{% highlight js %}
-
-// 아래 코드에 https://www.zerocho.com/category/JavaScript/post/579236d08241b6f43951af18를 참고했다
+~~~js
 
 const log = console.log;
 
@@ -268,7 +261,7 @@ const range = l => {
     return res;
 };
 
-{% endhighlight %}
+~~~
 
 각 함수의 병렬 평가 버전에 대해선 다시 강의를 듣고 복습할 생각이다.
 

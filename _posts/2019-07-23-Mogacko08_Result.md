@@ -9,11 +9,6 @@ tags:
   - 2019 모각코
 ---
 
-<i>Posting Time : 19-07-23, 16:47</i><br>
-<i>Updating Time : 19-07-23, 16:47</i><br>
-
----
-
 <h2>Counting Sort</h2>
 
 Counting Sort 과정을 설명하면 아래와 같다.

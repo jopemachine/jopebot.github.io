@@ -9,11 +9,6 @@ tags:
   - 2019 모각코
 ---
 
-<i>Posting Time : 19-07-05, 16:56</i><br>
-<i>Updating Time : 19-07-05, 16:56</i><br>
-
----
-
 <h2>Post Comment - Javascript</h2>
 
 오늘 제일 먼저 작성한 것은 클라이언트 측에서 댓글 작성 버튼을 클릭했을 때 서버로 전송하는 javascript 파일 내 함수이다.

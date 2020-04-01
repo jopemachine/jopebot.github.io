@@ -9,11 +9,6 @@ tags:
   - 2019 모각코
 ---
 
-<i>Posting Time : 19-07-30, 16:56</i><br>
-<i>Updating Time : 19-07-30, 16:56</i><br>
-
----
-
 오늘은 지금까지 인프런에서 들은 JS 강의의 코드를 타이핑하면서 복습을 진행했다.
 
 해당 강의는 아래의 강의이다. (코드는 https://github.com/indongyoo/functional-javascript-01 참조)
