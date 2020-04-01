@@ -59,8 +59,7 @@ const curry = f =>
 log(multiply3.curry(2)(3)); // Function
 log(multiply3.curry(2)(3)(4)); // 24
 
-{% endhighlight %}
-
+~~~
 
 <h2>코드 분석</h2>
 
@@ -70,7 +69,7 @@ log(multiply3.curry(2)(3)(4)); // 24
 
 ![](/img/posts/2019-08-06-Mogacko11_Result/ScreenClip.png)
 
-{% highlight js %}
+~~~js
 
 // log를 쉽게 작성하기 위함
 const log = console.log;
