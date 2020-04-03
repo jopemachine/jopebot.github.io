@@ -97,9 +97,12 @@ page-mathjax: false
 # jekyll-tipue-search
 tipue_search:
   include:
-    pages: true
+    pages: false
     collections: []
-
+  exclude:
+      files: [index.html]
+      categories: []
+      tags: []
 # Friends
 # friends: [
 #     {
