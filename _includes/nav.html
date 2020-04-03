@@ -75,8 +75,8 @@
 <script>
     window.onload = function(){
         if(Object.keys(getUrlParams("q")).length !== 0) {
-            document.querySelector('.postlist-container').style["display"] = "none";
-            document.querySelector("#tipue_search_content").style["display"] = "";
+            let postContainer = document.querySelector('.postlist-container');
+            postContainer.style["display"] = "none";
         }
         
         $('#tipue_search_input').tipuesearch({
@@ -86,10 +86,10 @@
         });
     }
 
-    function searchBarSubmit() {
-        console.log("execute");
-        let postContainer = document.querySelector('.postlist-container');
-        postContainer.style["display"] = "none";
+    function getUrlParams() {
+        var params = {};
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
+        return params;
     }
     
     function searchBarToggle() {
