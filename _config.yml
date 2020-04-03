@@ -94,7 +94,11 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
-
+# jekyll-tipue-search
+tipue_search:
+  include:
+    pages: true
+    collections: [apples, oranges]
 
 # Friends
 # friends: [
