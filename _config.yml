@@ -98,7 +98,7 @@ page-mathjax: false
 tipue_search:
   include:
     pages: true
-    collections: [_posts]
+    collections: []
 
 # Friends
 # friends: [
