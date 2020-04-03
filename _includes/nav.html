@@ -34,7 +34,7 @@
 
                     <!-- Search bar -->
                     <li>
-                        <form onsubmit="searchBarSubmit()" action="{{ page.url | relative_url }}">
+                        <form action="{{ page.url | relative_url }}">
                             <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
                             <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" placeholder="Search..." required></div>
                             <div style="clear: both;"></div>
@@ -70,8 +70,8 @@
 <script>
     window.onload = function(){
         if(Object.keys(getUrlParams("q")).length !== 0) {
-            let postContainer = document.querySelector('.postlist-container');
-            postContainer.style["display"] = "none";
+            document.querySelector('.postlist-container').style["display"] = "none";
+            document.querySelector("#tipue_search_content").style["display"] = "";
         }
         
         $('#tipue_search_input').tipuesearch({
