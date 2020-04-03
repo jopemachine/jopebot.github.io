@@ -48,8 +48,12 @@
     <!-- /.container -->
 </nav>
 <script>
-
-    window.onload = function(){        
+    window.onload = function(){
+        if(Object.keys(getUrlParams("q")).length !== 0) {
+            let postContainer = document.querySelector('.postlist-container');
+            postContainer.style["display"] = "none";
+        }
+        
         $('#tipue_search_input').tipuesearch({
             'wholeWords' : false,
             'showTime' : false,
@@ -57,10 +61,10 @@
         });
     }
 
-    function searchBarSubmit() {
-        console.log("execute");
-        let postContainer = document.querySelector('.postlist-container');
-        postContainer.style["display"] = "none";
+    function getUrlParams() {
+        var params = {};
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
+        return params;
     }
     
     // Drop Bootstarp low-performance Navbar
