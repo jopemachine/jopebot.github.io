@@ -43,9 +43,10 @@ http://www.tipue.com/search
 	border-radius: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-    box-shadow: none; 
      /* 직접 수정한 부분! css 교체 시엔 이 부분도 교체해야함 */
-	outline: 0;
+     box-shadow: none; 
+     outline: 0;
+     /* 직접 수정한 부분! css 교체 시엔 이 부분도 교체해야함 */
 	/* margin: 0; */
 }
 .tipue_search_icon
