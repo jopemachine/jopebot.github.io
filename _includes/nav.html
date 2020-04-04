@@ -39,11 +39,7 @@
                     {% endif %}
                     {% endfor %}
                     <li>
-                        <form action="{{ page.url | relative_url }}">
-                            <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
-                            <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" placeholder="Search..." required></div>
-                            <div style="clear: both;"></div>
-                        </form>
+                        <a href="javascript:void(0);" onclick="return searchBarToggle();">Search</a> 
                     </li>
                 </ul>
             </div>
@@ -85,6 +81,10 @@
             'minimumLength' : 1
         });
     }
+
+    window.addEventListener("wheel", event => {
+        document.querySelector('#search-bar-form').style['display'] = 'none'; 
+    });
 
     function getUrlParams() {
         var params = {};
