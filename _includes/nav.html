@@ -4,7 +4,14 @@
 {% else %}
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 {% endif %}
-  
+
+    <!-- Search bar -->
+    <form id="search-bar-form" style="display:none;" action="/">
+        <!-- <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div> -->
+        <div style="width:100%;" class="tipue_search_right"><input  style="width:100%;" type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" placeholder="Search..." required></div>
+        <div style="clear: both;"></div>
+    </form>
+
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -31,14 +38,8 @@
                     </li>
                     {% endif %}
                     {% endfor %}
-
-                    <!-- Search bar -->
                     <li>
-                        <form action="{{ page.url | relative_url }}">
-                            <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
-                            <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" placeholder="Search..." required></div>
-                            <div style="clear: both;"></div>
-                        </form>
+                        <a href="javascript:void(0);" onclick="return searchBarToggle();">Search</a> 
                     </li>
                 </ul>
             </div>
@@ -81,12 +82,27 @@
         });
     }
 
+    window.addEventListener("wheel", event => {
+        document.querySelector('#search-bar-form').style['display'] = 'none'; 
+    });
+
     function getUrlParams() {
         var params = {};
         window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
         return params;
     }
     
+    function searchBarToggle() {
+        let searchBarForm = document.querySelector('#search-bar-form');
+        
+        if(searchBarForm.style['display'] == 'none') {   
+            document.querySelector('#search-bar-form').style['display'] = '';
+        }
+        else searchBarForm.style['display'] = 'none'; 
+
+        window.scrollTo(0, 0);
+    }
+
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
