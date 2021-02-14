@@ -105,10 +105,10 @@ tipue_search:
       tags: []
       
 # Friends
-# friends: [
-#     {
-#     #     title: "Su",
-#     #     href: "http://su.gallery/"
-#     # },
-#   }
-# ]
+friends: [
+    {
+        title: "Haru",
+        href: "https://toitoitoi79.tistory.com/"
+    },
+  }
+]
