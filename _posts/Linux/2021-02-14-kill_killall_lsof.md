@@ -33,8 +33,8 @@ tags:
 프로세스를 종료하기 위한 사용법은 아래와 같다.
 
 ```shell-script
-kill -9 10432
-kill kill -SIGKILL 10432
+$ kill -9 10432
+$ kill kill -SIGKILL 10432
 ```
 
 1. 종료하려는 프로세스의 포트번호를 모를 땐 먼저 포트 번호를 알아내야 한다.
@@ -45,15 +45,17 @@ kill kill -SIGKILL 10432
 
 ```shell-script
 # 3000번 포트의 프로세스 출력
-lsof -i :3000
-...
-kill -9 {출력된 프로세스의 포트 번호}
+$ lsof -i :3000
+COMMAND  PID     USER   FD   TYPE            DEVICE SIZE/OFF NODE NAME
+Kite    1304 igyubong   26u  IPv4 0x95363694aab149d      0t0  TCP 192.168.219.199:64677->kul08s06-in-f14.1e100.net:http (ESTABLISHED)
+
+$ kill -9 1304
 ```
 
 2. 해당 프로세스를 모두 종료해도 괜찮을 땐, killall 명령을 이용할 수도 있다.
 
 ```shell-script
-killall -9 node
+$ killall -9 node
 ```
 
 `killall` 명령어는 일일히 PID를 확인하지 않고도 프로세스를 바로 종료할 수 있다는 장점이 있지만,

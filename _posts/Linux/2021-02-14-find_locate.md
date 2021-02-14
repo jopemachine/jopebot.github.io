@@ -20,32 +20,32 @@ find는 런타임에 입력으로 주어진 파일 디렉터리에서 조건에 
 사용법은 아래와 같다.
 
 ```shell-script
-find <~에서> <조건 옵션> <조건> 
+$ find <~에서> <조건 옵션> <조건> 
 ```
 
 예제는 아래와 같다
 
 ```shell-script
 # /etc에서 passwd 파일 찾기
-find /etc -name passwd
+$ find /etc -name passwd
 
 # /usr/share에서 size가 10MB보다 큰 파일들 찾기
-find /usr/share -size +10M
+$ find /usr/share -size +10M
 
 # /home에서 user가 chris인 파일들을 list 형식으로 출력
-find /home -user chris -ls
+$ find /home -user chris -ls
 
 # /home에서 user가 chris, joe인 파일들을 list 형식으로 출력
-find /home -user chris -or -user joe -ls
+$ find /home -user chris -or -user joe -ls
 
 # /etc에서 group이 ntp인 파일들을 list 형식으로 출력
-find /etc -group ntp -ls
+$ find /etc -group ntp -ls
 
 # /etc에서 수정된 지 10분 미만인 파일들을 출력
-find /etc/ -mmin -10
+$ find /etc/ -mmin -10
 
 # /bin, /usr/bin, /sbin, /usr/sbin에서 3일 동안 수정된적이 있는 파일들을 출력
-find /bin /usr/bin /sbin /usr/sbin -ctime -3
+$ find /bin /usr/bin /sbin /usr/sbin -ctime -3
 ```
 
 #### 찾은 파일 실행하기
@@ -60,7 +60,7 @@ find 명령은 찾은 파일들에 `exec`, `ok` 옵션을 통해 다른 명령�
 
 ```shell-script
 # /etc에서 iptables가 담긴 파일들의 경로를 모두 찾아 I found를 붙여 출력한다.
-find /etc -iname iptables -exec echo "I found {}" \;
+$ find /etc -iname iptables -exec echo "I found {}" \;
 ```
 
 ### locate
