@@ -67,7 +67,7 @@ $ find /etc -iname iptables -exec echo "I found {}" \;
 
 `find` 명령어는 런타임에 파일들을 직접 찾는 명령어이므로 정확하지만 많은 파일들을 검색해야 할 경우 느리다.
 
-`locate`는 미리 updatedb 명령어가 업데이트 해 놓은 파일 데이터베이스를 검색하므로 더 빠른 검색이 가능하지만,
+`locate`는 미리 `updatedb` 명령어가 업데이트 해 놓은 파일 데이터베이스를 검색하므로 더 빠른 검색이 가능하지만,
 
 `updatedb` 명령어가 실행된 이후 변경된 파일을 검색할 수 없으므로 부정확할 수 있다.
 
@@ -76,7 +76,7 @@ $ find /etc -iname iptables -exec echo "I found {}" \;
 ## 그 외 찾아볼 명령어
 
 1. grep
--> grep은 파일, 표준 출력을 검색해 해당 row를 출력한다.
+-> `grep`은 파일, 표준 출력을 검색해 해당 row를 출력한다.
 
 ## 출처
 
