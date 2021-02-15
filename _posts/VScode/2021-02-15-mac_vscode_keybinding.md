@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "vscode 터미널 키 바인딩 (mac)"
-subtitle: 'vscode'
+subtitle: '개발환경 셋팅'
 author: "jopemachine"
-header-img: "img/posts/header-img/vscode.png"
+header-img: "img/header-img/vscode.png"
 header-mask: 0.3
 tags:
   - vscode

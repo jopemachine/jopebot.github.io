@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "타입스크립트 메서드 오버로드"
-subtitle: '타입스크립트'
+subtitle: 'Typescript 문법'
 author: "jopemachine"
-header-img: "img/posts/header-img/typescript.jpg"
+header-img: "img/header-img/typescript.jpg"
 header-mask: 0.3
 tags:
   - Typescript

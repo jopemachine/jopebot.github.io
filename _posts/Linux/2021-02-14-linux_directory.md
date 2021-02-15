@@ -3,7 +3,7 @@ layout: post
 title: "리눅스 디렉토리 구조"
 subtitle: '리눅스'
 author: "jopemachine"
-header-img: "img/posts/header-img/linux.png"
+header-img: "img/header-img/linux.png"
 header-mask: 0.3
 tags:
   - Linux

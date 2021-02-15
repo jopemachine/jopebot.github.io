@@ -136,6 +136,14 @@ comments: true
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+
+</script>
+
+<script>
+    let images = document.querySelectorAll('p > img')
+    for (const image of images) {
+        image.parentNode.classList.add('post-picture')        
+    }
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
