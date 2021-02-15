@@ -7,5 +7,3 @@ Just personal blog
 ```sh
 $ bundle exec jekyll serve  # alternatively, npm start
 ```
-jekyll serve
-```
