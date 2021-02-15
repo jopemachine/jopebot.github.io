@@ -79,7 +79,7 @@ $ find /etc -iname iptables -exec echo "I found {}" \;
 -> `grep`은 파일, 표준 출력을 검색해 해당 row를 출력한다.
 
 2. [fzf](https://github.com/junegunn/fzf)
--> fzf는 fuzzy finding을 위한 검색 명령어이다. fzf는 approximate string matching을 사용하여 비슷한 파일명을 찾아준다.
+-> `fzf`는 fuzzy finding을 위한 검색 명령어이다. `fzf`는 approximate string matching을 사용하여 비슷한 파일명을 찾아준다.
 정확히 일치하지 않더라도 비슷한 파일명을 갖는 파일들을 찾아주기 때문에 제일 편리한 것 같다.
 
 
