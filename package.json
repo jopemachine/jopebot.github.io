@@ -15,7 +15,7 @@
         "grunt-contrib-less": "^2.0.0",
         "grunt-contrib-uglify": "^4.0.1",
         "grunt-contrib-watch": "^1.1.0",
-        "create-md-post": "^0.0.1"
+        "create-md-post": "^0.0.2"
     },
     "scripts": {
         "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
