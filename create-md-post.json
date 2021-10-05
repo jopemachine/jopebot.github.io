@@ -1,5 +1,5 @@
 {
-  "filename": "(attributes) => changeCase.headerCase(attributes.date + '-' + attributes.title) + '.md'",
+  "filename": "({ attributes }) => changeCase.headerCase(attributes.date + '-' + attributes.title) + '.md'",
   "order": [
     "date",
     "title",
@@ -17,14 +17,14 @@
     "subtitle": {
       "type": "string",
       "message": "Enter post subtitle",
-      "default": "() => { return conf.has('subtitle') ? conf.get('subtitle') : '' }",
-      "callback": "(value) => { conf.set('subtitle', value); }"
+      "default": "({ conf }) => { return conf.has('subtitle') ? conf.get('subtitle') : '' }",
+      "callback": "({ attributes }) => { conf.set('subtitle', attributes.subtitle); }"
     },
     "author": {
       "type": "string",
       "message": "Enter post author",
-      "default": "async () => { return conf.has('author') ? conf.get('author') : await username() }",
-      "callback": "(author) => { conf.set('author', author); }"
+      "default": "async ({ conf }) => { return conf.has('author') ? conf.get('author') : await username() }",
+      "callback": "({ attributes }) => { conf.set('author', attributes.author); }"
     },
     "date": {
       "type": "string",
