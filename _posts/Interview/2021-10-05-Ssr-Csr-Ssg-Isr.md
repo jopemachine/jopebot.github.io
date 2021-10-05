@@ -38,7 +38,7 @@ header-mask: 0.3
 - SSR의 종류 중 하나임.
 - 일반적인 SSR이 런타임에 사이트를 생성해 렌더링 하는 것이라면, Pre rendering은 빌드 타임에 미리 생성해 놓는 방식이다, 즉 Static generating 임.
 
-### ISR (Incremental Static Regeneration)
+### ISR (Incremental Static Regeneration), Progressive rendering
 
 - SSR와 CSR의 혼용.
 - 서버에서 어느 정도 렌더링 해서 html을 보내주면 js 로드해 놓고 점진적으로 렌더링 해서 보여줌.
