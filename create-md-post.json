@@ -1,0 +1,39 @@
+{
+  "filename": "(attributes) => changeCase.headerCase(attributes.date + attributes.title) + '.md'",
+  "order": [
+    "date",
+    "title",
+    "subtitle",
+    "author",
+    "tags"
+  ],
+  "template": "create-md-post.md",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "message": "Enter post title",
+      "default": "() => { return '' }"
+    },
+    "subtitle": {
+      "type": "string",
+      "message": "Enter post subtitle",
+      "default": "() => { return '' }"
+    },
+    "author": {
+      "type": "string",
+      "message": "Enter post author",
+      "default": "async () => { return conf.has('author') ? conf.get('author') : await username() }",
+      "callback": "(author) => { conf.set('author', author); }"
+    },
+    "date": {
+      "type": "string",
+      "message": "Enter created date",
+      "default": "() => { return new Date().toLocaleDateString('ko-KR', { year: \"numeric\" , month: \"2-digit\", day:\"2-digit\"})}"
+    },
+    "tags": {
+      "type": "list/comma",
+      "message": "Enter tags",
+      "default": "() => { return ''; }"
+    }
+  }
+}
