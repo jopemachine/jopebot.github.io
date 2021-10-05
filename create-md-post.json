@@ -7,7 +7,7 @@
     "author",
     "tags"
   ],
-  "template": "create-md-post.md",
+  "template": "_posts/template.md",
   "attributes": {
     "title": {
       "type": "string",
