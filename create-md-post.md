@@ -7,3 +7,5 @@ tags: ${tags}
 header-img: "img/header-img/linux.png"
 header-mask: 0.3
 ---
+
+# ${title}

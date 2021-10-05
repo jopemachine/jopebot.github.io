@@ -1,5 +1,5 @@
 {
-  "filename": "(attributes) => changeCase.headerCase(attributes.date + attributes.title) + '.md'",
+  "filename": "(attributes) => changeCase.headerCase(attributes.date + '-' + attributes.title) + '.md'",
   "order": [
     "date",
     "title",
@@ -17,7 +17,8 @@
     "subtitle": {
       "type": "string",
       "message": "Enter post subtitle",
-      "default": "() => { return '' }"
+      "default": "() => { return conf.has('subtitle') ? conf.get('subtitle') : '' }",
+      "callback": "(value) => { conf.set('subtitle', value); }"
     },
     "author": {
       "type": "string",
