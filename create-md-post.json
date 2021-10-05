@@ -1,5 +1,5 @@
 {
-  "filename": "({ attributes }) => changeCase.headerCase(attributes.date + '-' + attributes.title) + '.md'",
+  "filename": "`${__dirname}/builtins/filename.js`",
   "order": [
     "date",
     "title",
@@ -7,12 +7,12 @@
     "author",
     "tags"
   ],
-  "template": "_posts/template.md",
+  "template": "create-md-post.md",
   "attributes": {
     "title": {
       "type": "string",
       "message": "Enter post title",
-      "default": "() => { return '' }"
+      "default": "() => ''"
     },
     "subtitle": {
       "type": "string",
@@ -23,8 +23,8 @@
     "author": {
       "type": "string",
       "message": "Enter post author",
-      "default": "async ({ conf }) => { return conf.has('author') ? conf.get('author') : await username() }",
-      "callback": "({ attributes }) => { conf.set('author', attributes.author); }"
+      "default": "`${__dirname}/builtins/default/author.js`",
+      "callback": "`${__dirname}/builtins/default/author.js`"
     },
     "date": {
       "type": "string",
@@ -34,7 +34,7 @@
     "tags": {
       "type": "list/comma",
       "message": "Enter tags",
-      "default": "() => { return ''; }"
+      "default": "() => ''"
     }
   }
 }

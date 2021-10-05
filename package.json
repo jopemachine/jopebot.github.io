@@ -10,7 +10,7 @@
     },
     "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
     "devDependencies": {
-        "create-md-post": "^0.1.1",
+        "create-md-post": "^0.2.1",
         "grunt": "^1.1.0",
         "grunt-banner": "~0.2.3",
         "grunt-contrib-less": "^2.0.0",
