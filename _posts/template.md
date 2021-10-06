@@ -4,7 +4,7 @@ title: "${title}"
 subtitle: "${subtitle}"
 author: jopemachine
 tags: ${tags}
-header-img: "img/header-img/frontend.png"
+header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
 

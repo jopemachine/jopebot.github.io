@@ -5,13 +5,15 @@ subtitle: "프론트 면접 질문 정리"
 author: jopemachine
 tags: 
  - Frontend
-header-img: "img/header-img/frontend.png"
+header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
 
 # px, em, rem, vw, vh
 
 **폰트 크기 단위**에 무엇을 사용해야 적절한가?
+
+- 더 나은 단위가 있는 게 아니라 경우에 따라 선택해 사용
 
 ## px (pixel)
 
