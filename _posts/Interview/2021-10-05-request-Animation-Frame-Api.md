@@ -6,7 +6,7 @@ author: "jopemachine"
 tags: 
  - Frontend
  - Browser
-header-img: "img/header-img/linux.png"
+header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
 
