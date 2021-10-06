@@ -17,7 +17,13 @@ header-mask: 0.3
 
 - 자바스크립트 프레임 워크 (react, jquery 등) 을 로드.
 
-- 예전엔 `DCL`이 프론트 성능 측정의 지표였다. 
+- 예전엔 `DCL`이 프론트 성능 측정의 지표였다.
+
+### DCL이 늦어진다면?
+
+- 블록 리소스 (css, js 등) 때문에 html 파싱이 중단된 건 아닌지?
+
+- js는 body 태그 하단에 두는 것이 기본이고 DOM async나 defer를 써서 html 파싱이 블록되지 않게 할 것.
 
 ## window.onload
 
@@ -37,9 +43,11 @@ header-mask: 0.3
 
 - Hero element의 명확한 정의는 없으며 서비스에 따라 개발자가 정의해야 한다.
 
-## First contentful paint (FCP)
-
 ## First paint (FP)
+
+- non-blank인 첫 번째 렌더링
+
+## First contentful paint (FCP)
 
 ## Time to first byte (TTFB)
 

@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/jopemachine/jopemachine/master/github-metrics.svg" />
-
 ## Experience 
 
 <!-- TODO: Write more description here...  -->

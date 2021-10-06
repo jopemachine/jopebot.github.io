@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Critical rendering path (CRP)"
+title: "Critical rendering path (CRP) 및 관련 최적화"
 subtitle: "프론트 면접 질문 정리"
 author: jopemachine
 tags: 
