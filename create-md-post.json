@@ -1,13 +1,12 @@
 {
-  "filename": "`${__dirname}/builtins/filename.js`",
+  "filename": "({ attributes }) => { const changeCase = require('change-case'); return changeCase.headerCase(attributes.date + '-' + attributes.title) + '.md'; }",
   "order": [
     "date",
     "title",
     "subtitle",
-    "author",
     "tags"
   ],
-  "template": "create-md-post.md",
+  "template": "_posts/template.md",
   "attributes": {
     "title": {
       "type": "string",
@@ -19,12 +18,6 @@
       "message": "Enter post subtitle",
       "default": "({ conf }) => { return conf.has('subtitle') ? conf.get('subtitle') : '' }",
       "callback": "({ attributes }) => { conf.set('subtitle', attributes.subtitle); }"
-    },
-    "author": {
-      "type": "string",
-      "message": "Enter post author",
-      "default": "`${__dirname}/builtins/default/author.js`",
-      "callback": "`${__dirname}/builtins/default/author.js`"
     },
     "date": {
       "type": "string",
