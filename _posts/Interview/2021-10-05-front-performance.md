@@ -25,6 +25,14 @@ header-mask: 0.3
 
 - js는 body 태그 하단에 두는 것이 기본이고 DOM async나 defer를 써서 html 파싱이 블록되지 않게 할 것.
 
+#### async script
+
+- JS 실행 순서는 중요하지 않지만 onload가 시작되기 전 JS가 실행되어야만 한다면 `async`를 설정해야 한다.
+
+#### defer script
+
+- JS의 실행 순서는 중요하되 DOM이 다 로딩된 후에 JS를 실행해도 된다면 `defer`를 설정해야 한다.
+
 ## window.onload
 
 - HTML 파싱이 끝나고 모든 종속 리소스들의 로드가 끝난 후 발생하는 이벤트

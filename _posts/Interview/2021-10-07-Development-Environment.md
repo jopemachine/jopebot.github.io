@@ -15,7 +15,7 @@ header-mask: 0.3
 
 - ES6를 지원하지 않는 브라우저를 지원하기 위한 트랜스 컴파일러
 
-- Promise 같이 존재하지 않는 객체 같은 경우 폴리필 (polyfill)을 만들어 대체한다.
+- Promise 같이 존재하지 않는 객체 같은 경우 폴리필 (`polyfill`)을 만들어 대체한다.
 
 - 웹팩과 같이 사용되어 빌드 과정에서 자동으로 수행됨
 
@@ -27,11 +27,11 @@ header-mask: 0.3
 
 - 모듈 번들러.
 
-- Entry를 그래프의 시작점으로 의존성을 분석해 모든 리소스를 모듈 형태로 로드해 플러그인을 거쳐 컴파일 (빌드) 한다.
+- `entry`를 그래프의 시작점으로 의존성을 분석해 모든 리소스를 모듈 형태로 로드해 플러그인을 거쳐 컴파일 (빌드) 한다.
 
 ### Loader
 
-- test, use로 로딩할 파일을 지정하고 지정한 서드파티 로더를 통해 모듈 형태로 변환한다.
+- `test`, `use`로 로딩할 파일을 지정하고 지정한 서드파티 로더를 통해 모듈 형태로 변환한다.
 
 #### css loader
 
@@ -43,7 +43,7 @@ header-mask: 0.3
 
 - `file-loader`: 이진 파일을 사용할 수 있게 해 준다.
 
-- `url-loader`: 이미지를 base64 포맷으로 html에 포함시켜 빌드해 줌.
+- `url-loader`: 이미지를 `base64` 포맷으로 html에 포함시켜 빌드해 줌. (`Inlining`)
 
 #### html loader
 
@@ -91,17 +91,17 @@ header-mask: 0.3
 
 - `rules`에 새 룰을 추가하거나 삭제해 커스터마이징 가능.
 
-- eslint의 경우 document 페이지에 각 룰들에 대한 설명이 자세히 나와 있는데 자동 수정 규칙은 렌치 아이콘이 그려져 있다.
+- `eslint`의 경우 document 페이지에 각 룰들에 대한 설명이 자세히 나와 있는데 자동 수정 규칙은 렌치 아이콘이 그려져 있다.
 
 ## prettier
 
 - 마찬가지로 코드 스타일, 포맷팅을 강요해 줌.
 
-- eslint랑 겹치는 부분도 있으나 eslint가 못 고치는 부분도 일부 고쳐줌.
+- `eslint`랑 겹치는 부분도 있으나 `eslint`가 못 고치는 부분도 일부 고쳐줌.
 
-- eslint와 충돌나지 않게 하기 위해 `eslint-config-prettier`를 설치해 충돌을 방지할 수 있음.
+- `eslint`와 충돌나지 않게 하기 위해 `eslint-config-prettier`를 설치해 충돌을 방지할 수 있음.
 
-- `eslint-prettier-plugin` 설치해 eslint 돌아갈 때 자동으로 prettier가 돌아가게 할 수 있음.
+- `eslint-prettier-plugin` 설치해 `eslint` 돌아갈 때 자동으로 prettier가 돌아가게 할 수 있음.
 
 ## lint-staged
 

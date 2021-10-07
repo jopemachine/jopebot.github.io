@@ -23,6 +23,8 @@ header-mask: 0.3
 
 - next navigation에 사용할 리소스이기 때문에 preload 보다 우선순위가 낮다.
 
+- 브라우저가 바쁘거나 개체 크기가 너무 크다면 prefetch 요청은 무시될 수 있다.
+
 ## preconnect
 
 - 다른 도메인에 미리 DNS lookup, TLS negotiation, TCP handshake 등 연결 절차를 밟음.
