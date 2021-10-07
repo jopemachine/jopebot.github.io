@@ -19,7 +19,7 @@ header-mask: 0.3
 
 - 웹 소켓 handshake 요청을 통해 http 프로토콜에서 웹 소켓 프로토콜로 변경 (업그레이드)
 
-## Server send event
+## Server sent event
 
 - 클라이언트 입장에선 웹 소켓에서의 이벤트 핸들링과 비슷하게 구현됨.
 
