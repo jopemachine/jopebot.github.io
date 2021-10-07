@@ -11,7 +11,7 @@ header-mask: 0.3
 
 # Debounce vs Throttle
 
-이 방법 모두 과도한 이벤트 핸들러 실행을 제어하기 위한 방법이다.
+두 방법 모두 과도한 이벤트 핸들러 실행을 제어하기 위한 방법이다.
 
 ## Debounce
 

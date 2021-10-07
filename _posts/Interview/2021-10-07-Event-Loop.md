@@ -25,7 +25,7 @@ header-mask: 0.3
 
 - promise는 마이크로태스크 큐 (Job queue) 에서 처리된다.
 
-- 큐들의 우선순위는 마이크로 태스크 큐 > animation frame 큐 > 콜백 큐
+- 큐들의 우선순위는 `마이크로 태스크 큐 > animation frame 큐 > 콜백 큐`
 
 ## 브라우저 이벤트 루프 vs 노드 이벤트 루프
 

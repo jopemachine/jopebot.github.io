@@ -13,11 +13,11 @@ header-mask: 0.3
 
 ## DomContentLoaded 이벤트 (DCL)
 
-- HTML 문서가 파싱된 후 발생하는 이벤트
+- HTML 문서가 파싱된 후 발생하는 이벤트.
 
 - 자바스크립트 프레임 워크 (react, jquery 등) 을 로드.
 
-- 예전엔 `DCL`이 프론트 성능 측정의 지표였다.
+- 예전엔 `DCL`이 프론트 성능 측정의 지표였다고 함.
 
 ### DCL이 늦어진다면?
 
@@ -27,15 +27,15 @@ header-mask: 0.3
 
 #### async script
 
-- JS 실행 순서는 중요하지 않지만 onload가 시작되기 전 JS가 실행되어야만 한다면 `async`를 설정해야 한다.
+- JS 실행 순서는 중요하지 않지만 **onload가 시작되기 전 JS가 실행되어야만 한다면** `async`를 설정해야 한다.
 
 #### defer script
 
-- JS의 실행 순서는 중요하되 DOM이 다 로딩된 후에 JS를 실행해도 된다면 `defer`를 설정해야 한다.
+- JS의 실행 순서는 중요하되 **DOM이 다 로딩된 후에 JS를 실행해도 된다**면 `defer`를 설정해야 한다.
 
 ## window.onload
 
-- HTML 파싱이 끝나고 모든 종속 리소스들의 로드가 끝난 후 발생하는 이벤트
+- HTML 파싱이 끝나고 모든 종속 리소스들의 로드가 끝난 후 발생하는 이벤트.
 
 ### DCL vs onload
 
@@ -45,7 +45,7 @@ header-mask: 0.3
 
 ## First meaningful paint (FMP)
 
-- 화면에 Hero Element가 처음 렌더링 되는 시점
+- 화면에 Hero Element가 처음 렌더링 되는 시점.
 
 - 실질적인 프론트 성능 측정의 지표로 사용됨.
 
@@ -53,7 +53,7 @@ header-mask: 0.3
 
 ## First paint (FP)
 
-- non-blank인 첫 번째 렌더링
+- non-blank인 첫 번째 렌더링.
 
 ## First contentful paint (FCP)
 
