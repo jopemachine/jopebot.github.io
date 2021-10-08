@@ -6,7 +6,7 @@ author: jopemachine
 tags: 
  - Frontend
  - Typescript
-header-img: "img/header-img/frontend.jpg"
+header-img: "img/header-img/typescript.jpg"
 header-mask: 0.3
 ---
 
