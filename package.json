@@ -1,26 +1,43 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
-    "homepage": "http://jopemachine.github.io",
-    "version": "1.8.2",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jopemachine/jopemachine.github.io"
-    },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
-    "devDependencies": {
-        "create-md-post": "^0.2.1",
-        "grunt": "^1.1.0",
-        "grunt-banner": "~0.2.3",
-        "grunt-contrib-less": "^2.0.0",
-        "grunt-contrib-uglify": "^4.0.1",
-        "grunt-contrib-watch": "^1.1.0"
-    },
-    "scripts": {
-        "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
-        "dev": "grunt watch & npm run start",
-        "boil": "git push boilerplate boilerplate:master",
-        "push": "git push origin master --tag"
-    }
+  "name": "hux-blog",
+  "title": "Hux Blog",
+  "author": "Hux <huxpro@gmail.com>",
+  "homepage": "http://jopemachine.github.io",
+  "version": "1.8.2",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/jopemachine/jopemachine.github.io"
+  },
+  "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+  "devDependencies": {
+      "chalk": "^4.1.2",
+      "clipboardy": "^2.3.0",
+      "create-md-post": "^0.2.1",
+      "fs-extra": "^10.0.0",
+      "git-parse": "^2.1.0",
+      "got": "^9.6.0",
+      "grunt": "^1.1.0",
+      "grunt-banner": "~0.2.3",
+      "grunt-contrib-less": "^2.0.0",
+      "grunt-contrib-uglify": "^4.0.1",
+      "grunt-contrib-watch": "^1.1.0",
+      "husky": "^7.0.4",
+      "inquirer": "^8.2.0",
+      "inquirer-file-tree-selection-prompt": "^1.0.13",
+      "moment": "^2.29.1",
+      "octokit": "^1.7.0",
+      "read-filepath-from-clipboard": "^0.0.6",
+      "recursive-readdir": "^2.2.2",
+      "write": "^2.0.0",
+      "yaml": "^1.10.2"
+  },
+  "scripts": {
+      "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
+      "dev": "grunt watch & npm run start",
+      "boil": "git push boilerplate boilerplate:master",
+      "push": "git push origin master --tag",
+      "prepare": "husky install",
+      "append-last-update": "node appendLastUpdate.js"
+  }
 }
+

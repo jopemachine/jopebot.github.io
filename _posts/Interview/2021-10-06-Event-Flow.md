@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Event flow"
-subtitle: "프론트 면접 질문 정리"
+title: Event flow
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Browser
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Browser
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Event flow
@@ -38,6 +39,6 @@ header-mask: 0.3
 
 ## 이벤트 위임 (Event delegation)
 
-- Event flow란 게 있기 때문에 자식 엘리먼트에 핸들러를 붙여 놓는 대신 부모 엘리먼트에서 target을 검사해 자식 엘리먼트의 이벤트 처리를 담당할 수 있다.
+- Event flow란 게 있기 때문에 자식 엘리먼트에 핸들러를 붙여 놓는 대신 **부모 엘리먼트에서 target을 검사해 자식 엘리먼트의 이벤트 처리를 담당**할 수 있다.
 
 - 브라우저 환경에서 많은 핸들러로 인해 성능이 저하되는 것을 막기 위해 사용할 수 있다.

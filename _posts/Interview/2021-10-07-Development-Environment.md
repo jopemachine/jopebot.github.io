@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "프론트 개발 환경 구성 (Development environment)"
-subtitle: "프론트 면접 질문 정리"
+title: 프론트 개발 환경 구성 (Development environment)
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 10, 2021
 ---
 
 # 프론트 개발 환경 구성 (Development environment)
@@ -73,7 +74,7 @@ header-mask: 0.3
 
 ### HTMLTemplatePlugin
 
-- ejs 문법으로 html을 템플릿으로 활용할 수 있게 해 준다.
+- `ejs` 문법으로 html을 템플릿으로 활용할 수 있게 해 준다.
 
 - 그 외 주석을 제거하거나 white space를 제거하는 등 minifier로 활용 가능.
 
