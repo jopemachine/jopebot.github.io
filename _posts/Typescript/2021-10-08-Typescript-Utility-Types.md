@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Typescript utility types "
-subtitle: "프론트 면접 질문 정리"
+subtitle: "Typescript 문법"
 author: jopemachine
 tags: 
  - Frontend
