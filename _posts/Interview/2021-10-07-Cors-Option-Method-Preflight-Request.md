@@ -15,7 +15,7 @@ header-mask: 0.3
 
 - 다른 도메인에 요청을 날리는 것은 브라우저에서 보안 상 허용하지 않음.
 
-- 그러나 웹 서비스 구현 시 반드시 필요한 작업.
+- 그러나 웹 서비스 구현 시 거의 반드시 필요한 작업.
 
 - preflight의 response header의 `access-control-allow-origin`에 해당 도메인이 적혀 있으면 CORS를 허용한다. 즉, 일반적으로 서버에서 설정해줘야 하는 작업.
 

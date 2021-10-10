@@ -73,7 +73,7 @@ header-mask: 0.3
 
 ### HTMLTemplatePlugin
 
-- ejs 문법으로 html을 템플릿으로 활용할 수 있게 해 준다.
+- `ejs` 문법으로 html을 템플릿으로 활용할 수 있게 해 준다.
 
 - 그 외 주석을 제거하거나 white space를 제거하는 등 minifier로 활용 가능.
 

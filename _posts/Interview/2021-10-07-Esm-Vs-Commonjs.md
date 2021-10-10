@@ -14,9 +14,9 @@ header-mask: 0.3
 
 ## Common Javascript (CJS)
 
-- 동기적으로 모듈을 import 하는 require 구문 사용
+- 동기적으로 모듈을 import 하는 `require` 구문 사용
 
-- CJS는 top level await 구문 때문에 ESM 모듈을 require 할 수 없다.
+- CJS는 _top level await_ 구문 때문에 ESM 모듈을 `require` 할 수 없다.
 
 - CJS에서 ESM 모듈을 사용하려면 dynamic import 구문을 사용해 mjs 파일에 직접 접근해 사용해야 한다.
 
@@ -30,7 +30,7 @@ header-mask: 0.3
 
 - `deno`의 경우 ESM을 디폴트로 사용한다.
 
-- Node 12.17.0 이후 부터 experimental 플래그 없이도 사용 가능하게 되었다.
+- Node 12.17.0 이후 부터 `experimental` 플래그 없이도 사용 가능하게 되었다.
 
 - `mjs` 확장자를 사용하거나 `type: "module"`를 사용
 

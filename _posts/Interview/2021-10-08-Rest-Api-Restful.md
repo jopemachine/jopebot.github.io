@@ -12,13 +12,11 @@ header-mask: 0.3
 
 # Rest API, Restful
 
-- Representational State Transfer.
+- REST (Representational State Transfer).
 
-- URL에 API의 의미 체계를 담음
+- Http method에 동사, URL엔 명사로 구성해 의미 체계를 구성해서 이 둘만으로 어떤 일을 하는 API인지 알게 하자. 즉, self-descriptive한 API를 구축하자는 것.
 
-- Http method에 동사, URL엔 명사로 구성해 의미 체계를 구성해서 이 둘만으로 어떤 일을 하는 API인지 알게 하자. (self-descriptive)
-
-- Rest API의 원칙을 지키는 API를 Restful 하다고 함
+- Rest API의 원칙을 지키는 API를 Restful 하다고 함.
 
 ## SOAP vs Rest API
 
@@ -42,7 +40,7 @@ header-mask: 0.3
 
 ## post
 
-- 서버에 데이터를 post (보냄)
+- 서버에 데이터를 post (보냄).
 
 - 요청에 필요한 정보들은 body에 넣어 보내므로 보안 상 적절하며, 길이 제한 없이 text, binary 데이터 전송 가능.
 
@@ -56,12 +54,12 @@ header-mask: 0.3
 
 ## put
 
-- 서버에 리소스를 put (저장)
+- 서버에 리소스를 put (저장).
 
 ## connect
 
 - 요청한 리소스에 대해 양방향 연결함.
 
-- 클라이언트가 프록시를 통해 서버와 SSL 연결할 때 사용. (SSL 터널링)
+- 클라이언트가 프록시를 통해 서버와 SSL 연결할 때 사용. (SSL 터널링).
 
 ## trace

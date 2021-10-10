@@ -31,17 +31,17 @@ header-mask: 0.3
 
 ### 마이크로 태스크 vs 매크로 태스크
 
-- Node js 11 이전엔 브라우저와 마이크로 태스크, 매크로 태스트 (콜백 함수의 태스크) 우선 순위 할당 방법이 달랐다.
+- Node js 11 이전엔 브라우저와 마이크로 태스크, 매크로 태스크 (콜백 함수의 태스크) 우선 순위 할당 방법이 달랐다.
 
 ### 타이머 동작
 
-- setTimeout의 동작은 Node, 브라우저에서 다르다. (브라우저 끼리도 다르다고 함)
+- setTimeout의 동작은 Node, 브라우저에서 다르다.
 
 ## nextTick vs setImmediate
 
 - 두 함수 모두 Nodejs의 전용 API. (일부 브라우저는 setImmediate를 지원하긴 한다)
 
-- 이름이 서로 잘못 지어진 케이스
+- 이름이 서로 잘못 지어진 케이스.
 
 - nextTick은 콜백 함수를 이벤트 루프의 phase에 관계 없이 바로 실행함. (immediate) 즉, nextTick이 더 먼저 실행된다.
 

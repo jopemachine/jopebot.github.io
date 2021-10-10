@@ -21,13 +21,13 @@ header-mask: 0.3
 
 ### block
 
-- FOIT 방식으로 렌더링.
+- `FOIT` 방식으로 렌더링.
 
 - timeout (3s)이 지나면 디폴트 폰트로 렌더링.
 
 ### swap
 
-- FOUT 방식으로 렌더링.
+- `FOUT` 방식으로 렌더링.
 
 ### fallback
 
