@@ -40,7 +40,7 @@ header-mask: 0.3
 
 - flex item에 지정.
 
-- flex item들의 공간이 flex-container의 공간보다 작을 때 각 item들의 크기를 늘리는데 사용됨.
+- flex item들의 공간이 flex container의 공간보다 작을 때 각 item들의 크기를 늘리는데 사용됨.
 
 - `flex-grow`가 1이면 다른 아이템들과 모두 같은 공간을 할당 받음.
 
@@ -50,9 +50,9 @@ header-mask: 0.3
 
 - flex item에 지정.
 
-- flex item들의 공간이 flex-container의 공간보다 클 때 각 item들의 크기를 줄이는데 사용됨.
+- flex item들의 공간이 flex container의 공간보다 클 때 각 item들의 크기를 줄이는데 사용됨.
 
-- `flex-shrink`가 0이면 flex-container를 초과함.
+- `flex-shrink`가 0이면 flex container를 초과함.
 
 - `flex-shrink`가 2이면 다른 item들 보다 두 배 더 줄어듬.
 
@@ -62,7 +62,7 @@ header-mask: 0.3
 
 - auto이면 같은 공간 할당
 
-- `flex-basic`를 지정하지 않으면 flex item의 크기가 flex-basic 값으로 들어감.
+- `flex-basic`를 지정하지 않으면 flex item의 크기가 `flex-basic` 값으로 들어감.
 
 ## flex
 
@@ -74,7 +74,7 @@ header-mask: 0.3
 
 ## justify-content vs align-items
 
-- justify는 텍스트 행의 끝을 나란히 맞춘다는 의미.
+- justify는 *텍스트 행의 끝을 나란히 맞춘다*는 의미.
 
 - `justify-content`는 아이템들을 주축을 따라 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `justify-content`는 가로 축으로 정렬하는 게 된다.
 
