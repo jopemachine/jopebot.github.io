@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CSS flexbox 모델"
+title: "CSS Flexbox 모델"
 subtitle: "프론트 면접 질문 정리"
 author: jopemachine
 tags: 
@@ -10,7 +10,7 @@ header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
 
-# CSS flexbox 모델
+# CSS Flexbox 모델
 
 - 동일한 간격 또는 일정 간격으로 아이템들을 정렬하기 위한 레이아웃 모델.
 
