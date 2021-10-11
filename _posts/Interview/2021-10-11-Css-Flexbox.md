@@ -5,6 +5,7 @@ subtitle: "프론트 면접 질문 정리"
 author: jopemachine
 tags: 
  - Frontend
+ - CSS
 header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
@@ -69,15 +70,15 @@ header-mask: 0.3
 
 - 보통 flex만 지정함.
 
-- `flex: 1`로 지정하면 flex-grow가 1이 되고 나머지는 기본 값인 1, 0을 사용하는 것.
+- `flex: 1`로 지정하면 `flex-grow`가 1이 되고 `flex-shrink`, `flex-basic`은 기본 값으로 `1`, `0`을 사용한다.
 
-## `justify-content` vs `align-items`
+## justify-content vs align-items
 
 - justify는 텍스트 행의 끝을 나란히 맞춘다는 의미.
 
-- `justify-content`는 아이템들을 주축을 따라 나란히 정렬한다. 예를 들어, flex-direction이 기본 값인 row라면, justify-content는 가로 축으로 정렬하는 게 된다.
+- `justify-content`는 아이템들을 주축을 따라 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `justify-content`는 가로 축으로 정렬하는 게 된다.
 
-- `align-items`는 아이템들을 주축에 수직인 방향으로 나란히 정렬한다. 예를 들어, flex-direction이 기본 값인 row라면, justify-content는 세로 축으로 정렬하는 게 된다.
+- `align-items`는 아이템들을 주축에 수직인 방향으로 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `align-items`는 세로 축으로 정렬하는 게 된다.
 
 - 사용 가능한 값들은 아래와 같다.
 
