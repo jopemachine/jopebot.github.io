@@ -22,6 +22,8 @@ header-mask: 0.3
 2. 생성자일 경우 해당 객체를 가리킴
 
 3. 일반적으로 전역 객체인 window를 가리킴.
+
+4. use strict 모드이면 일반 함수에 undefined가 바인딩 됨.
 ```
 
 <br />
