@@ -12,9 +12,9 @@ header-mask: 0.3
 
 # Rest API, Restful
 
-- REST (Representational State Transfer).
+- `REST` (Representational State Transfer).
 
-- Http method에 동사, URL엔 명사로 구성해 의미 체계를 구성해서 이 둘만으로 어떤 일을 하는 API인지 알게 하자. 즉, self-descriptive한 API를 구축하자는 것.
+- Http method에 동사, URL엔 명사로 구성해 의미 체계를 구성해서 이 둘만으로 어떤 일을 하는 API인지 알게 하자. **즉, self-descriptive한 API를 구축하자**는 것.
 
 - Rest API의 원칙을 지키는 API를 Restful 하다고 함.
 
@@ -22,11 +22,11 @@ header-mask: 0.3
 
 - 둘 다 API를 구축하는 방법론
 
-- SOAP는 W3C에서 관리하는 프로토콜로, REST 보다 더 구체적인 명세 (XML 메세징 등) 를 가짐. REST는 프로토콜이 아니기 때문에 둘은 서로 다른 개념임.
+- `SOAP`는 W3C에서 관리하는 프로토콜로, `REST` 보다 더 구체적인 명세 (XML 메세징 등) 를 가짐. `REST`는 *프로토콜이 아니기 때문에 둘은 서로 다른 개념*임.
 
-- SOAP는 다른 언어, 다른 플랫폼에서 빌드된 애플리케이션이 통신할 수 있도록 설계된 최초의 표준 프로토콜.
+- `SOAP`는 다른 언어, **다른 플랫폼에서 빌드된 애플리케이션이 통신할 수 있도록 설계된 최초의 표준 프로토콜.**
 
-- 많은 레거시 시스템이 SOAP를 준수하고, 웹 서비스의 경우 REST API로 작성하는 경우가 많다.
+- 많은 레거시 시스템이 `SOAP`를 준수하고, 웹 서비스의 경우 `REST` API로 작성하는 경우가 많다.
 
 # Http Method
 
@@ -60,6 +60,6 @@ header-mask: 0.3
 
 - 요청한 리소스에 대해 양방향 연결함.
 
-- 클라이언트가 프록시를 통해 서버와 SSL 연결할 때 사용. (SSL 터널링).
+- 클라이언트가 프록시를 통해 서버와 SSL 연결할 때 사용. (`SSL 터널링`).
 
 ## trace

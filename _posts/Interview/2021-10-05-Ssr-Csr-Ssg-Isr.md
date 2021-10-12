@@ -21,7 +21,7 @@ header-mask: 0.3
 
 - `React`에서 `Next.js`를 써서 CSR과 섞어 쓸 수 있다.
 
-- `Vue`에서 `Nuxt.js`를 써서 구현 가능
+- `Vue`에서 `Nuxt.js`를 써서 구현 가능.
 
 - 서버에서 새로 html을 불러와야 해서 blinking이 발생하고 `SPA` 구축 안 됨.
 

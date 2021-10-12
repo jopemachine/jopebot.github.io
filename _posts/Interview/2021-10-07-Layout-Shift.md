@@ -15,4 +15,4 @@ header-mask: 0.3
 
 - 콘텐츠가 불안정해 사용자가 클릭하려 했을 때 화면 요소 위치가 변경되는 등 사용자 경험을 저해함.
 
-- Chrome devtool의 performance, lighthouse 탭에서 `Cumulative Layout shift`라는 값을 통해 측정 가능하다.
+- Chrome devtool의 `performance`, `lighthouse` 탭에서 `Cumulative Layout shift`라는 값을 통해 측정 가능하다.

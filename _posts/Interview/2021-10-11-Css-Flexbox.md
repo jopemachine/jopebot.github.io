@@ -20,7 +20,7 @@ header-mask: 0.3
 
 ## flex-direction
 
-- 어떤 차원을 정렬할 것인지 결정 (이 축을 주축이라 함)
+- 어떤 차원을 정렬할 것인지 결정 (이 축을 `주축`이라 함)
 
 ### row
 
@@ -60,7 +60,7 @@ header-mask: 0.3
 
 - flex item에 지정하여 초기 크기 지정.
 
-- auto이면 같은 공간 할당
+- `auto`이면 같은 공간 할당
 
 - `flex-basic`를 지정하지 않으면 flex item의 크기가 `flex-basic` 값으로 들어감.
 
@@ -76,9 +76,9 @@ header-mask: 0.3
 
 - justify는 *텍스트 행의 끝을 나란히 맞춘다*는 의미.
 
-- `justify-content`는 아이템들을 주축을 따라 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `justify-content`는 가로 축으로 정렬하는 게 된다.
+- `justify-content`는 아이템들을 `주축`을 따라 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `justify-content`는 가로 축으로 정렬하는 게 된다.
 
-- `align-items`는 아이템들을 주축에 수직인 방향으로 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `align-items`는 세로 축으로 정렬하는 게 된다.
+- `align-items`는 아이템들을 `주축에 수직인 방향`으로 나란히 정렬한다. 예를 들어, `flex-direction`이 기본 값인 row라면, `align-items`는 세로 축으로 정렬하는 게 된다.
 
 - 사용 가능한 값들은 아래와 같다.
 

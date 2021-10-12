@@ -11,7 +11,7 @@ header-mask: 0.3
 
 # 프로토타입 이란?
 
-- 자바스크립트엔 ES5까지 class가 없었고, `상속` 개념을 사용하려면 프로토타입 기반의 상속을 이용한다. ES6의 class 개념도 프로토타입 기반에서 작동한다.
+- 자바스크립트엔 ES6까지 class가 없었고, `상속` 개념을 사용하려면 프로토타입 기반의 상속을 이용한다. ES6의 class 개념도 프로토타입 기반에서 작동한다.
 
 - 생성자 함수는 자신의 생성자 (`constructor` 함수)를 멤버로 갖는 프로토 타입을 가짐.
 
@@ -36,7 +36,6 @@ header-mask: 0.3
 ### getPrototypeOf
 
 ### setPrototypeOf
-
 
 # Related links
 

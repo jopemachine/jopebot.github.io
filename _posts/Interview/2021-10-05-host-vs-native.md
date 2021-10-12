@@ -10,7 +10,7 @@ header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
 
-# 호스트 객체 (host object) 와 내장 객체 (native object) 의 차이점
+# 호스트 객체 (Host object) 와 내장 객체 (Native object) 의 차이점
 
 ## 내장 객체 (Native object)
 
