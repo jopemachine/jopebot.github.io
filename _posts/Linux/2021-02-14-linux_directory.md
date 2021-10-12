@@ -121,8 +121,8 @@ cron 유틸리티의 실행 일정
 
 부트 프로세스와 시스템 서비스 관리를 위해 systemd 관련 파일이 담겨 있음.
 
-## 출처
+## Related
 
-[리눅스 바이블](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890586)
+- [리눅스 바이블](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890586)
 
 

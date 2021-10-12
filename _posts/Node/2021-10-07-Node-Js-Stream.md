@@ -43,4 +43,4 @@ header-mask: 0.3
 
 - callback은 그냥 완료되면 실행하란 개념.
 
-- 중간 중간 callback의 결과를 이벤트 방식으로 (EventEmitter) 가져올 순 없을까? 하는 과정에서 등장한 것이라 EventEmitter 상속
+- 중간 중간 callback의 결과를 이벤트 방식으로 (EventEmitter) 가져올 순 없을까? 하는 과정에서 등장한 것이라 EventEmitter를 상속

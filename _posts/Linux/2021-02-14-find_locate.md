@@ -83,8 +83,8 @@ $ find /etc -iname iptables -exec echo "I found {}" \;
 정확히 일치하지 않더라도 비슷한 파일명을 갖는 파일들을 찾아주기 때문에 제일 편리한 것 같다.
 
 
-## 출처
+## Related
 
-[리눅스 바이블](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890586)
+- [리눅스 바이블](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890586)
 
 

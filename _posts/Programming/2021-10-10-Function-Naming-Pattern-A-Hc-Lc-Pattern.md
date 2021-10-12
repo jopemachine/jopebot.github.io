@@ -15,7 +15,7 @@ header-mask: 0.3
 
 A/HC/LC Pattern이란 아래와 같은 패턴으로 함수 이름을 명명하는 방법론이다.
 
-prefix는 optional임에 유의할 것.
+_prefix는 optional임에 유의할 것._
 
 ```
 prefix? + action (A) + high context (HC) + low context (LW)
@@ -124,7 +124,7 @@ link.addEventListener('click', handleLinkClick)
 
 ### Context
 
-Function이 작용하는 domain.
+- Function이 작용하는 domain.
 
 ### Prefixes
 

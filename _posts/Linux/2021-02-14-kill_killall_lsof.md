@@ -66,10 +66,9 @@ $ killall -9 node
 
 실행 중인 모든 프로세스를 종료한다.
 
-## 그 외 명령어 및 프로그램
+## Related
 
-1. [kill-port](https://www.npmjs.com/package/kill-port)
-
+- [kill-port](https://www.npmjs.com/package/kill-port)
 
 ## 출처
 

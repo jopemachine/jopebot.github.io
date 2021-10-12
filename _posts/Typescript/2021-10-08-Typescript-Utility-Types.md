@@ -16,7 +16,7 @@ header-mask: 0.3
 
 ## Partial
 
-- 모든 프로퍼티 Optional로 만든다.
+- 모든 프로퍼티 `Optional`로 만든다.
 
 ```typescript
 interface Todo {
@@ -35,7 +35,7 @@ let fieldsToUpdate: Partial<Todo>
 
 ## Required
 
-- 모든 프로퍼티 Required로 만든다
+- 모든 프로퍼티 `Required`로 만든다
 
 ```typescript
 interface Props {
@@ -54,7 +54,7 @@ let props: Required<Props>
 
 ## Readonly
 
-- 모든 프로퍼티를 Readonly로 만든다.
+- 모든 프로퍼티를 `Readonly`로 만든다.
 
 ```typescript
 interface Todo {
@@ -74,7 +74,7 @@ const todo: Readonly<Todo> = {
 
 ## Record
 
-- Object 타입의 대체.
+- `Object` 타입의 대체.
 
 ```typescript
 const cats: Record<CatName, CatInfo> = {
@@ -86,7 +86,7 @@ const cats: Record<CatName, CatInfo> = {
 
 ## Pick
 
-- Record 타입에서 원하는 키를 골라 타입을 만듬
+- `Record` 타입에서 원하는 키를 골라 타입을 만듬
 
 ```typescript
 interface Todo {
@@ -107,7 +107,7 @@ type TodoPreview = Pick<Todo, "title" | "completed">;
 
 ## Omit
 
-- Record 타입에서 원하는 키를 제거해 타입을 만듬
+- `Record` 타입에서 원하는 키를 제거해 타입을 만듬
 
 ```typescript
 interface Todo {
@@ -148,7 +148,7 @@ type T0 = Extract<"a" | "b" | "c", "a" | "f">;
 
 ## NonNullable
 
-- 타입에서 Nullable 타입을 제거.
+- 타입에서 `Nullable` 타입을 제거.
 
 ```typescript
 type T0 = NonNullable<string[] | null | undefined>;
@@ -158,7 +158,7 @@ type T0 = NonNullable<string[] | null | undefined>;
 
 ## Parameters
 
-- 함수 타입에서 parameter 타입을 추출함
+- 함수 타입에서 `parameter` 타입을 추출함
 
 ```typescript
 type T0 = Parameters<(s: string) => void>;
@@ -168,7 +168,7 @@ type T0 = Parameters<(s: string) => void>;
 
 ## ConstructorParameters
 
-- 생성자의 parameter 타입을 추출함
+- 생성자의 `parameter` 타입을 추출함
 
 ```typescript
 type T0 = ConstructorParameters<ErrorConstructor>;
@@ -178,7 +178,7 @@ type T0 = ConstructorParameters<ErrorConstructor>;
 
 ## ReturnType
 
-- 함수의 리턴 타입을 추출함
+- 함수의 `리턴 타입`을 추출함
 
 ```typescript
 type T0 = ReturnType<() => string>;
@@ -203,7 +203,7 @@ type T0 = InstanceType<typeof C>;
 
 ## ThisParameterType
 
-- 해당 함수의 this의 타입을 추출
+- 해당 함수의 `this의 타입`을 추출
 
 ```typescript
 function toHex(this: Number) {
@@ -220,7 +220,7 @@ function numberToString(n: ThisParameterType<typeof toHex>) {
 
 ## OmitThisParameter
 
-- this가 함수의 인자로 쓰였을 때 인자를 생략해 없애줌.
+- this가 함수의 인자로 쓰였을 때 `인자를 생략해 없애`줌.
 
 ```typescript
 
