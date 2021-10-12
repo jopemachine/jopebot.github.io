@@ -9,7 +9,7 @@ header-img: "img/header-img/frontend.jpg"
 header-mask: 0.3
 ---
 
-# Critical rendering path (CRP), Pixel pipeline
+# Critical Rendering Path (CRP), Pixel pipeline
 
 - 브라우저가 TCP 연결에서 받은 데이터를 파싱한 후 랜더링 되기 까지의 과정
 
@@ -41,15 +41,15 @@ header-mask: 0.3
 
 ## Reflow
 
-- 특정 CSS attribute 변화 등으로 CRP를 다시 도는 것을 `Reflow`라고 함.
+- 특정 CSS attribute 변화 등으로 `CRP`를 다시 도는 것을 `Reflow`라고 함.
 
-- CRP의 모든 phase 들을 다시 돌아야 되기 때문에 성능 저하의 원인이 됨.
+- `CRP`의 모든 phase 들을 다시 돌아야 되기 때문에 성능 저하의 원인이 됨.
 
 ## Repaint
 
 - 색상 관련 attribute 등 특정 CSS attribute는 굳이 Layout을 다시 계산해야할 필요가 없다. (css triggers 참고)
 
-- Layout 과정을 생략한 채 CRP를 다시 도는 것을 `Repaint`라고 한다.
+- Layout 과정을 생략한 채 `CRP`를 다시 도는 것을 `Repaint`라고 한다.
 
 ## GPU 사용한 최적화
 
