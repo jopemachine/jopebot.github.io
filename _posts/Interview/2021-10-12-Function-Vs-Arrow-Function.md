@@ -28,6 +28,8 @@ header-mask: 0.3
 
 그래서 Arrow function이 없었던 ES5까지는 *this에 상위 컨텍스트의 문맥을 넣고 싶다면* `call`, `apply`, `bind` 함수를 사용해야 했다.
 
+<br />
+
 - Arrow function의 경우 자동으로 this가 상위 컨텍스트의 this를 이어 받기 때문에 `call`, `apply`, `bind`를 사용할 필요가 없다.
 
 - 상위 컨텍스트의 this를 이어 받는다 => Lexical scope라고 함.
