@@ -12,19 +12,19 @@ header-mask: 0.3
 
 # CSS 레이아웃
 
-- Element의 크기는 Content box, padding, border, margin으로 구성됨
+- Element의 크기는 `Content box`, `padding`, `border`, `margin`으로 구성됨
 
 ## margin
 
-- border와 외부 엘리먼트들 사이의 여백
+- `border`와 `외부 엘리먼트들` 사이의 여백
 
 ## border
 
-- 엘리먼트의 가장자리. margin과 padding의 경계.
+- 엘리먼트의 가장자리. `margin`과 `padding`의 경계.
 
 ## padding
 
-- 콘텐츠 박스와 border 사이의 여백.
+- `콘텐츠 박스`와 `border` 사이의 여백.
 
 ## content box
 
@@ -36,7 +36,7 @@ header-mask: 0.3
 
 - width: 300px 이라 하면 **콘텐츠 박스의 길이를 300px로 지정**.
 
-- box-sizing의 디폴트 값
+- `box-sizing`의 디폴트 값
 
 ## border-box
 

@@ -35,15 +35,15 @@ header-mask: 0.3
 
 ### 타이머 동작
 
-- setTimeout의 동작은 Node, 브라우저에서 다르다.
+- `setTimeout`의 동작은 Node, 브라우저에서 다르다. 브라우저들 마다도 다르다.
 
 ## nextTick vs setImmediate
 
-- 두 함수 모두 Nodejs의 전용 API. (일부 브라우저는 setImmediate를 지원하긴 한다)
+- 두 함수 모두 Nodejs의 전용 API. (일부 브라우저는 `setImmediate`를 지원하긴 한다)
 
 - 이름이 서로 잘못 지어진 케이스.
 
-- nextTick은 콜백 함수를 이벤트 루프의 phase에 관계 없이 바로 실행함. (immediate) 즉, nextTick이 더 먼저 실행된다.
+- `nextTick`은 콜백 함수를 이벤트 루프의 phase에 관계 없이 바로 실행함. (immediate) 즉, `nextTick`이 더 먼저 실행된다.
 
-- setImmediate는 이벤트 루프의 가능한 다음 loop에 실행함. (next loop)
+- `setImmediate`는 이벤트 루프의 가능한 다음 loop에 실행함. (next loop)
 
