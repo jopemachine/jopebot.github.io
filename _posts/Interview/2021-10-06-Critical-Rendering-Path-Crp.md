@@ -15,7 +15,7 @@ header-mask: 0.3
 
 ## DOM, CSSOM Parsing
 
-- 렌더링 트리를 그리기 전 각각의 DOM, CSSOM 트리를 생성한다.
+- 렌더링 트리를 그리기 전 각각의 `DOM`, `CSSOM` 트리를 생성한다.
 
 ## Javascript execute
 
@@ -27,7 +27,7 @@ header-mask: 0.3
 
 - 화면에 그려질 모든 요소의 크기와 위치를 계산하는 비교적 무거운 작업
 
-- 각 레이어마다 Layout 과정이 필요함.
+- 각 레이어마다 `Layout` 과정이 필요함.
 
 ## Painting (Rasterizing)
 
@@ -41,15 +41,15 @@ header-mask: 0.3
 
 ## Reflow
 
-- 특정 css attribute 변화 등으로 CRP를 다시 도는 것을 Reflow라고 함.
+- 특정 CSS attribute 변화 등으로 CRP를 다시 도는 것을 `Reflow`라고 함.
 
 - CRP의 모든 phase 들을 다시 돌아야 되기 때문에 성능 저하의 원인이 됨.
 
 ## Repaint
 
-- 색상 관련 attribute 등 특정 css attribute는 굳이 Layout을 다시 계산해야할 필요가 없다.
+- 색상 관련 attribute 등 특정 CSS attribute는 굳이 Layout을 다시 계산해야할 필요가 없다. (css triggers 참고)
 
-- Layout 과정을 생략한 채 CRP를 다시 도는 것을 Repaint라고 한다.
+- Layout 과정을 생략한 채 CRP를 다시 도는 것을 `Repaint`라고 한다.
 
 ## GPU 사용한 최적화
 
@@ -61,7 +61,7 @@ header-mask: 0.3
 
 - DOM을 변경하지 않았는데 강제로 Reflow가 일어나 프레임 드랍을 일으키는 것.
 
-- 빈번한 Forced reflow로 레이아웃 쓰레싱이 발생할 수 있다.
+- 빈번한 Forced Reflow로 레이아웃 쓰레싱이 발생할 수 있다.
 
 - js에서 element에 접근할 때 마다 `강제 동기 레이아웃`이 발생하므로 캐싱해 놓고 쓰거나 `virtual dom`을 사용하는 등의 해결책을 사용해야 한다.
 

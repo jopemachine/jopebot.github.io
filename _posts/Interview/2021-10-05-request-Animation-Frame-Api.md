@@ -14,11 +14,11 @@ header-mask: 0.3
 
 ## 필요한 이유
 
-- 애니메이션을 사용하는 js 로직을 setTimeout으로 사용하는 경우 애니메이션이 프레임 시작과 동시에 실행됨을 보장할 수 없고 끊길 수 있다.
+- 애니메이션을 사용하는 js 로직을 `setTimeout`으로 사용하는 경우 애니메이션이 프레임 시작과 동시에 실행됨을 보장할 수 없고 끊길 수 있다.
 
-- requestAnimationFrame은 애니메이션이 프레임 시작과 동시에 실행됨을 보장해준다.
+- `requestAnimationFrame`은 애니메이션이 프레임 시작과 동시에 실행됨을 보장해준다.
 
-- requestAnimationFrame은 화면에 해당 요소가 보이지 않는 경우 콜백을 호출하지 않는다.
+- `requestAnimationFrame`은 화면에 해당 요소가 보이지 않는 경우 콜백을 호출하지 않는다.
 
 - 콜백은 브라우저의 animation queue에 들어가며, 이 큐는 마이크로 태스크 큐 보다는 우선순위가 낮고 매크로 태스크 큐 보다는 높은 우선 순위를 가진다.
 
@@ -31,3 +31,7 @@ header-mask: 0.3
 ## 사용해야 하는 경우
 
 - css transition으로 처리가 안 되는 js로만 구현 가능한 애니메이션 구현에 사용하면 된다.
+
+# Related links
+
+- [Must Know About Frontend - Css 애니메이션 vs Js 애니메이션](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/frontend/css-js-animation.md)

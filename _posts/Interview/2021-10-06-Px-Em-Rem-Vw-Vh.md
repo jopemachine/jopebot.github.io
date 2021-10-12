@@ -31,11 +31,11 @@ header-mask: 0.3
 
 ## rem
 
-- `em`인데 부모가 아닌 `Root element에 상대적`인 폰트 사이즈 단위이다.
+- `em`인데 부모가 아닌 `Root Element에 상대적인` 폰트 사이즈 단위이다.
 
 ## vw, vh
 
-- view port에 상대적인 값을 폰트 크기 사이즈로 지정할 수 있다.
+- `view port에 상대적인 값`을 폰트 크기 사이즈로 지정할 수 있다.
 
 ## %
 
