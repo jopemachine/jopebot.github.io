@@ -23,7 +23,7 @@ header-mask: 0.3
 
 - 블록 리소스 (css, js 등) 때문에 html 파싱이 중단된 건 아닌지?
 
-- js는 body 태그 하단에 두는 것이 기본이고 DOM async나 defer를 써서 html 파싱이 블록되지 않게 할 것.
+- js는 body 태그 하단에 두는 것이 기본이고 `async`나 `defer`를 써서 html 파싱이 블록되지 않게 할 것.
 
 #### async script
 
@@ -39,17 +39,17 @@ header-mask: 0.3
 
 ### DCL vs onload
 
-- 이미지는 블록 리소스가 아니므로 이미지 다운로드 중에도 (DCL 후) 렌더링 트리가 그려진다.
+- 이미지는 블록 리소스가 아니므로 이미지 다운로드 중에도 (`DCL` 후) 렌더링 트리가 그려진다.
 
-- 하지만 onload 이벤트는 모든 이미지(를 포함한 종속 리소스들) 들의 다운로드가 끝나고 발생한다.
+- 하지만 `onload` 이벤트는 모든 이미지(를 포함한 종속 리소스들) 들의 다운로드가 끝나고 발생한다.
 
 ## First meaningful paint (FMP)
 
-- 화면에 Hero Element가 처음 렌더링 되는 시점.
+- 화면에 `Hero Element`가 처음 렌더링 되는 시점.
 
 - **실질적인 프론트 성능 측정의 지표**로 사용됨.
 
-- Hero element의 명확한 정의는 없으며 서비스에 따라 개발자가 정의해야 한다.
+- `Hero Element`의 명확한 정의는 없으며 서비스에 따라 개발자가 정의해야 한다.
 
 ## First paint (FP)
 
