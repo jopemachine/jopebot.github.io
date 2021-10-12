@@ -11,7 +11,7 @@ header-mask: 0.3
 
 # 웹 폰트의 문제점과 해결 (FOIT, FOUT)
 
-웹 폰트가 다운로드 되기 전 글자는 어떻게 렌더링 할 것인가?
+> 웹 폰트가 다운로드 되기 전 글자는 어떻게 렌더링 할 것인가?
 
 - 브라우저에 따라 `FOUT` (Flash of unstyled text), `FOIT` (Flash of invisible text) 방식 중 어떤 것을 사용할 것인지 디폴트 값이 다름.
 

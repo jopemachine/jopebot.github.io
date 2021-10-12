@@ -56,4 +56,4 @@ header-mask: 0.3
 
 # Related links
 
-- [know html semantic elements](https://blueshw.github.io/2020/05/09/know-html-semantic-elements/)
+- [[HTML 바로 알기] Semantic Web을 위한 Semantic Elements](https://blueshw.github.io/2020/05/09/know-html-semantic-elements/)
