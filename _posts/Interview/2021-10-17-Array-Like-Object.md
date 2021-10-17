@@ -12,9 +12,9 @@ header-mask: 0.3
 
 # ArrayLike object에 대해
 
-- 객체인데 `length`와 (optional) map, filter 등의 메서드를 선언하고 배열인 척 한다.
+- 객체인데 `length`와 (optional) `map`, `filter` 등의 메서드를 선언하고 배열인 척 한다.
 
-- `arguments`, `HtmlCollection`이 대표적인 Array like object.
+- `arguments`, `HtmlCollection`이 대표적인 ArrayLike object.
 
 ## ArrayLike 객체를 배열로 변환하는 법
 
@@ -24,7 +24,13 @@ header-mask: 0.3
 
 ### spread operator 이용
 
-- ES6 이후부턴 [Symbol.iterator]가 구현되어 있는 Array like object들에 적용할 수 있다.
+- ES6 이후부턴 `Symbol.iterator`가 구현되어 있는 ArrayLike object들에 적용할 수 있다.
+
+## _.map vs [].map
+
+- map 등 배열 메서드들의 경우 ArrayLike 객체에 적용되면 시그니쳐나 구현부가 달라질 수 있음.
+
+- `lodash`, `underscore` 등의 라이브러리의 map 함수를 사용하면 더 통일적으로 배열 메서드를 사용할 수 있음.
 
 # Related links
 
