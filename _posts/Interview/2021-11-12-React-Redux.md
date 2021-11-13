@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "React, redux, 불변성"
+title: "React, redux와 불변성에 대한 개념 정리"
 subtitle: "프론트 면접 질문 정리"
 author: jopemachine
 tags: 
@@ -36,3 +36,5 @@ React와 Redux 둘 다 마찬가지로 효율적으로 state를 비교하기 위
 ## Related links
 
 - [Redux Three Principles](https://redux.js.org/understanding/thinking-in-redux/three-principles)
+
+- [깊은 상태 비교와 얕은 상태 비교의 차이](https://redux.js.org/faq/immutable-data#how-do-shallow-and-deep-equality-checking-differ)
