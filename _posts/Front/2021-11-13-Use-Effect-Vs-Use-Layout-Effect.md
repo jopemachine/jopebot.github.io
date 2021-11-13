@@ -26,6 +26,12 @@ header-mask: 0.3
 
 그리고 `useLayoutEffect`는 동기적으로 일어나기 때문에 당연히 무거운 작업을 넣어 놓으면 안 된다.
 
+![](/img/posts/Front/2021-11-13-Use-Effect-Vs-Use-Layout-Effect)
+
 ## Related links
 
 - [React 공식 문서](https://ko.reactjs.org/docs/hooks-reference.html#timing-of-effects)
+
+- [useLayoutEffect 훅에 대하여](https://merrily-code.tistory.com/46)
+
+- [Hook flow](https://github.com/donavon/hook-flow)
