@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "As a service 종류"
-subtitle: "Cloud"
+title: As a service 종류
+subtitle: Cloud
 author: jopemachine
-tags: 
- - Cloud
-header-img: "img/header-img/cloud.png"
+tags:
+  - Cloud
+header-img: img/header-img/cloud.png
 header-mask: 0.3
+last-update: October 11, 2021
 ---
 
 # As a service 종류

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "리눅스 디렉토리 구조"
-subtitle: '리눅스'
-author: "jopemachine"
-header-img: "img/header-img/linux.png"
+title: 리눅스 디렉토리 구조
+subtitle: 리눅스
+author: jopemachine
+header-img: img/header-img/linux.png
 header-mask: 0.3
 tags:
   - Linux
+last-update: October 12, 2021
 ---
 
 ## 환경 정보 설정 관련

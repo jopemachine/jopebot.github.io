@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "requestAnimationFrame API에 대해"
-subtitle: "프론트 면접 질문 정리"
-author: "jopemachine"
-tags: 
- - Frontend
- - Browser
-header-img: "img/header-img/frontend.jpg"
+title: requestAnimationFrame API에 대해
+subtitle: 프론트 면접 질문 정리
+author: jopemachine
+tags:
+  - Frontend
+  - Browser
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # requestAnimationFrame API에 대해

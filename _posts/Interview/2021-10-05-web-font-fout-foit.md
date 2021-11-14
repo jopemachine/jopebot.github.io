@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "웹 폰트의 문제점과 해결"
-subtitle: "프론트 면접 질문 정리"
-author: "jopemachine"
-tags: 
- - Frontend
-header-img: "img/header-img/frontend.jpg"
+title: 웹 폰트의 문제점과 해결
+subtitle: 프론트 면접 질문 정리
+author: jopemachine
+tags:
+  - Frontend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # 웹 폰트의 문제점과 해결 (FOIT, FOUT)

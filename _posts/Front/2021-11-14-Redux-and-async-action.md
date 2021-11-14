@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Redux와 비동기 액션 처리"
-subtitle: "프론트 면접 질문 정리"
+title: Redux와 비동기 액션 처리
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Redux
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Redux
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 14, 2021
 ---
 
 # Redux와 비동기 액션 처리

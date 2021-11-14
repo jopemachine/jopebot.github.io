@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "cluster vs worker_thread vs child_process"
-subtitle: "Node.js"
+title: cluster vs worker_thread vs child_process
+subtitle: Node.js
 author: jopemachine
-tags: 
- - Node
-header-img: "img/header-img/node.png"
+tags:
+  - Node
+header-img: img/header-img/node.png
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Cluster vs Worker_thread

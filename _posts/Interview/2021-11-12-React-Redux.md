@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "React, redux와 불변성에 대한 개념 정리"
-subtitle: "프론트 면접 질문 정리"
+title: React, redux와 불변성에 대한 개념 정리
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - React
- - Redux
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - React
+  - Redux
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 13, 2021
 ---
 
 # React, Redux와 불변성

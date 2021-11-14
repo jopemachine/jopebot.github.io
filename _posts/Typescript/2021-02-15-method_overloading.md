@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "타입스크립트 메서드 오버로드"
-subtitle: 'Typescript 문법'
-author: "jopemachine"
-header-img: "img/header-img/typescript.jpg"
+title: 타입스크립트 메서드 오버로드
+subtitle: Typescript 문법
+author: jopemachine
+header-img: img/header-img/typescript.jpg
 header-mask: 0.3
 tags:
   - Typescript
+last-update: October 10, 2021
 ---
 
 ## 타입스크립트에서 메서드 오버로드이 다른 언어와 다른 이유

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Lighthouse란?"
-subtitle: "프론트 성능 최적화"
+title: Lighthouse란?
+subtitle: 프론트 성능 최적화
 author: jopemachine
-tags: 
- - Frontend
- - Browser
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Browser
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 08, 2021
 ---
 
 # Lighthouse란?

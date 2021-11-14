@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "브라우저에 URL을 입력했을 때"
-subtitle: "프론트 면접 질문 정리"
+title: 브라우저에 URL을 입력했을 때
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Browser
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Browser
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # 브라우저에 URL을 입력했을 때

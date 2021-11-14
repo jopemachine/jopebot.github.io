@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "특정 프로세스 죽이기"
-subtitle: '리눅스 명령어 정리'
-author: "jopemachine"
-header-img: "img/header-img/linux.png"
+title: 특정 프로세스 죽이기
+subtitle: 리눅스 명령어 정리
+author: jopemachine
+header-img: img/header-img/linux.png
 header-mask: 0.3
 tags:
   - Linux
+last-update: October 12, 2021
 ---
 
 ## kill

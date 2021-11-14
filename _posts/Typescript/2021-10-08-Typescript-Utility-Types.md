@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Typescript utility types "
-subtitle: "Typescript 문법"
+subtitle: Typescript 문법
 author: jopemachine
-tags: 
- - Frontend
- - Typescript
-header-img: "img/header-img/typescript.jpg"
+tags:
+  - Frontend
+  - Typescript
+header-img: img/header-img/typescript.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Typescript utility types

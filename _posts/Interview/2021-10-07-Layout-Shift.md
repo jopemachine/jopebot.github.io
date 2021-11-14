@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Layout shift"
-subtitle: "프론트 면접 질문 정리"
+title: Layout shift
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
+tags:
   - Frontend
-header-img: "img/header-img/frontend.jpg"
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Layout shift

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "CSS 레이아웃"
-subtitle: "프론트 면접 질문 정리"
+title: CSS 레이아웃
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - CSS
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - CSS
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # CSS 레이아웃

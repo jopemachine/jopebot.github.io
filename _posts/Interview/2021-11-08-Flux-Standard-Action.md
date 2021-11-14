@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Flux-standard-action (FSA)이란?"
-subtitle: "프론트 면접 질문 정리"
+title: Flux-standard-action (FSA)이란?
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Redux
- - Flux
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Redux
+  - Flux
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 08, 2021
 ---
 
 # Flux-standard-action (FSA) 이란?

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Function Naming Pattern (A/HC/LC Pattern)"
-subtitle: "프로그래밍"
+title: Function Naming Pattern (A/HC/LC Pattern)
+subtitle: 프로그래밍
 author: jopemachine
-tags: 
- - Programming
-header-img: "img/header-img/coding.jpg"
+tags:
+  - Programming
+header-img: img/header-img/coding.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Function Naming Pattern (A/HC/LC Pattern)

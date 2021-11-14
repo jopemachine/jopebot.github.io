@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Node.js stream에 대해"
-subtitle: "Node.js"
+title: Node.js stream에 대해
+subtitle: Node.js
 author: jopemachine
-tags: 
- - Node
-header-img: "img/header-img/node.png"
+tags:
+  - Node
+header-img: img/header-img/node.png
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Node.js stream에 대해

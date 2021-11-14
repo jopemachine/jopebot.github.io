@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "프론트 성능 측정의 지표에 관해"
-subtitle: "프론트 면접 질문 정리"
-author: "jopemachine"
-tags: 
- - Frontend
-header-img: "img/header-img/frontend.jpg"
+title: 프론트 성능 측정의 지표에 관해
+subtitle: 프론트 면접 질문 정리
+author: jopemachine
+tags:
+  - Frontend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # 프론트 성능 측정의 지표에 관해

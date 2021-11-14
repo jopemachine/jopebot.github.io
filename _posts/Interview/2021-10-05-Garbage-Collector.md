@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Garbage collector"
-subtitle: "프론트 면접 질문 정리"
-author: "jopemachine"
-tags: 
- - Frontend
- - Programming
-header-img: "img/header-img/frontend.jpg"
+title: Garbage collector
+subtitle: 프론트 면접 질문 정리
+author: jopemachine
+tags:
+  - Frontend
+  - Programming
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Garbage collector

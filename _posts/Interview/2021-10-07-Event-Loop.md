@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "이벤트 루프에 관해 (Event loop)"
-subtitle: "프론트 면접 질문 정리"
+title: 이벤트 루프에 관해 (Event loop)
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # 이벤트 루프에 관해 (Event loop)

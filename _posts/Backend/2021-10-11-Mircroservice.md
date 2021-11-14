@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Mircroservice의 특징"
-subtitle: "백엔드"
+title: Mircroservice의 특징
+subtitle: 백엔드
 author: jopemachine
-tags: 
- - Backend
-header-img: "img/header-img/backend.jpg"
+tags:
+  - Backend
+header-img: img/header-img/backend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Mircroservice

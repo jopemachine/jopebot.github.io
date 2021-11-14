@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "React, Rehydate vs render"
-subtitle: "프론트 면접 질문 정리"
+title: React, Rehydate vs render
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - React
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - React
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 31, 2021
 ---
 
 # React, Rehydate vs render

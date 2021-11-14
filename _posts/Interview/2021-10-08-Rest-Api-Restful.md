@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Rest API, Restful"
-subtitle: "프론트 면접 질문 정리"
+title: Rest API, Restful
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Backend
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Backend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Rest API, Restful

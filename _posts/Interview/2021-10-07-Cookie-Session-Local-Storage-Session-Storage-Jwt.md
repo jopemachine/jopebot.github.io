@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Cookie, session, local storage, session storage, JWT"
-subtitle: "프론트 면접 질문 정리"
+title: Cookie, session, local storage, session storage, JWT
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Browser
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Browser
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Cookie, session, local storage, session storage, JWT

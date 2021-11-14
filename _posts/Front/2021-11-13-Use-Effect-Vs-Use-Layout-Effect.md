@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "useEffect vs useLayoutEffect"
-subtitle: "프론트 면접 질문 정리"
+title: useEffect vs useLayoutEffect
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - React
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - React
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 14, 2021
 ---
 
 # useEffect vs useLayoutEffect

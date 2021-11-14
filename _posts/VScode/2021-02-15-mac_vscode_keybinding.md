@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "vscode 터미널 키 바인딩 (mac)"
-subtitle: '개발환경 셋팅'
-author: "jopemachine"
-header-img: "img/header-img/vscode.png"
+title: vscode 터미널 키 바인딩 (mac)
+subtitle: 개발환경 셋팅
+author: jopemachine
+header-img: img/header-img/vscode.png
 header-mask: 0.3
 tags:
   - vscode
+last-update: February 15, 2021
 ---
 
 ## 문제

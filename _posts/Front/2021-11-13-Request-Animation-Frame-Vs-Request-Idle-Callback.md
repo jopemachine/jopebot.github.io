@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "requestAnimationFrame vs requestIdleCallback"
-subtitle: "프론트 면접 질문 정리"
+title: requestAnimationFrame vs requestIdleCallback
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Browser
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Browser
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 13, 2021
 ---
 
 # requestAnimationFrame vs requestIdleCallback

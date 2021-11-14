@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "find와 locate의 차이점에 대해서"
-subtitle: '리눅스 명령어 정리'
-author: "jopemachine"
-header-img: "img/header-img/linux.png"
+title: find와 locate의 차이점에 대해서
+subtitle: 리눅스 명령어 정리
+author: jopemachine
+header-img: img/header-img/linux.png
 header-mask: 0.3
 tags:
   - Linux
+last-update: October 12, 2021
 ---
 
 ## find와 locate

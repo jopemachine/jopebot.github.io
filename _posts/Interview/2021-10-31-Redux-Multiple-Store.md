@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Redux multiple store에 대해"
-subtitle: "프론트 면접 질문 정리"
+title: Redux multiple store에 대해
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Redux
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Redux
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 31, 2021
 ---
 
 # Redux multiple store에 대해

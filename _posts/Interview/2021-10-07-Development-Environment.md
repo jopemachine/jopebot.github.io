@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "프론트 개발 환경 구성 (Development environment)"
-subtitle: "프론트 면접 질문 정리"
+title: 프론트 개발 환경 구성 (Development environment)
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 10, 2021
 ---
 
 # 프론트 개발 환경 구성 (Development environment)

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Data 속성에 관해"
-subtitle: "프론트 면접 질문 정리"
+title: Data 속성에 관해
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - HTML
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - HTML
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # Data 속성에 관해

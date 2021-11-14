@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "package-lock.json의 lockfileVersion에 대해"
-subtitle: "npm 이슈"
+title: package-lock.json의 lockfileVersion에 대해
+subtitle: npm 이슈
 author: jopemachine
-tags: 
- - npm
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - npm
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 09, 2021
 ---
 
 # package-lock.json의 lockfileVersion에 대해

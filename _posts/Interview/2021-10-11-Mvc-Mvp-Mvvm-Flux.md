@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "MVC, MVP, MVVM, Flux 디자인 패턴"
-subtitle: "프론트 면접 질문 정리"
+title: MVC, MVP, MVVM, Flux 디자인 패턴
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - Flux
- - Redux
- - Design pattern
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - Flux
+  - Redux
+  - Design pattern
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: November 14, 2021
 ---
 
 # MVC, MVP, MVVM, Flux 디자인 패턴

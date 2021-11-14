@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "CSS Flexbox 모델"
-subtitle: "프론트 면접 질문 정리"
+title: CSS Flexbox 모델
+subtitle: 프론트 면접 질문 정리
 author: jopemachine
-tags: 
- - Frontend
- - CSS
-header-img: "img/header-img/frontend.jpg"
+tags:
+  - Frontend
+  - CSS
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # CSS Flexbox 모델

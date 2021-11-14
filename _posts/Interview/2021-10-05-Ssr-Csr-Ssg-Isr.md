@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "SSR, CSR, SSG, ISR"
-subtitle: "프론트 면접 질문 정리"
-author: "jopemachine"
-tags: 
- - Frontend
-header-img: "img/header-img/frontend.jpg"
+title: SSR, CSR, SSG, ISR
+subtitle: 프론트 면접 질문 정리
+author: jopemachine
+tags:
+  - Frontend
+header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: October 12, 2021
 ---
 
 # SSR, CSR, SSG, ISR
