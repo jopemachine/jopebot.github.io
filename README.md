@@ -1,6 +1,6 @@
 ## Outline
 
-Just personal blog
+Just personal tech blog
 
 ## Build from sources
 
