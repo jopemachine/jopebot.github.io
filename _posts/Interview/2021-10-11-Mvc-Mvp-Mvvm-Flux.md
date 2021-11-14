@@ -26,7 +26,7 @@ header-mask: 0.3
 
 -> `Model`과 `View`의 의존 관계 (바인딩)을 어떻게 핸들링해야 할까? 에서 아래의 다른 패턴들이 등장.
 
-![](/img/posts/Interview/2021-10-11-Mvc-Mvp-Mvvm-Flux/다운로드.png)
+![](/img/posts/Interview/2021-10-11-Mvc-Mvp-Mvvm-Flux/1.png)
 
 ## Flux
 
