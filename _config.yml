@@ -3,8 +3,8 @@ title: Development Notes
 SEOTitle: Development Notes
 header-img: img/home-bg.jpg
 email: jopemachine@gmail.com
-description: "description"
-keyword: "keyword"
+description: "I organize the problems that I experienced in development and what I studied in this blog."
+keyword: "frontend, jopemachine, gyubong, gyubong lee, react, javascript"
 url: "https://jopemachine.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -86,7 +86,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
+chrome-tab-theme-color: "#ffffff"
 service-worker: true
 
 
