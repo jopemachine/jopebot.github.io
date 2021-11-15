@@ -200,8 +200,9 @@ http://www.tipue.com/search
 
 .tipue_search_spinner
 {
-     width: 50px;
-     height: 28px;
+     display: none !important;
+     width: 0px;
+     height: 0px;
 }
 .tipue_search_spinner > div
 {

@@ -8,7 +8,7 @@
     <!-- Search bar -->
     <form id="search-bar-form" style="display:none;" action="/">
         <!-- <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div> -->
-        <div style="width:100%;" class="tipue_search_right"><input  style="width:100%;" type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" placeholder="Search..." required></div>
+        <div style="width:100%;" class="tipue_search_right"><input style="width:100%;" type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" placeholder="Search..." required></div>
         <div style="clear: both;"></div>
     </form>
 
@@ -58,7 +58,7 @@
         
         $('#tipue_search_input').tipuesearch({
             'wholeWords' : false,
-            'showTime' : false,
+            'showTime' : true,
             'minimumLength' : 1
         });
     }
