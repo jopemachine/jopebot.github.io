@@ -8,7 +8,7 @@ tags:
   - Redux
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 14, 2021
+last-update: November 15, 2021
 ---
 
 # Redux와 비동기 액션 처리
@@ -23,7 +23,7 @@ last-update: November 14, 2021
 
 - 비동기 처리가 필요한 각 액션들을 `TRY`, `SUCCESS`, `FAIL`로 나눠 놓고, 비동기 액션을 처리하기 위해 `TRY` 액션을 호출했을 때, 리듀서에 들어가기 전 미들웨어에서 비동기 액션을 처리하고 처리된 후 자동으로 `SUCCESS`, `FAIL`에 해당하는 액션들이 디스패치 되게 한 후, 이 부분이 리듀서에서 처리되도록 만들면 문제를 해결할 수 있다.
 
-- 이런 일을 해 주는 대표적인 미들웨어엔 `redux-thunk`, `redux-saga`가 있다.
+- 이런 일을 해 주는 대표적인 오픈소스 미들웨어엔 `redux-thunk`, `redux-saga`가 있다.
 
 ## redux-thunk
 
