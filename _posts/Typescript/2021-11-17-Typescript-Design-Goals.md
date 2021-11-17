@@ -5,7 +5,7 @@ subtitle: Typescript
 author: jopemachine
 tags:
   - Typescript
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/typescript.jpg
 header-mask: 0.3
 last-update: November 17, 2021
 ---
