@@ -8,7 +8,7 @@ tags:
   - Redux
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 15, 2021
+last-update: November 18, 2021
 ---
 
 # Redux와 비동기 액션 처리
@@ -27,7 +27,7 @@ last-update: November 15, 2021
 
 ## redux-thunk
 
-- `thunk`의 의미는 함수애 의해 반환된 함수이다. (아래 Related links 참고)
+- `thunk`의 의미는 함수에 의해 반환된 함수이다. (아래 Related links 참고)
 
 - redux store 객체의 `dispatch`, `getState` 메서드를 함수 인자로 넘겨주는 식으로 굉장히 심플하게 구현되어 있다. 아래 코드가 `redux-thunk`의 코드이다.
 
@@ -77,11 +77,11 @@ function fetchData(someValue) {
 dispatch(fetchData(someValue))
 ```
 
-- 결론적으로 redux-thunk는 액션을 함수 형태로 디스패치 함으로써 비동기 문제를 해결한다.
+- 결론적으로 `redux-thunk`는 액션을 함수 형태로 디스패치 함으로써 비동기 문제를 해결한다.
 
 ## redux-saga
 
-- redux-saga는 아예 다른 방법으로 접근한다. action이 plain object여야 한다는 가정을 깨지 않고, 특정 액션들을 받아들이는 스레드를 만든다. (스레드처럼 동작하도록 만든다)
+- `redux-saga`는 아예 다른 방법으로 접근한다. action이 plain object여야 한다는 가정을 깨지 않고, 특정 액션들을 받아들이는 스레드를 만든다. (스레드처럼 동작하도록 만든다)
 
 - 제네레이터 문법을 사용하기 때문에 진입 장벽이 어느 정도 있을 수 있다.
 
