@@ -5,6 +5,7 @@ subtitle: Typescipt
 author: jopemachine
 tags:
   - Typescript
+  - Translation
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
 last-update: November 19, 2021

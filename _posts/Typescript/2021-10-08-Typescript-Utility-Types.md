@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Typescript utility types "
+title: Typescript utility types
 subtitle: Typescript 문법
 author: jopemachine
 tags:

@@ -7,7 +7,7 @@ header-img: img/header-img/vscode.png
 header-mask: 0.3
 tags:
   - vscode
-last-update: February 15, 2021
+last-update: November 19, 2021
 ---
 
 ## 문제
@@ -43,5 +43,5 @@ vscode 터미널에서 cmd +left, cmd + right 키를 사용하여 단어 사이�
 
 ## 출처
 
-1. [https://code.visualstudio.com/docs/editor/integrated-terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
-2. [https://stackoverflow.com/questions/58476611/forward-backward-words-in-the-vscode-terminal](https://stackoverflow.com/questions/58476611/forward-backward-words-in-the-vscode-terminal)
+1. [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
+2. [Forward Backward Words in the Vscode Terminal](https://stackoverflow.com/questions/58476611/forward-backward-words-in-the-vscode-terminal)

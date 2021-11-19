@@ -5,9 +5,11 @@ subtitle: 프로그래밍
 author: jopemachine
 tags:
   - Programming
+  - Javascript
+  - Translation
 header-img: img/header-img/coding.jpg
 header-mask: 0.3
-last-update: October 12, 2021
+last-update: November 19, 2021
 ---
 
 # Function Naming Pattern (A/HC/LC Pattern)
@@ -147,4 +149,4 @@ link.addEventListener('click', handleLinkClick)
 
 ## Related links
 
-- [naming-cheatsheet 원문](https://github.com/kettanaito/naming-cheatsheet#ahclc-pattern)
+- [Naming Cheatsheet 원문](https://github.com/kettanaito/naming-cheatsheet#ahclc-pattern)

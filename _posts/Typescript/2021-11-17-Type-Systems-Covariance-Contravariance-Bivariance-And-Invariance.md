@@ -6,9 +6,10 @@ author: jopemachine
 tags:
   - Programming
   - Typescript
+  - Translation
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: November 17, 2021
+last-update: November 19, 2021
 ---
 
 # Type Systems: Covariance, Contravariance, Bivariance, and Invariance
