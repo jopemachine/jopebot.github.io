@@ -8,7 +8,7 @@ tags:
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 08, 2021
+last-update: November 19, 2021
 ---
 
 # Lighthouse란?
@@ -28,5 +28,5 @@ last-update: November 08, 2021
 # Related links
 
 - [Lighthouse Github](https://github.com/GoogleChrome/lighthouse)
-- [https://skyksit.tistory.com/entry/사이트-성능-측정-lighthouse](https://skyksit.tistory.com/entry/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95-lighthouse)
-- [https://velog.io/@dell_mond/Lighthouse-사용법](https://velog.io/@dell_mond/Lighthouse-%EC%82%AC%EC%9A%A9%EB%B2%95)
+- [사이트 성능 측정 Lighthouse](https://skyksit.tistory.com/entry/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95-lighthouse)
+- [Lighthouse 사용법](https://velog.io/@dell_mond/Lighthouse-%EC%82%AC%EC%9A%A9%EB%B2%95)

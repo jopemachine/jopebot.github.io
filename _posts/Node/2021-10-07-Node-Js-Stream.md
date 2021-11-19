@@ -7,7 +7,7 @@ tags:
   - Node
 header-img: img/header-img/node.png
 header-mask: 0.3
-last-update: October 12, 2021
+last-update: November 19, 2021
 ---
 
 # Node.js stream에 대해
@@ -20,9 +20,9 @@ last-update: October 12, 2021
 
 4. `Transform`
 
-- 모두 EventEmitter를 상속해 이벤트 emit으로 구현하거나 다른 스트림에 파이프 시켜 구현할 수 있다.
+- 모두 `EventEmitter`를 상속해 이벤트 emit으로 구현하거나 다른 스트림에 파이프 시켜 구현할 수 있다.
 
-- Readable 스트림의 경우 data, end 이벤트를 emit하고 Wriable 스트림의 경우 drain, finish 이벤트를 emit.
+- `Readable` 스트림의 경우 `data`, `end` 이벤트를 emit하고 `Wriable` 스트림의 경우 `drain`, `finish` 이벤트를 emit.
 
 ## 구현
 
