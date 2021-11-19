@@ -7,7 +7,7 @@ header-img: img/header-img/typescript.jpg
 header-mask: 0.3
 tags:
   - Typescript
-last-update: November 17, 2021
+last-update: November 19, 2021
 ---
 
 ## 타입스크립트에서 메서드 오버로드가 다른 언어와 다른 이유
@@ -72,4 +72,4 @@ last-update: November 17, 2021
 
 ## 출처
 
-[https://stackoverflow.com/questions/12688275/is-there-a-way-to-do-method-overloading-in-typescript](https://stackoverflow.com/questions/12688275/is-there-a-way-to-do-method-overloading-in-typescript)
+- [Is There a Way to Do Method Overloading in Typescript](https://stackoverflow.com/questions/12688275/is-there-a-way-to-do-method-overloading-in-typescript)

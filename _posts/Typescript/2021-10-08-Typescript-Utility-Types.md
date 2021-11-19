@@ -8,7 +8,7 @@ tags:
   - Typescript
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: October 12, 2021
+last-update: November 19, 2021
 ---
 
 # Typescript utility types
@@ -262,4 +262,4 @@ console.log(fiveToHex());
 
 ## Related
 
-- [utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+- [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
