@@ -19,18 +19,18 @@ last-update: November 20, 2021
 
 - 구글에선 좋은 사용자 경험을 위해 `90점 ~ 100점` 정도의 점수 획득을 권장하고 있다고 함.
 
-- 측정 지표는 `성능`, `접근성`, `프로그레시브 웹 앱`, `SEO`
+- 측정 지표는 `성능`, `접근성`, `프로그레시브 웹 앱`, `SEO`이다.
 
 - 기본적으로 한 화면에 대해 측정하지만, 여러 개의 URL에 대해 품질을 측정하는 것도 가능.
 
 ## Lighthouse CLI options
 
-- CLI로 사용하는 편이 쾌적했다.
+- 개인적으로 CLI로 사용하는 편이 쾌적했다.
 
-- 디폴트 옵션으로 CPU 4배 스로틀링이 들어간다. 스로틀링 옵션을 변경하고 싶으면 아래처럼 바꿀 수 있다.
+- 디폴트 옵션으로 CPU 4배 스로틀링이 들어간다. 스로틀링 배율을 변경하고 싶으면 아래처럼 바꿀 수 있다. (당연히 스로틀링 옵션에 따라 점수가 달라진다)
 
 ```
-$ lighthouse [url] --throttling.cpuSlowdownMultiplier=1 --throttling.rttMs-40
+$ lighthouse [url] --throttling.cpuSlowdownMultiplier=1 --throttling.rttMs=40
 ```
 
 # Related links
