@@ -8,14 +8,12 @@ tags:
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 19, 2021
+last-update: November 20, 2021
 ---
 
 # Lighthouse란?
 
 - 웹 페이지의 품질 개선을 위한 자동화된 오픈 소스 툴로, 기본적으로 크롬 개발자 도구에 내장되어 있으며 추가 설치를 통해 노드 모듈로서도 사용 가능함. 측정 리포트는 `html`, `json` 파일로 저장 가능함.
-
-- CLI로 설치해 사용할 수도 있음. 개인적으로 CLI 쪽이 휠씬 쾌적하게 사용할 수 있었다.
 
 - 모바일 환경, 데스크톱 환경에서 따로 성능 측정이 가능.
 
@@ -25,8 +23,19 @@ last-update: November 19, 2021
 
 - 기본적으로 한 화면에 대해 측정하지만, 여러 개의 URL에 대해 품질을 측정하는 것도 가능.
 
+## Lighthouse CLI options
+
+- CLI로 사용하는 편이 쾌적했다.
+
+- 디폴트 옵션으로 CPU 4배 스로틀링이 들어간다. 스로틀링 옵션을 변경하고 싶으면 아래처럼 바꿀 수 있다.
+
+```
+$ lighthouse [url] --throttling.cpuSlowdownMultiplier=1 --throttling.rttMs-40
+```
+
 # Related links
 
 - [Lighthouse Github](https://github.com/GoogleChrome/lighthouse)
 - [사이트 성능 측정 Lighthouse](https://skyksit.tistory.com/entry/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95-lighthouse)
 - [Lighthouse 사용법](https://velog.io/@dell_mond/Lighthouse-%EC%82%AC%EC%9A%A9%EB%B2%95)
+- [pagespeed.web.dev](https://pagespeed.web.dev/)
