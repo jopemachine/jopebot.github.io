@@ -27,7 +27,7 @@ last-update: November 20, 2021
 
 - 개인적으로 CLI로 사용하는 편이 쾌적했다.
 
-- 디폴트 옵션으로 CPU 4배 스로틀링이 들어간다. 스로틀링 배율을 변경하고 싶으면 아래처럼 바꿀 수 있다. (당연히 스로틀링 옵션에 따라 점수가 달라진다)
+- 스로틀링 배율을 변경하고 싶으면 아래처럼 바꿀 수 있다. (당연히 스로틀링 옵션에 따라 점수가 달라짐.) 모바일 환경에선 디폴트로 4배의 CPU 스로틀링이 들어가는 것 같다.
 
 ```
 $ lighthouse [url] --throttling.cpuSlowdownMultiplier=1 --throttling.rttMs=40
