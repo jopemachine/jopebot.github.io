@@ -23,13 +23,13 @@ last-update: November 21, 2021
 
 - 기본적으로 한 화면에 대해 측정하지만, 여러 개의 URL에 대해 품질을 측정하는 것도 가능.
 
-- 구글은 그 외에도 그 외 Core web vital 측정을 위한 도구들로, `PageSpeed Insights`, `Chrome UX Report`, `Search Engine` 등의 툴을 지원.
+- 구글은 그 외에도 그 외 Core web vital 측정을 위한 도구들로, `PageSpeed Insights (PSI)`, `Chrome UX Report`, `Search Engine` 등의 툴을 지원.
+
+- Lighthouse로 측정할 때 기본적으로 네트워크 스로틀링이 `40ms` 걸리기 때문에 실제 페이지의 메트릭스들과 다른 값을 가지게 된다. 체감되는? 지표를 그대로 보고 싶으면 `Simulated throttling` 옵션을 꺼 주면 된다.
 
 ## Lighthouse CLI options
 
-- 개인적으로 CLI로 사용하는 편이 쾌적했다.
-
-- 스로틀링 배율을 변경하고 싶으면 아래처럼 바꿀 수 있다. (당연히 스로틀링 옵션에 따라 점수가 달라짐.) 모바일 환경에선 디폴트로 4배의 CPU 스로틀링이 들어가는 것 같다.
+- 스로틀링 배율을 변경하고 싶으면 아래처럼 옵션을 주면 바꿀 수 있다. (당연히 스로틀링 옵션에 따라 점수가 달라짐.) 모바일 환경에선 디폴트로 4배의 CPU 스로틀링이 들어가는 것 같다.
 
 ```
 $ lighthouse [url] --throttling.cpuSlowdownMultiplier=1 --throttling.rttMs=40
@@ -46,6 +46,9 @@ $ lighthouse [url] --preset=desktop
 # Related links
 
 - [Lighthouse Github](https://github.com/GoogleChrome/lighthouse)
+
 - [사이트 성능 측정 Lighthouse](https://skyksit.tistory.com/entry/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95-lighthouse)
+
 - [Lighthouse 사용법](https://velog.io/@dell_mond/Lighthouse-%EC%82%AC%EC%9A%A9%EB%B2%95)
+
 - [pagespeed.web.dev](https://pagespeed.web.dev/)
