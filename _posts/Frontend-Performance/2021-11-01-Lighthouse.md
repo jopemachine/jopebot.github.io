@@ -8,7 +8,7 @@ tags:
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 20, 2021
+last-update: November 21, 2021
 ---
 
 # Lighthouse란?
@@ -32,6 +32,14 @@ last-update: November 20, 2021
 ```
 $ lighthouse [url] --throttling.cpuSlowdownMultiplier=1 --throttling.rttMs=40
 ```
+
+- 모바일 환경이 디폴트 값인데 기기를 바꾸려면, `form-factor` 옵션을, 데스크톱 환경으로 바꾸려면 `preset` 옵션을 변경한다.
+
+```
+$ lighthouse [url] --preset=desktop
+```
+
+- 기기 화면 크기를 고정하고 싶으면 `screenEmulation` 옵션을 변경한다.
 
 # Related links
 
