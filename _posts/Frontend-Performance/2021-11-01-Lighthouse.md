@@ -23,6 +23,8 @@ last-update: November 21, 2021
 
 - 기본적으로 한 화면에 대해 측정하지만, 여러 개의 URL에 대해 품질을 측정하는 것도 가능.
 
+- 구글은 그 외에도 그 외 Core web vital 측정을 위한 도구들로, `PageSpeed Insights`, `Chrome UX Report`, `Search Engine` 등의 툴을 지원.
+
 ## Lighthouse CLI options
 
 - 개인적으로 CLI로 사용하는 편이 쾌적했다.

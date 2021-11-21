@@ -18,6 +18,7 @@ last-update: November 21, 2021
 
 - 실제로 사용자의 입력을 받아야만 측정할 수 있는 메트릭 (Real user monitoring, RUM)이 있고 Lighthouse등의 성능 측정 도구로 측정 가능한 메트릭이 있음.
 
+- 각 매트릭스들의 가중치는 정기적인 조사를 통해 시간이 지남에 따라 변화함.
 ## Fircst contentful patin (FCP)
 
 - 페이지가 로드되기 시작한 시점부터 페이지 콘텐츠의 콘텐츠 일부가 화면에 렌더링 될 때 까지의 시간
