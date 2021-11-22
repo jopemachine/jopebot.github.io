@@ -7,7 +7,7 @@ tags:
   - Frontend
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 21, 2021
+last-update: November 22, 2021
 ---
 
 # Core Web Vitals
@@ -16,7 +16,7 @@ last-update: November 21, 2021
 
 - 하나의 메트릭 만으론 모든 성능 지표를 나타낼 수 없기 때문에 여러 가지 측정 지표를 만들어 사용함.
 
-- 실제로 사용자의 입력을 받아야만 측정할 수 있는 메트릭 (Real user monitoring, RUM)이 있고 Lighthouse등의 성능 측정 도구로 측정 가능한 메트릭이 있음.
+- 실제로 사용자의 입력을 받아야만 측정할 수 있는 메트릭 (Real user monitoring, RUM)이 있고 Lighthouse등의 성능 측정 도구로 측정 가능한 메트릭이 있음. (`Lab data`, `Field data`라고 표현)
 
 - 각 매트릭스들의 가중치는 정기적인 조사를 통해 시간이 지남에 따라 변화함.
 ## Fircst contentful patin (FCP)
@@ -64,3 +64,5 @@ last-update: November 21, 2021
 - [How Metrics Are Measured](https://web.dev/user-centric-performance-metrics/#how-metrics-are-measured)
 
 - [Custom metric 추가하는 법](https://web.dev/custom-metrics/)
+
+- [Lab and Field Data Differences](https://web.dev/lab-and-field-data-differences/)
