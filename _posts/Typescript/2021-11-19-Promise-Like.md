@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PromiseLike에 대해
+title: PromiseLike, ArrayLike 같은 타입들을 쓰는 이유
 subtitle: Typescipt
 author: jopemachine
 tags:
@@ -8,14 +8,14 @@ tags:
   - Translation
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: November 19, 2021
+last-update: November 23, 2021
 ---
 
-# PromiseLike에 대해
+# PromiseLike, ArrayLike 같은 타입들을 쓰는 이유
 
-Like가 붙는 Object들은 더 느슨한 선언을 가진다.
+`Like`가 붙는 타입들은 더 느슨한 선언을 가진다.
 
-예를 들어, `Array`의 경우, 아래의 모든 메서드, 프로퍼티를 가지지 않으면 Array 타입이 아니다.
+예를 들어, `Array`의 경우, 아래의 모든 메서드, 프로퍼티를 가지지 않으면 `Array` 타입이 아니다.
 
 ```ts
 interface Array<T> {
