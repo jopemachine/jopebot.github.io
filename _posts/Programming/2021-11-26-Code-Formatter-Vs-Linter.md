@@ -13,11 +13,9 @@ last-update: November 26, 2021
 
 # Code formatter vs Linter
 
-Code formatter
-: tab, space와 같은 옵션을 통일함
+- Code formatter: tab, space와 같은 옵션을 통일함
 
-Code linter
-: var 대신 let/const를 쓰게 하는 등 베스트 프랙티스를 가이드함.
+- Code linter: var 대신 let/const를 쓰게 하는 등 베스트 프랙티스를 가이드함.
 
 ## Linter를 formatter로 쓰는 것
 
