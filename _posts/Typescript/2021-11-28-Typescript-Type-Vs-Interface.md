@@ -6,7 +6,7 @@ author: jopemachine
 tags:
   - Typescript
   - Translation
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/typescript.jpg
 header-mask: 0.3
 last-update: November 28, 2021
 ---
