@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Typescript 메서드 오버로드가 다른 언어와 다른 이유
-subtitle: Typescript 문법
+subtitle: Typescript
 author: jopemachine
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
 tags:
   - Typescript
-last-update: November 23, 2021
+last-update: November 29, 2021
 ---
 
 ## Typescript 메서드 오버로드가 다른 언어와 다른 이유
