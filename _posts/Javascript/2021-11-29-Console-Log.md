@@ -5,9 +5,9 @@ subtitle: Javascript
 author: jopemachine
 tags:
   - Javascript
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: November 29, 2021
+last-update: December 01, 2021
 ---
 
 # 자바스크립트 디버깅 console.log 관련

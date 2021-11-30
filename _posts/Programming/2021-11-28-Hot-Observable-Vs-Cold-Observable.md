@@ -4,9 +4,8 @@ title: Hot Observable vs Cold Observable
 subtitle: Async Programming
 author: jopemachine
 tags:
-  - Javascript
   - Async Programming
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/coding.jpg
 header-mask: 0.3
 last-update: November 28, 2021
 ---
