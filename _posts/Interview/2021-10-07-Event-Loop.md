@@ -7,7 +7,7 @@ tags:
   - Frontend
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: October 12, 2021
+last-update: December 16, 2021
 ---
 
 # 이벤트 루프에 관해 (Event loop)
@@ -18,7 +18,7 @@ last-update: October 12, 2021
 
 - 콜스택이 빌 때 마다 태스크 큐에서 대기하던 콜백함수가 콜스택으로 넘어와 (`tick`) 실행되는 방식이다.
 
-- 이벤트 구현을 위해 크롬은 `libevent`, 노드는 `libuv`를 사용한다. 
+- 이벤트 루프 구현을 위해 크롬은 `libevent`, 노드는 `libuv`를 사용한다. 
 
 ## 태스크 큐
 
