@@ -8,10 +8,12 @@ tags:
   - CSS
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: October 12, 2021
+last-update: December 18, 2021
 ---
 
 # CSS 레이아웃
+
+![](/img/posts/Interview/2021-10-10-Css-Layout/helloworld-59361-19.png)
 
 - Element의 크기는 `Content box`, `padding`, `border`, `margin`으로 구성됨
 
