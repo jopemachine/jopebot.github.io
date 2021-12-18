@@ -24,7 +24,7 @@ last-update: December 18, 2021
 
 - 한 탭에 문제가 생겨도 다른 탭들은 무탈하게 작동함.
 
-- 각 탭들이 다른 프로세스이니 각 탭 별로 권한을 분리할 수 있음. (샌드박스) 
+- 각 탭들이 다른 프로세스이니 각 탭 별로 권한을 분리할 수 있음. (샌드박스)
 
 ## 각 프로세스의 임무
 
@@ -47,15 +47,15 @@ last-update: December 18, 2021
 
 - 검색창 등 탭 밖에 있는 모든 요소는 브라우저 프로세스에서 돌음.
 
-- 검색어인지 url인지 판단해서 검색.
+- Query가 검색어인지 url인지 판단해서 Navigation start.
 
 - TCP 연결이 수립되면 네트워크 스레드가 스트림의 처음 몇 바이트를 읽어, 데이터 타입을 읽어와 html 파일인 경우 렌더러 프로세스로 넘겨주고, html 파싱을 시작함.
 
 - 데이터 타입이 zip 등 다른 타입인 경우 다운로드 매니저에 데이터를 넘겨, 다운로드 시작.
 
-- Safe 브라우징을 수행해 접속하려는 도메인이 악성 사이트인지 체크.
+- Safe Browsing을 수행해 접속하려는 도메인이 악성 사이트인지 체크.
 
-- CORB 정책을 어기지 않는지 체크.
+- CORB (Cross Origin Resource Blocking) 체크.
 
 - onload 이벤트가 일어난 후, 브라우저 프로세스를 호출해 스피너를 멈춤
 
@@ -69,11 +69,11 @@ last-update: December 18, 2021
 
 - HTML이 Context free grammar가 아니기 때문에, 일반적인 상향식, 하향식 파서로 작성되는 게 아니라 좀 복잡한 파서를 사용해야 하며, 다양한 에러들을 처리해 줘야함. (CSS는 Context free grammar라 일반적인 파서를 사용 가능)
 
-- 더 빠른 요청을 위해 img, link 태그는 파싱 중이 아니라 파싱 전 Preload scanner에 의해 미리 요청됨. (html 토큰화 이후 Preload scanner 실행)
+- 더 빠른 요청을 위해 `img`, `link` 태그는 파싱 중이 아니라 파싱 전 Preload scanner에 의해 미리 요청됨. (html 토큰화 이후 Preload scanner 실행)
 
 - img는 non blocking으로 처리 되는 외부 리소스이지만, css는 브라우저 마다, 속성마다 다르게 처리되므로 주의.
 
-- script 태그는 html 파싱을 블록한다. script 태그가 DOM을 수정하지 않는다면 async를 사용할 수 있다. 그 외 defer로 해당 스크립트 실행 자체를 html 파싱 후로 미룰 수도 있다.
+- `script` 태그는 html 파싱을 블록한다. `script` 태그가 DOM을 수정하지 않는다면 async를 사용할 수 있다. 그 외 defer로 해당 스크립트 실행 자체를 html 파싱 후로 미룰 수도 있다.
 
 - preload 등의 리소스 힌트 사용해 외부 리소스 다운로드의 우선순위를 변경 가능.
 
