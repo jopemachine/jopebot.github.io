@@ -3,11 +3,12 @@ layout: post
 title: CORS vs CSP
 subtitle: Broswer
 author: jopemachine
-tags: 
- - Frontend
- - Browser
+tags:
+  - Frontend
+  - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: December 19, 2021
 ---
 
 # CORS vs CSP
