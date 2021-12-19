@@ -8,12 +8,12 @@ tags:
   - React
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 14, 2021
+last-update: December 19, 2021
 ---
 
 # useEffect vs useLayoutEffect
 
-> 둘은 같은 API를 갖고 있고 이름도 비슷? 한데 어떻게 다른가?
+> 둘은 같은 API를 갖고 있고 이름도 비슷한데 어떻게 다른가?
 
 `useEffect`로 전달된 콜백은 레이아웃 배치, 페인트 이후 발생한다.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: canvas vs svg
+title: Canvas vs SVG
 subtitle: 프론트 면접 질문 정리
 author: jopemachine
 tags:
