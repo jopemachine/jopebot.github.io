@@ -8,7 +8,7 @@ tags:
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: October 12, 2021
+last-update: December 19, 2021
 ---
 
 # Cookie, session, local storage, session storage, JWT
@@ -45,9 +45,15 @@ last-update: October 12, 2021
 
 - HTML 5에서 도입된 `key-value storage`.
 
-- 사용자 기기 (Local storage)에 서비스 데이터를 저장함.
+- 클라이언트 기기 (Local storage)에 서비스 데이터를 저장함.
 
-- 삭제하지 않으면 계속 거기 남아 있음.
+- 삭제하지 않으면 계속 영구적으로 남아 있음.
+
+- 서로 다른 프로토콜을 사용하는 페이지들은 서로 다른 Local storage를 사용함. 즉, http 프로토콜로 접속되었을 때 사용하는 Local stroage와 https 프로토콜을 사용했을 때 사용되는 Local storage는 공유되지 않음.
+
+- 키와 값은 UTF-16 문자열만 사용 가능. (정수는 자동으로 문자열로 변환)
+
+- 최대 10MB 까지 저장 가능.
 
 ## Session storage
 
@@ -60,6 +66,16 @@ last-update: October 12, 2021
 - 새로고침해도 남아 있지만 *새로운 탭에서 페이지를 열거나 탭을 닫으면 session storage를 초기화*함.
 
 ## IndexedDB
+
+- 오프라인에서 많은 양의 데이터를 영구적으로 사용하기 위한 솔루션. 오프라인에 저장해야 하는 데이터의 양이 커지면 localStorage보다 IndexedDB를 사용하는게 효율적일 수 있음.
+
+- 비슷한 용도로 WebSQL이란 게 있지만, deprecated 되었다
+
+- 로컬 스토리지와 다르게 String 이외에도 객체 데이터 타입을 저장할 수 있다.
+
+- createObjectStore라는 메서드 호출로 ObjectStore에 데이터를 저장하거나 조회할 수 있다.
+
+- (크롬의 경우) 개발자 도구 > Application 탭에서 IndexedDB에 저장된 레코드들을 확인할 수 있다.
 
 # Related links
 
