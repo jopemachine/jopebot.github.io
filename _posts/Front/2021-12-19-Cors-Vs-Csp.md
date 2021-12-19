@@ -19,7 +19,7 @@ last-update: December 19, 2021
 
 - 공격자가 XSS (악성 스크립트 삽입 실행) 공격으로 스크립트를 삽입해 데이터를 탈취하는 것을 막기 위한 것.
 
-## CSP (Content Security Policy
+## CSP (Content Security Policy, 콘텐츠 보안 정책)
 
 - 악의적인 의도를 가진 스크립트를 차단하고, XSS를 완화함.
 
