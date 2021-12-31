@@ -58,13 +58,17 @@ last-update: December 31, 2021
 
 - 폴링 하면서 다른 작업을 처리. (Busy waiting)
 
-### Async non-blocking
+- epoll, select가 대표적인 Sync non-blocking 함수.
+
+### Async non-blocking (Async IO, AIO)
 
 ![](/img/posts/Programming/2021-12-31-Blocking-Non-Blocking-Vs-Sync-Async/Asynchronous-non-blocking-IO.png)
 
 - 태스크를 등록해놓고 다른 일을 함.
 
 - 자바스크립트에선 프라미스에 then 콜백을 등록해놓고 await 없이 다른 일 처리를 실행하는 것.
+
+- WinAPI IOCP가 대표적인 Async non-blocking.
 
 ### Async blocking
 
@@ -94,6 +98,8 @@ console.log('non-blocking');
 ## 결론
 
 - sync, async와 blocking, non-blocking은 다른 개념이다.
+
+- Node js에선 sync는 blocking으로, async는 non-blocking으로 구현되어 있다.
 
 ## Related links
 
