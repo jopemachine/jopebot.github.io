@@ -14,9 +14,7 @@ last-update: December 31, 2021
 
 ![](/img/posts/Programming/2021-12-31-Blocking-Non-Blocking-Vs-Sync-Async/download.png)
 
-비동기 처리에 대해 원래 sync는 blocking이고 async는 non blocking 이다 라고만 이해해두었으나, 잘못 이해하고 있는 부분이 있어 다시 정리해둔다.
-
-(여전히 잘못 이해하고 있는 부분이 있을 수 있음)
+원래 sync는 blocking이고 async는 non blocking 이다 라고 이해해두었으나, 잘못 이해하고 있는 부분이 있어 다시 정리해둔다.
 
 ## Blocking vs Non blocking
 
@@ -91,7 +89,7 @@ console.log('non-blocking');
 
 - `await` 구문을 적용하면 function call이 끝난 시점에 태스크가 끝나게 된다, 즉 `await` 구문은 Async 함수를 sync로 보이게 만들어준다.
 
-### Generator(javascript)
+### Generator (javascript)
 
 - async, await이 표준이 아닐 땐 `co`와 같은 라이브러리를 사용해 Generator로 동기적으로 만들어 사용했다.
 
