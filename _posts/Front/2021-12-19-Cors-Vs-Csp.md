@@ -8,7 +8,7 @@ tags:
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: December 19, 2021
+last-update: September 23, 2022
 ---
 
 # CORS vs CSP
@@ -17,13 +17,13 @@ last-update: December 19, 2021
 
 - CORS를 사용하면 현재 도메인과 (Response에서 허용해주지 않는) 다른 도메인의 API 콜을 제한함. (포트 포함)
 
-- 공격자가 XSS (악성 스크립트 삽입 실행) 공격으로 스크립트를 삽입해 데이터를 탈취하는 것을 막기 위한 것.
+- 공격자가 XSS (Cross site scripting, 악성 스크립트 삽입 실행) 공격으로 스크립트를 삽입해 데이터를 탈취하는 것을 막기 위한 것.
 
 ## CSP (Content Security Policy, 콘텐츠 보안 정책)
 
 - 악의적인 의도를 가진 스크립트를 차단하고, XSS를 완화함.
 
-- http header (`Content-Security-Policy`)에 추가 가능.
+- `Content-Security-Policy`를 통해 http header에 추가 가능.
 
 - 예를 들어, 아래와 세부적인 사항을 추가할 수 있다.
 

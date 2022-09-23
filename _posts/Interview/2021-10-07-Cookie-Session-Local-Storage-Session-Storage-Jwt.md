@@ -8,7 +8,7 @@ tags:
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: December 19, 2021
+last-update: September 23, 2022
 ---
 
 # Cookie, session, Web Storage (Local storage, Session storage), JWT, IndexedDB
@@ -43,11 +43,11 @@ last-update: December 19, 2021
 
 ## Web storage
 
-- HTML 5에서 도입된 `key-value storage`.
+- HTML 5에서 도입된 `key-value storage`이다.
 
-- 키와 값은 UTF-16 문자열만 사용 가능. (정수는 자동으로 문자열로 변환)
+- 키와 값은 `UTF-16` 문자열만 사용 가능하며, 정수를 저장하려 하면 자동으로 문자열로 변환되어 저장된다.
 
-- 최대 10MB 까지 저장 가능.
+- 최대 저장 용량은 브라우저 마다 다를 수 있다. Chrome의 경우 최대 10MB 까지 저장 가능하다.
 
 - 서로 다른 프로토콜을 사용하는 페이지들은 서로 다른 Web storage를 사용함. 즉, http 프로토콜로 접속되었을 때 사용하는 Web stroage와 https 프로토콜을 사용했을 때 사용되는 Web storage는 공유되지 않음.
 
@@ -55,23 +55,27 @@ last-update: December 19, 2021
 
 - 클라이언트 기기 (Local storage)에 서비스 데이터를 저장함.
 
-- 삭제하지 않는 한 계속 영구적으로 남아 있음.
+- **삭제하지 않는 한 계속 영구적으로 남아 있다.**
+
+- 개발자 도구 > Application 탭에서 Local storage 탭에 저장된 키 값쌍들을 볼 수 있다.
 
 ### Session storage
 
-- 여기서 Session은 page session을 의미함. 즉, 창이 닫히는 순간 삭제되는 휘발성 데이터 저장에 사용.
+- Local Storage와 같은 웹 API를 갖고 있다.
+
+- 여기서 Session은 page session을 의미함. **즉, 창이 닫히는 순간 삭제되는 휘발성 데이터 저장에 사용된다.**.
 
 - 새로고침해도 남아 있지만 *새로운 탭에서 페이지를 열거나 탭을 닫으면 Session storage가 초기화 된다*.
 
 ## IndexedDB
 
-- 오프라인에서 많은 양의 데이터를 영구적으로 사용하기 위한 솔루션. 오프라인에 저장해야 하는 데이터의 양이 커지면 Web storage보다 IndexedDB를 사용하는게 효율적일 수 있음.
+- 오프라인에서 많은 양의 데이터를 영구적으로 사용하기 위한 솔루션으로, 저장해야 하는 데이터의 양이 커지면 Web storage보다 IndexedDB를 사용하는게 효율적일 수 있음.
 
-- 비슷한 용도로 WebSQL이란 게 있지만, deprecated 되었다.
+- 비슷한 용도로 `WebSQL`이란 게 있지만, deprecated 되었다.
 
-- 로컬 스토리지와 다르게 String 이외에도 객체 데이터 타입을 저장할 수 있다.
+- 로컬 스토리지와 다르게 문자열 이외에도 객체 데이터 타입을 저장할 수 있다.
 
-- `createObjectStore`라는 메서드 호출로 ObjectStore에 데이터를 저장하거나 조회할 수 있다.
+- `createObjectStore`라는 메서드 호출로 `ObjectStore`에 데이터를 저장하거나 조회할 수 있다.
 
 - (크롬의 경우) 개발자 도구 > Application 탭에서 IndexedDB에 저장된 레코드들을 확인할 수 있다.
 

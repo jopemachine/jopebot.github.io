@@ -7,7 +7,7 @@ tags:
   - Frontend
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 22, 2021
+last-update: September 23, 2022
 ---
 
 # Core Web Vitals
@@ -25,7 +25,7 @@ last-update: November 22, 2021
 
 ## Largest contentful paint (LCP)
 
-- 페이지가 로드되기 시작한 시점부터 뷰 포트에서 가장 콘텐츠가 화면에 렌더링 될 때 까지의 시간
+- 페이지가 로드되기 시작한 시점부터 뷰 포트에서 가장 큰 콘텐츠가 화면에 렌더링 될 때 까지의 시간
 
 - 가장 큰 콘텐츠가 Hero element가 아닐 경우 의미 없는 지표가 될 수 있음.
 
@@ -37,9 +37,9 @@ last-update: November 22, 2021
 
 - 자바스크립트 실행 시간이 너무 김 (클라이언트 렌더링)
 
-- 필요 없는 css import
+- 필요 없는 css import.
 
-- 리소스 로드에 너무 긴 시간이 걸림
+- 리소스 로드에 너무 긴 시간이 걸림.
 
 - [Optimize LCP](https://web.dev/optimize-lcp/)
 
