@@ -21,7 +21,7 @@ last-update: October 12, 2021
 사용법은 아래와 같다.
 
 ```shell-script
-$ find <~에서> <조건 옵션> <조건> 
+$ find <~에서> <조건 옵션> <조건>
 ```
 
 예제는 아래와 같다
@@ -83,9 +83,6 @@ $ find /etc -iname iptables -exec echo "I found {}" \;
 -> `fzf`는 fuzzy finding을 위한 검색 명령어이다. `fzf`는 approximate string matching을 사용하여 비슷한 파일명을 찾아준다.
 정확히 일치하지 않더라도 비슷한 파일명을 갖는 파일들을 찾아주기 때문에 제일 편리한 것 같다.
 
-
 ## Related
 
 - [리눅스 바이블](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890586)
-
-

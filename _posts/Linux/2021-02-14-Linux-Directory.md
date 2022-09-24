@@ -106,13 +106,13 @@ cron 유틸리티의 실행 일정
 
 ### init.d
 
-시스템 V 방식의 런레벨 스크립트. 
+시스템 V 방식의 런레벨 스크립트.
 
 이 스크립트에 정의된대로 각 서비스는 특정 런레벨에서 시작, 중지 된다.
 
 ### security
 
-컴퓨터에 적용된 각종 기본 보안 설정 
+컴퓨터에 적용된 각종 기본 보안 설정
 
 ### skel
 
@@ -125,5 +125,3 @@ cron 유틸리티의 실행 일정
 ## Related
 
 - [리눅스 바이블](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890586)
-
-

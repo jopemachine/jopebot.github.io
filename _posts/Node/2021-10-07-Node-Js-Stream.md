@@ -10,7 +10,9 @@ header-mask: 0.3
 last-update: November 19, 2021
 ---
 
-# Node.js stream에 대해
+# Node.js Stream
+
+## Types
 
 1. `Readable`
 
