@@ -38,7 +38,7 @@ last-update: September 24, 2022
 
 - `Sync`는 예측 가능한 시점에, 예측 가능한 순서대로 실행된다. 예측 가능한 순서란 것은, 함수 내에서 실행 흐름의 주도권이 계속 본인에게 있다는 것을 의미하며, 리턴 값을 받아서 바로 처리한다.
 
-- `Sync`는 System call이 리턴되는 시점에 `function call`도 리턴.'
+- `Sync`는 System call이 리턴되는 시점에 `function call`도 리턴.
 
 - 반면 `Async`는 순서가 정해져 있지 않다. 태스크에 관심이 없고, 실행 흐름을 런타임에 양도한다.
 
