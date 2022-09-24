@@ -20,11 +20,11 @@ last-update: September 24, 2022
 
 ### Blocking
 
-- `blocking`은 말 그대로 파일을 읽거나 API 콜을 하는 등 (시간이 오래 걸리기 때문에 병렬 처리가 필요한) 특정 태스크가 끝날 때 까지 기다리는 방식이다.
+- `blocking`은 말 그대로 파일을 읽거나 API 콜을 하는 등 특정 태스크가 끝날 때 까지 기다리는 방식이다.
 
-- `blocking` 함수는 **함수가 끝난 시점에 태스크가 끝나 있다**.
+- `blocking` 함수는 **함수가 리턴하는 시점에 태스크가 끝나 있다**.
 
-- 병렬 구조 없이 `blocking` 함수가 끝날 때 까지 기다리고만 있기 때문에 비효율적이다.
+- 병렬 구조 없이 `blocking` 함수가 리턴할 때 까지 기다리고만 있기 때문에 비효율적이고, 작동 방식이 단순하다. (다만 `non-blocking`이라고 해서 병렬적인 것은 아니다. concurrency와 parallelism의 차이 참고)
 
 - 기본적으로 `function call`은 `blocking`이다.
 
@@ -56,7 +56,7 @@ last-update: September 24, 2022
 
 ![](/img/posts/Programming/2021-12-31-Blocking-Non-Blocking-Vs-Sync-Async/Synchronous-non-blocking-IO.png)
 
-- Multiplexing을 통해 폴링(polling) 하면서 다른 작업을 처리.
+- Multiplexing을 통해 폴링(polling) 하면서 다른 작업을 처리한다. 작업이 처리되면 caller에서 다음 작업을 수행하기 때문에 `sync` (태스크가 위임되지 않았다.), 작업이 수행되는 동안 다른 작업을 수행할 수 있기 때문에 `non-blocking`이다.
 
 - `epoll`, `select`가 대표적인 `Sync non-blocking` 함수.
 
@@ -66,9 +66,9 @@ last-update: September 24, 2022
 
 - 태스크를 등록해놓고 다른 작업을 처리 함.
 
-- 자바스크립트에선 프라미스에 `then` 콜백을 등록해놓고 다른 일 처리를 실행하는 것.
+- Node.js, 브라우저에서 프라미스에 `then` 콜백 함수를 위임해놓고 다른 일 처리를 실행하는 것. caller가 콜백 함수(태스크)에 관심이 없으므로 `async`, 호출한 이후 다른 작업을 수행할 수 있기 때문에 `non-blocking`이다.
 
-- WinAPI `IOCP`가 대표적인 `Async non-blocking`.
+- WinAPI에선 `IOCP`가 대표적인 `Async non-blocking`.
 
 ### Async blocking
 
@@ -89,11 +89,11 @@ console.log('non-blocking');
 
 - 즉, 해당 function 내부에서 block 되는 것 처럼 보이지만, 비동기 처리가 되어 있기 때문에, (브라우저) 이벤트 처리 등 애플리케이션은 다른 일을 처리할 수 있다.
 
-- `await` 구문을 적용하면 function call이 끝난 시점에 태스크가 끝나게 된다, 즉 `await` 구문은 Async 함수를 sync로 보이게 만들어준다.
+- `await` 구문을 적용하면 `function call`이 끝난 시점에 태스크가 끝나게 된다, 즉 `await` 구문은 `async` 함수를 `sync`로 보이게 만들어 줌으로써 caller 구현부를 단순하게 만들어준다.
 
 ### Generator (javascript)
 
-- `async`, `await`이 표준이 아닐 땐 `co`와 같은 라이브러리를 사용해 Generator로 동기적으로 만들어 사용했다.
+- `async`, `await`이 표준이 아닐 땐 `co`와 같은 라이브러리를 사용해 `Generator`로 동기적으로 만들어 사용했다.
 
 ## 결론
 
