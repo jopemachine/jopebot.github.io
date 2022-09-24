@@ -179,7 +179,7 @@ Source Position Table (size = 0)
 
 ## 바이트 코드 인터프리팅 및 실행
 
-![](/img/posts/Javascript/2021-11-29-Console-Log/1_XUkZoMOM0ecu1NvAHgCcnQ.jpg)
+![](/img/posts/Javascript/2022-09-24-How-V8-Javascript-Engine-Works-Step-By-Step/1_XUkZoMOM0ecu1NvAHgCcnQ.jpg)
 
 바이트 코드들은 명령어의 집합입니다.
 
