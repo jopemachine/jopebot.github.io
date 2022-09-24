@@ -41,6 +41,6 @@ hydrate(element, container, callback)
 
 - 따라서 SSR 사용 시, `hydrate`를 사용해야 해야 함.
 
-## Redux에서의 Rehydration.
+## Redux에서의 Rehydration
 
 - persist 되어 있는 redux store를 메모리에 올리는 걸 `rehydration`이라 표현.
