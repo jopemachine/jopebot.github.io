@@ -26,9 +26,9 @@ last-update: November 08, 2021
 
 - Action은 반드시 plain object여야 한다.
 
-- type 프로퍼티를 가져야 한다.
+- `type` 프로퍼티를 가져야 한다.
 
-- error, payload, meta 프로퍼티를 가질 수 있다
+- `error`, `payload`, `meta` 프로퍼티를 가질 수 있다
 
 - 그 외의 프로퍼티는 가질 수 없다.
 
@@ -38,18 +38,16 @@ last-update: November 08, 2021
 
 ### payload
 
-- 액션의 인자에 해당. 
+- 액션의 인자에 해당.
 
-- 규약 상 error가 true일 경우 payload는 반드시 에러 객체여야 한다.
+- 규약 상 `error`가 true일 경우 `payload`는 반드시 에러 객체여야 한다.
 
 ### error
 
-- 액션이 에러를 나타내는 경우 error 프로퍼티는 true로 셋팅될 수 있다 (optional)
+- 액션이 에러를 나타내는 경우 `error` 프로퍼티는 true로 셋팅될 수 있다 (optional)
 
 ### meta
 
 - 어떤 종류의 값이든 될 수 있다
 
 - payload에 담기지 않는 어떤 추가적인 데이터를 담기 위한 용도.
-
-

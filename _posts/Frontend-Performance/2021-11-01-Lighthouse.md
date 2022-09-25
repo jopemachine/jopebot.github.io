@@ -11,7 +11,7 @@ header-mask: 0.3
 last-update: November 21, 2021
 ---
 
-# Lighthouse란?
+# Lighthouse
 
 - 웹 페이지의 품질 개선을 위한 자동화된 오픈 소스 툴로, 기본적으로 크롬 개발자 도구에 내장되어 있으며 추가 설치를 통해 노드 모듈로서도 사용 가능함. 측정 리포트는 `html`, `json` 파일로 저장 가능함.
 
