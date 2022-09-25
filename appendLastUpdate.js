@@ -46,7 +46,7 @@ recursive("_posts", ["template.md"], function (err, files) {
           yamlObj['last-update'] = lastChanged[changed];
 
           const meta = `---\n${YAMLParser.stringify(yamlObj)}---\n`;
-          const body = content.split('---').slice(2).join('---').trimLeft();
+          const body = content.split('---').slice(2).join('---').trimStart();
 
           fse.writeFile(changed, `${meta}\n${body}`);
           ++writingCnt;

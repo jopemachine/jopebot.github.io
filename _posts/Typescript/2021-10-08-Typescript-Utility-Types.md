@@ -8,7 +8,7 @@ tags:
   - Typescript
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: November 29, 2021
+last-update: September 25, 2022
 ---
 
 # Typescript utility types

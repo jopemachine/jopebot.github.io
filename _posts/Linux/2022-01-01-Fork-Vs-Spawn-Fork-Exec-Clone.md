@@ -8,7 +8,7 @@ tags:
   - Nodejs
 header-img: img/header-img/linux.png
 header-mask: 0.3
-last-update: January 01, 2022
+last-update: September 25, 2022
 ---
 
 # fork vs spawn (fork_exec, clone 등)

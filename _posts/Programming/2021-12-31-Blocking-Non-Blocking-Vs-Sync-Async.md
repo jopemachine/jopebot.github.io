@@ -7,7 +7,7 @@ tags:
   - Programming
 header-img: img/header-img/coding.jpg
 header-mask: 0.3
-last-update: September 24, 2022
+last-update: September 25, 2022
 ---
 
 # Blocking, Non blocking vs Sync, Async

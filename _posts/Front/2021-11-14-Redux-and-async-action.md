@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Redux와 비동기 액션 처리
-subtitle: 프론트 면접 질문 정리
+subtitle: 프론트 각종 문제 상황 해결
 author: jopemachine
 tags:
   - Frontend
   - Redux
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 18, 2021
+last-update: September 25, 2022
 ---
 
 # Redux와 비동기 액션 처리
@@ -47,7 +47,7 @@ const thunkMiddleware =
   }
 ```
 
-- 구현을 보면 알겠지만, 비동기 형태로 처리할 action은 함수 형태로 넘겨주게 한다. 원래 action은 `plain object` 여야만 하도록 되어 있으니 여기에 function이 넘어오면 redux-thunk에서 처리할 비동기 액션이라고 가정할 수 있는 것이다.
+- 구현을 보면 알겠지만, 비동기 형태로 처리할 action은 함수 형태로 넘겨주게 한다. 원래 action은 `plain object` 여야만 하도록 되어 있으니 여기에 function이 넘어오면 `redux-thunk`에서 처리할 비동기 액션이라고 가정할 수 있는 것이다.
 
 - 사용자 입장에서 코드를 써 보면 아래와 같이 쓸 수 있다.
 
@@ -77,11 +77,11 @@ function fetchData(someValue) {
 dispatch(fetchData(someValue))
 ```
 
-- 결론적으로 `redux-thunk`는 액션을 함수 형태로 디스패치 함으로써 비동기 문제를 해결한다.
+- 결론적으로 `redux-thunk`는 *액션을 함수 형태로 디스패치 함으로써 비동기 문제를 해결*한다.
 
 ## redux-saga
 
-- `redux-saga`는 아예 다른 방법으로 접근한다. action이 plain object여야 한다는 가정을 깨지 않고, 특정 액션들을 받아들이는 스레드를 만든다. (스레드처럼 동작하도록 만든다)
+- `redux-saga`는 아예 다른 방법으로 접근한다. *action이 plain object여야 한다는 가정을 깨지 않고*, 특정 액션들을 받아들이는 스레드를 만든다. (스레드처럼 동작하도록 만든다)
 
 - 제네레이터 문법을 사용하기 때문에 진입 장벽이 어느 정도 있을 수 있다.
 

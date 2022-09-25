@@ -9,7 +9,7 @@ tags:
   - Translation
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 24, 2022
+last-update: September 25, 2022
 ---
 
 # How V8 Javascript Engine works step by step

@@ -8,7 +8,7 @@ tags:
   - Translation
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: November 28, 2021
+last-update: September 25, 2022
 ---
 
 # type vs interface

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 자바스크립트 디버깅 console.log로 그 당시의 값을 출력하기
-subtitle: Javascript
+subtitle: 자바스크립트 세부사항
 author: jopemachine
 tags:
   - Javascript
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: December 01, 2021
+last-update: September 25, 2022
 ---
 
 # 자바스크립트 디버깅 console.log 관련

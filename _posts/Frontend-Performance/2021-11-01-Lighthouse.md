@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Lighthouse란?
-subtitle: 프론트 성능 최적화
+subtitle: Frontend 최적화
 author: jopemachine
 tags:
   - Frontend
+  - Frontend Optimization
   - Browser
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: November 21, 2021
+last-update: September 25, 2022
 ---
 
 # Lighthouse

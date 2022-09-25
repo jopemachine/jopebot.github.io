@@ -9,7 +9,7 @@ tags:
   - Translation
 header-img: img/header-img/coding.jpg
 header-mask: 0.3
-last-update: November 19, 2021
+last-update: September 25, 2022
 ---
 
 # Function Naming Pattern (A/HC/LC Pattern)

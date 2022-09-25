@@ -10,7 +10,7 @@ tags:
   - Translation
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: November 23, 2021
+last-update: September 25, 2022
 ---
 
 # React.FC를 기피해야 하는 이유
