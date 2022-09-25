@@ -4,10 +4,11 @@ title: 번역 - Avoid Using Array Index for Key in React
 subtitle: React 세부사항
 author: jopemachine
 tags:
- - React
- - Frontend
+  - React
+  - Frontend
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
+last-update: September 25, 2022
 ---
 
 # Avoid Using Array Index for Key in React
@@ -83,7 +84,9 @@ Robin Pokorny의 조언에 따르면, 배열의 인덱스를 key로 사용하는
 
 react key 속성의 값으로 배열 인덱스를 사용하는 것에 대한 새로운 통찰력을 얻으셨기를 바랍니다.
 
-References and related articles:
+<hr />
+
+### References and related articles:
 
 https://reactjs.org/docs/lists-and-keys.html#keys
 
