@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [번역] How V8 Javascript Engine works step by step
+title: 번역 - How V8 Javascript Engine works step by step
 subtitle: 자바스크립트 내부 작동 원리
 author: jopemachine
 tags:
