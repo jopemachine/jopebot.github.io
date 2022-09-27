@@ -30,7 +30,7 @@ last-update: September 27, 2022
 
 * 훌룡하고 완성된 툴이 될 예정입니다.
 
-> 베타 릴리스에서 제작자는 Bun이 엄청나게 빠른 올인원 JavaScript 런타임이라고 주장했습니다.
+> *베타 릴리스에서 제작자는 Bun이 엄청나게 빠른 올인원 JavaScript 런타임이라고 주장했습니다.*
 
 ![](/img/posts/Javascript/2022-09-27-Goodbye-Node-Js/1__-eXW38rRFCB4M49TC4RiQ.jpg)
 
@@ -58,7 +58,7 @@ last-update: September 27, 2022
 
 또한 `C`와 `Rust`가 아기를 낳은 것처럼 생긴 저수준 언어인, [Zig](https://ziglang.org/)로 작성되었습니다.
 
-낮은 수준의 메모리 제어와 보이지 않는 제어 흐름의 제거는 Bun을 최대한 빠르게 만드는 [Zig](https://ziglang.org/)의 기능입니다.
+낮은 수준의 메모리 제어와 보이지 않는 제어 흐름의 제거는 `Bun`을 최대한 빠르게 만드는 [Zig](https://ziglang.org/)의 기능입니다.
 
 ## 기능 📋
 
