@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 번역 - Understanding Javascript Generators and Iterators
-subtitle: 번역
+subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 tags:
   - Javascript
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 25, 2022
+last-update: September 27, 2022
 ---
 
 # 번역 - Understanding Javascript Generators and Iterators
@@ -86,7 +86,7 @@ last-update: September 25, 2022
 
 ![](/img/posts/Javascript/2022-09-25-Understanding-Javascript-Generators-And-Iterators/1_6BtcApG-UniQC2_4B2xFQg.png)
 
-문제는 우리가 아직 모든 항목을 갖고 있지 않고 (paintings[x]는 불가능), 얼마나 많은 항목이 있는지 정확히 모른다는 것입니다. (마찬가지로 paintings.length도 불가능함)
+문제는 우리가 아직 모든 항목을 갖고 있지 않고 (`paintings[x]`는 불가능), 얼마나 많은 항목이 있는지 정확히 모른다는 것입니다. (마찬가지로 `paintings.length`도 불가능함)
 
 ## Generators와 Iterator의 소개
 
@@ -178,7 +178,7 @@ last-update: September 25, 2022
 
 시간이 지남에 따라 값의 시퀀스를 생성해야 할 때마다, `generator` 함수를 사용할 수 있습니다.
 
-`generator` 함수는 완료될 때까지 실행되지 않고 yield 문까지 부분적으로 실행됩니다.
+`generator` 함수는 완료될 때까지 실행되지 않고 `yield` 문까지 부분적으로 실행됩니다.
 
 `generator` 함수는 무한히 실행될 수 있고 무한한 값을 생성할 수 있습니다.
 

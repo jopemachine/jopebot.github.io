@@ -1,14 +1,14 @@
 ---
 layout: post
 title: ArrayLike object에 대해
-subtitle: 자바스크립트 세부사항
+subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 tags:
   - Frontend
   - Javascript
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 25, 2022
+last-update: September 27, 2022
 ---
 
 # ArrayLike object에 대해

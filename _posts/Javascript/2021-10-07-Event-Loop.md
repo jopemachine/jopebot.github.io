@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 이벤트 루프에 관해 (Event loop)
-subtitle: 자바스크립트 세부사항
+subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 tags:
   - Frontend
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 25, 2022
+last-update: September 27, 2022
 ---
 
 # 이벤트 루프에 관해 (Event loop)
