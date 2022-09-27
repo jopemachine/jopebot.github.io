@@ -64,7 +64,7 @@ React는 모든 컴포넌트들을 뽑아서, 리스트를 만듭니다. 당신�
 
 여기에 작은 샌드박스가 있습니다. 가능하면 `input`들을 사용해 보십시오.
 
-https://codesandbox.io/s/keys-example-ll5rxg?file=/src/App.js
+[https://codesandbox.io/s/keys-example-ll5rxg?file=/src/App.js](https://codesandbox.io/s/keys-example-ll5rxg?file=/src/App.js)
 
 여기서 일어나는 일은 컴포넌트가 다시 렌더링 되어야 할 때마다 다른 `key`를 찾기 때문에 무작위로 컴포넌트가 파괴된다는 것입니다. 이것은 직접적으로 일어날 수도, 간접적으로 일어날 수도 있습니다.
 
