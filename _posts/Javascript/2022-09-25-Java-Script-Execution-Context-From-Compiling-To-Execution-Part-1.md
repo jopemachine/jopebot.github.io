@@ -7,10 +7,10 @@ tags:
   - Javascript
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 27, 2022
+last-update: September 28, 2022
 ---
 
-# JavaScript execution context — from compiling to execution (part 1)
+# 번역 - JavaScript execution context — from compiling to execution (part 1)
 
 많은 사람들에게 JavaScript는 미스터리입니다. JavaScript만의 독특한 특징이 있습니다.
 

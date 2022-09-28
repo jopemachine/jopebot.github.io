@@ -7,10 +7,10 @@ tags:
   - Javascript
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 27, 2022
+last-update: September 28, 2022
 ---
 
-# Goodbye Node JS
+# 번역 - Goodbye Node JS
 
 2009년 5월 27일 한 오픈소스 런타임 환경이 출시되었습니다.
 

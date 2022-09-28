@@ -11,7 +11,7 @@ header-mask: 0.3
 last-update: September 28, 2022
 ---
 
-# Avoid Using Array Index for Key in React
+# 번역 - Avoid Using Array Index for Key in React
 
 이 두 번째 게시물에서, 저는 reactJS에서 배열의 인덱스를 `key`로 사용하는 것에 대해 논의할 것입니다.
 
