@@ -29,7 +29,8 @@
     "read-filepath-from-clipboard": "^0.0.6",
     "recursive-readdir": "^2.2.2",
     "write": "^2.0.0",
-    "yaml": "^1.10.2"
+    "yaml": "^1.10.2",
+    "conf": "^10.2.0"
   },
   "scripts": {
     "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
@@ -38,8 +39,5 @@
     "push": "git push origin master --tag",
     "prepare": "husky install",
     "append-last-update": "node appendLastUpdate.js"
-  },
-  "dependencies": {
-    "conf": "^10.2.0"
   }
 }

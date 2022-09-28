@@ -39,12 +39,12 @@
                     {% endif %}
                     {% endfor %}
                     <li>
-                      <a href="https://jopemachine.github.io/portfolio/projects/">Portfolio</a>
+                      <a href="https://transparent-petalite-9c2.notion.site/Gyubong-Lee-78340fd921954171870a2f599513a35d">About me</a>
                     </li>
                     <li class="search-icon">
                         <a href="javascript:void(0);" onclick="return searchBarToggle();">
                           <i class="fa fa-search"></i>
-                        </a> 
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
             document.querySelector('.postlist-container').style["display"] = "none";
             document.querySelector("#tipue_search_content").style["display"] = "";
         }
-        
+
         $('#tipue_search_input').tipuesearch({
             'wholeWords' : false,
             'showTime' : true,
@@ -67,7 +67,7 @@
     }
 
     window.addEventListener("wheel", event => {
-        document.querySelector('#search-bar-form').style['display'] = 'none'; 
+        document.querySelector('#search-bar-form').style['display'] = 'none';
     });
 
     function getUrlParams() {
@@ -75,14 +75,14 @@
         window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
         return params;
     }
-    
+
     function searchBarToggle() {
         let searchBarForm = document.querySelector('#search-bar-form');
-        
-        if(searchBarForm.style['display'] == 'none') {   
+
+        if(searchBarForm.style['display'] == 'none') {
             document.querySelector('#search-bar-form').style['display'] = '';
         }
-        else searchBarForm.style['display'] = 'none'; 
+        else searchBarForm.style['display'] = 'none';
 
         window.scrollTo(0, 0);
     }
@@ -124,11 +124,11 @@
   /**
    * Since Fastclick is used to delegate 'touchstart' globally
    * to hack 300ms delay in iOS by performing a fake 'click',
-   * Using 'e.stopPropagation' to stop 'touchstart' event from 
+   * Using 'e.stopPropagation' to stop 'touchstart' event from
    * $toggle/$collapse will break global delegation.
-   * 
+   *
    * Instead, we use a 'e.target' filter to prevent handler
-   * added to document close HuxNav.  
+   * added to document close HuxNav.
    *
    * Also, we use 'click' instead of 'touchstart' as compromise
    */

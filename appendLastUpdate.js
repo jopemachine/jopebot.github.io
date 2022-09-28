@@ -6,7 +6,6 @@ const YAMLParser = require('yaml');
 
 const lastChanged = {};
 recursive("_posts", ["template.md"], function (err, files) {
-
   let checks = 0;
   gitToJs('./').then(commits => {
     for (const commit of commits) {
