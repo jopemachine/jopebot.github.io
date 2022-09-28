@@ -8,20 +8,20 @@ tags:
   - Frontend
 header-img: img/header-img/frontend.jpg
 header-mask: 0.3
-last-update: September 27, 2022
+last-update: September 28, 2022
 ---
 
 # 번역 - React — The hidden function for keys
 
 ![](/img/posts/React/2022-09-27-React-The-Hidden-Function-For-Keys/1_Y9wZFcxL-JEYxZhLYTPksA.jpg)
 
-React가 당신에게 화를 내지 않도록, 리스트들에 `keys`를 전달해줘야 한다는 사실을 알고 있나요?
+React가 당신에게 화를 내지 않도록, 리스트들에 `key`를 전달해줘야 한다는 사실을 알고 있나요?
 
-당신은 생각할 것입니다.. 왜 모든 `key`를 무작위로 만들어서 사용하면 안 되는거지?
+당신은 생각할 것입니다: 왜 모든 `key`를 무작위로 만들어서 사용하면 안 되는거지?
 
 ## Keys!
 
-대부분의 튜토리얼들에선 리스트를 매핑하는 맥락에서만 `keys`를 언급합니다. 결국 당신은 그 외엔 `keys`에 기능이 없다고 생각할 수 있습니다.
+대부분의 튜토리얼들에선 리스트를 매핑하는 맥락에서만 `key`를 언급합니다. 결국 당신은 그 외엔 `key`에 기능이 없다고 생각할 수 있습니다.
 
 아마 당신이 저 같은 사람이라면, 당신은 아마 리스트들에 `key`를 추가하는 것을 가끔 깜빡해, 경고 메세지를 보고 `key`를 추가할 것입니다.
 
@@ -48,9 +48,7 @@ function ThisIsOk(){
 
 이것은 음.. 트리 때문에 발생하는 문제입니다!
 
-React가 컴포넌트들을 렌더링하는 방식을 살펴 보면, 기본적으로 하나의 큰 컴포넌트들의 트리를 렌더링 하는 것임을 알 수 있습니다.
-
-(이게 당신이 Wrapper 없이 여러 컴포넌트를 리턴하는 컴포넌트를 사용할 수 없는 이유입니다.)
+React가 컴포넌트들을 렌더링하는 방식을 살펴 보면, 기본적으로 하나의 큰 컴포넌트들의 트리를 렌더링 하는 것임을 알 수 있습니다. (이게 당신이 Wrapper 없이 여러 컴포넌트를 리턴하는 컴포넌트를 사용할 수 없는 이유입니다.)
 
 React는 모든 컴포넌트들을 뽑아서, 리스트를 만듭니다. 당신이 컴포넌트에 `key`를 넣을 때, 아래의 몇 가지 일이 발생할 것입니다.
 
@@ -74,21 +72,13 @@ React는 모든 컴포넌트들을 뽑아서, 리스트를 만듭니다. 당신�
 
 ## 이게 무엇을 의미하는거죠?
 
-아마도 당신은 무슨 일이 있어도 컴포넌트를 리셋할 수 없는 버그를 마주쳐 본 적이 있을 것입니다.
+아마도 당신은 무슨 일이 있어도 컴포넌트를 리셋할 수 없는 버그를 마주쳐 본 적이 있을 것입니다. 그래서 당신은 상태를 리셋하기 위해 몇몇 디펜던시와 함께, `useEffect`를 사용하기 시작했습니다. 글쎄요.. 당신만 그런 것은 아닙니다!
 
-그래서 당신은 상태를 리셋하기 위해 몇몇 디펜던시와 함께, `useEffect`를 사용하기 시작했습니다.
+하지만 이제.. 당신은 상태를 리셋하기 위해 다른 `key`를 전달하기만 하면 된다는 점을 알고 있습니다! 더 이상 `useEffect`가 필요하지 않죠!
 
-글쎄요.. 당신만 그런 것은 아닙니다!
+또한 당신은 동일한 위치에서 동일한 컴포넌트를 렌더링 할 수 있고, 그것이 이전 상태를 유지한다는 점을 알고 있습니다. 비록 이것을 어디에 활용해야 할 지는 잘 모르겠지만요.
 
-하지만 이제.. 당신은 상태를 리셋하기 위해 다른 `key`를 전달하기만 하면 된다는 점을 알고 있습니다!
-
-더 이상 `useEffect`가 필요하지 않죠!
-
-또한 당신은 동일한 위치에서 동일한 컴포넌트를 렌더링 할 수 있고, 그것이 이전 상태를 유지한다는 점을 알고 있습니다.
-
-비록 이것을 어디에 활용해야 할 지는 잘 모르겠지만요.
-
-Cover Photo by [Samantha Lam](https://unsplash.com/@contradirony?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
+Cover Photo by [Samantha Lam](https://unsplash.com/@contradirony?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/keys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 # 원문
 
