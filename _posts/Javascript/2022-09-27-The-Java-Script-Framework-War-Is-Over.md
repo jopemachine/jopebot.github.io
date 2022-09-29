@@ -5,9 +5,10 @@ subtitle: 자바스크립트 생태계
 author: jopemachine
 tags:
   - Javascript
-header-img: img/header-img/frontend.jpg
+  - Translation
+header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 27, 2022
+last-update: September 29, 2022
 ---
 
 # 번역 - The JavaScript framework war is over

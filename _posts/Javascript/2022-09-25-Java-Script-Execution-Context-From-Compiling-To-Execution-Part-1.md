@@ -3,11 +3,13 @@ layout: post
 title: 번역 - JavaScript execution context — from compiling to execution (part 1)
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
+original-author: Carson
 tags:
   - Javascript
-header-img: img/header-img/frontend.jpg
+  - Translation
+header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 28, 2022
+last-update: September 29, 2022
 ---
 
 # 번역 - JavaScript execution context — from compiling to execution (part 1)

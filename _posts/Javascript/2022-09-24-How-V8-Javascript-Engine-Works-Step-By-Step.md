@@ -7,9 +7,9 @@ tags:
   - V8
   - Javascript
   - Translation
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 27, 2022
+last-update: September 29, 2022
 ---
 
 # How V8 Javascript Engine works step by step
