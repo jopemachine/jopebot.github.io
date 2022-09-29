@@ -6,9 +6,9 @@ author: jopemachine
 tags:
   - Frontend
   - React
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/react.png
 header-mask: 0.3
-last-update: September 25, 2022
+last-update: September 29, 2022
 ---
 
 # React, Rehydate vs render

@@ -8,7 +8,7 @@ tags:
   - React
   - Frontend
   - Translation
-header-img: img/header-img/javascript.png
+header-img: img/header-img/react.png
 header-mask: 0.3
 last-update: September 29, 2022
 ---

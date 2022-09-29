@@ -7,9 +7,9 @@ tags:
   - Frontend
   - React
   - Redux
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/react.png
 header-mask: 0.3
-last-update: September 25, 2022
+last-update: September 29, 2022
 ---
 
 # React, Redux와 불변성
