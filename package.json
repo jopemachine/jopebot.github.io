@@ -38,6 +38,7 @@
     "boil": "git push boilerplate boilerplate:master",
     "push": "git push origin master --tag",
     "prepare": "husky install",
-    "append-last-update": "node appendLastUpdate.js"
+    "append-last-update": "node append-last-update.js",
+    "insert-img": "node image-insert.js"
   }
 }

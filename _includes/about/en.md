@@ -1,28 +1,3 @@
-## Experience 
-
-<!-- TODO: Write more description here...  -->
-<!-- * (20.03 ~ 20.08) maintenance Enertalk -->
-
-* Familiar language: `Javascript`, `C++`
-
-## Interest
-
-* Contributing to open source.
-* Developing tools that can save someone's time.
-
-## Present State
-
-* Graduation scheduled at Chungnam university.
-
-## My Programming Languages Spectrum
-
-|      | 💔️     | ❤️ ️                          | ❤️❤️ ️                   | ❤️❤️❤️ ️ |
-| :----: | :-----: | :----: | :----: | :----: |
-| 😅    |       | ``Assembly``                | `Python`              |   `Go`, `Rust`   |
-| 🧐    | `VBA`, `Applescript` | `Batchfile`,  `Shell`, `PHP`, `C` | `C#`, `Java`                  |      |
-| 😏    |       |                             |  `C++`  | `Javascript`, `Typescript`     |
-| 🤓    |       |                             |                       |      |
-
 ## Contact, Sites
 
 [![Tech Blog Badge](http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://jopemachine.github.io/)](https://jopemachine.github.io/)

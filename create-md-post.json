@@ -10,23 +10,23 @@
   "attributes": {
     "title": {
       "type": "string",
-      "message": "Enter post title",
+      "message": "Enter post's title",
       "default": "() => ''"
     },
     "subtitle": {
       "type": "string",
-      "message": "Enter post subtitle",
+      "message": "Enter post's subtitle",
       "default": "({ conf }) => { return conf.has('subtitle') ? conf.get('subtitle') : '' }",
       "callback": "({ attributes }) => { conf.set('subtitle', attributes.subtitle); }"
     },
     "date": {
       "type": "string",
-      "message": "Enter created date",
-      "default": "() => { return new Date().toLocaleDateString('ko-KR', { year: \"numeric\" , month: \"2-digit\", day:\"2-digit\"})}"
+      "message": "Enter post's created date",
+      "default": "() => { return new Date().toLocaleDateString('ko-KR', { year: \"numeric\" , month: \"2-digit\", day:\"2-digit\" })}"
     },
     "tags": {
       "type": "list/comma",
-      "message": "Enter tags",
+      "message": "Enter post's tags",
       "default": "() => ''"
     }
   }

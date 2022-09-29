@@ -5,9 +5,9 @@ subtitle: npm 이슈
 author: jopemachine
 tags:
   - npm
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/node.png
 header-mask: 0.3
-last-update: September 25, 2022
+last-update: September 29, 2022
 ---
 
 # package-lock.json의 lockfileVersion에 대해
