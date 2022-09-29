@@ -3,6 +3,7 @@ layout: post
 title: 번역 - The JavaScript framework war is over
 subtitle: 자바스크립트 생태계
 author: jopemachine
+original-author: David Rodenas, Ph. D.
 tags:
   - Javascript
   - Translation

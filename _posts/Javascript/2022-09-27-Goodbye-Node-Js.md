@@ -3,6 +3,7 @@ layout: post
 title: 번역 - Goodbye Node JS
 subtitle: 자바스크립트 생태계
 author: jopemachine
+original-author: Appiahyoofi
 tags:
   - Javascript
   - Translation

@@ -3,6 +3,7 @@ layout: post
 title: 번역 - Understanding Javascript Generators and Iterators
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
+original-author: Diego Martinez
 tags:
   - Javascript
   - Translation

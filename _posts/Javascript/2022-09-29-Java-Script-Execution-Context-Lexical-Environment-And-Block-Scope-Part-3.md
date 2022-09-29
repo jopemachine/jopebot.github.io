@@ -96,7 +96,7 @@ if문을 읽을 때 중첩 컴파일 단계가 발생합니다. `undefined`인 �
 
 ![](/img/posts/Javascript/2022-09-29-Java-Script-Execution-Context-Lexical-Environment-And-Block-Scope-Part-3/1_SZpz0TkyXsDVg3HUrqMMnw.jpg)
 
-실행 단계가 시작됩니다. `apple`에는 "global apple" 값이 할당되고 banana에는 "global banana"가 할당됩니다.
+실행 단계가 시작됩니다. `apple`에는 "global apple" 값이 할당되고 `banana`에는 "global banana"가 할당됩니다.
 
 ![](/img/posts/Javascript/2022-09-29-Java-Script-Execution-Context-Lexical-Environment-And-Block-Scope-Part-3/1_Kxo8b223Kuo7x-pTfMQqYg.png)
 

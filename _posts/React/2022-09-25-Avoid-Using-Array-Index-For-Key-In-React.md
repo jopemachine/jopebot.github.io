@@ -3,12 +3,14 @@ layout: post
 title: 번역 - Avoid Using Array Index for Key in React
 subtitle: React 세부사항
 author: jopemachine
+original-author: Rizky Firman
 tags:
   - React
   - Frontend
-header-img: img/header-img/frontend.jpg
+  - Translation
+header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 28, 2022
+last-update: September 29, 2022
 ---
 
 # 번역 - Avoid Using Array Index for Key in React
