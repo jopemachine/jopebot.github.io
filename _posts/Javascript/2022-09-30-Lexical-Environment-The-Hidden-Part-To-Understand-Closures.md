@@ -4,10 +4,11 @@ title: 번역 - Lexical Environment — The hidden part to understand Closures
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 tags:
- - Javascript
- - Translation
+  - Javascript
+  - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
+last-update: September 30, 2022
 ---
 
 # Lexical Environment — The hidden part to understand Closures

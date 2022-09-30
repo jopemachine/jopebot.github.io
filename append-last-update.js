@@ -5,11 +5,11 @@ const fse = require('fs-extra');
 const YAMLParser = require('yaml');
 
 const lastChanged = {};
-recursive("_posts", ["template.md"], function (err, files) {
+recursive("_posts", ["template.md"], function (_err, files) {
   let checks = 0;
   gitToJs('./').then(commits => {
     for (const commit of commits) {
-      if (commit.message.includes('[format]')) continue;
+      if (commit.message.startsWith('[fmt]')) continue;
 
       const mdChanged = commit.filesModified.filter(_ => _.path.endsWith('.md'));
       const mdGenerated = commit.filesAdded.filter(_ => _.path.endsWith('.md'));
@@ -36,18 +36,20 @@ recursive("_posts", ["template.md"], function (err, files) {
     }
 
     let writingCnt = 0;
-    for (const changed of Object.keys(lastChanged)) {
-      fse.readFile(changed, { encoding: 'utf-8' }).then((content) => {
-        const yaml = content.match(/---\n(?<markdownMetaInfo>.*)\n---/s).groups.markdownMetaInfo;
+    for (const changedFile of Object.keys(lastChanged)) {
+      fse.readFile(changedFile, { encoding: 'utf-8' }).then((fileContent) => {
+        const reg = RegExp(/---\n(?<markdownMetaInfo>.*?)\n---/s).exec(fileContent)
+        const yaml = reg.groups.markdownMetaInfo;
+
         const yamlObj = YAMLParser.parse(yaml);
 
-        if (yamlObj['last-update'] !== lastChanged[changed]) {
-          yamlObj['last-update'] = lastChanged[changed];
+        if (yamlObj['last-update'] !== lastChanged[changedFile]) {
+          yamlObj['last-update'] = lastChanged[changedFile];
 
           const meta = `---\n${YAMLParser.stringify(yamlObj)}---\n`;
-          const body = content.split('---').slice(2).join('---').trimStart();
+          const body = fileContent.split('---').slice(2).join('---').trimStart();
 
-          fse.writeFile(changed, `${meta}\n${body}`);
+          fse.writeFile(changedFile, `${meta}\n${body}`);
           ++writingCnt;
         }
       });
