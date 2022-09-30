@@ -36,6 +36,8 @@ recursive("_posts", ["template.md"], function (_err, files) {
     }
 
     let writingCnt = 0;
+    console.log(`${Object.keys(lastChanged).length} markdown files found.`);
+
     for (const changedFile of Object.keys(lastChanged)) {
       fse.readFile(changedFile, { encoding: 'utf-8' }).then((fileContent) => {
         const reg = RegExp(/---\n(?<markdownMetaInfo>.*?)\n---/s).exec(fileContent)

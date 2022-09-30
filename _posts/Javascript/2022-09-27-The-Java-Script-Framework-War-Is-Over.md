@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 번역 - The JavaScript framework war is over
+title: 번역 - JavaScript 프레임워크 전쟁은 끝났다.
 subtitle: 자바스크립트 생태계
 author: jopemachine
 original-author: David Rodenas, Ph. D.
@@ -9,10 +9,10 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 29, 2022
+last-update: September 30, 2022
 ---
 
-# 번역 - The JavaScript framework war is over
+# JavaScript 프레임워크 전쟁은 끝났다.
 
 ## 참가자들
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 번역 - How V8 Javascript Engine works step by step
+title: 번역 - V8 Javascript 엔진의 단계 별 작동 방식
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 original-author: Carson
@@ -10,10 +10,10 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 29, 2022
+last-update: September 30, 2022
 ---
 
-# How V8 Javascript Engine works step by step
+# V8 Javascript 엔진의 단계 별 작동 방식
 
 ![](/img/posts/Javascript/2022-09-24-How-V8-Javascript-Engine-Works-Step-By-Step/1_JvgAHbM4UFjD062hmchAiw.jpg)
 

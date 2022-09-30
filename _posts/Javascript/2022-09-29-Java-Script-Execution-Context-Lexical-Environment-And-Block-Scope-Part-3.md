@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 번역 - JavaScript execution context — lexical environment and block scope (part 3)
+title: 번역 - JavaScript 실행 컨텍스트 — lexical environment와 block scope (part 3)
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 original-author: Carson
@@ -9,10 +9,10 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 29, 2022
+last-update: September 30, 2022
 ---
 
-# 번역 - JavaScript execution context — lexical environment and block scope (part 3)
+# JavaScript 실행 컨텍스트 — lexical environment와 block scope (part 3)
 
 JavaScript에는 ES6 업데이트 이후 세 가지 유형의 scope가 있습니다.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 번역 - Avoid Using Array Index for Key in React
+title: 번역 - React에서 배열 인덱스를 Key로 사용하는 것을 피하세요
 subtitle: React 세부사항
 author: jopemachine
 original-author: Rizky Firman
@@ -10,10 +10,10 @@ tags:
   - Translation
 header-img: img/header-img/react.png
 header-mask: 0.3
-last-update: September 29, 2022
+last-update: September 30, 2022
 ---
 
-# 번역 - Avoid Using Array Index for Key in React
+# React에서 배열 인덱스를 Key로 사용하는 것을 피하세요
 
 이 두 번째 게시물에서, 저는 reactJS에서 배열의 인덱스를 `key`로 사용하는 것에 대해 논의할 것입니다.
 

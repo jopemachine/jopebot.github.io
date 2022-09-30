@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 번역 - Lexical Environment — The hidden part to understand Closures
+title: 번역 - Lexical Environment, 클로저를 이해하기 위한 숨겨진 조각
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
+original-author: Amandeep Singh
 tags:
   - Javascript
   - Translation
@@ -11,7 +12,7 @@ header-mask: 0.3
 last-update: September 30, 2022
 ---
 
-# Lexical Environment — The hidden part to understand Closures
+# Lexical Environment, 클로저를 이해하기 위한 숨겨진 조각
 
 ![](/img/posts/Javascript/2022-09-30-Lexical-Environment-The-Hidden-Part-To-Understand-Closures/0_rOhdypP7zTFRNuoB.jpg)
 
@@ -183,7 +184,7 @@ foo의 *LexicalEnvironment*는 생성 시 10을 값으로 갖고 있었던, "a"�
 
 ```
 // "foo"의 env record 내부에서 "a"의 바인딩을 확인함
--- foo.[[LexicalEnvironment]].[[Record]] --> not found
+--- foo.[[LexicalEnvironment]].[[Record]] --> not found
 // 만약 찾지 못하면, "foo"의 외부 환경을 확인함
 --- global[[LexicalEnvironment]][[Record]] --> found 10
 // 식별자 a의 값을 10으로 확인함
@@ -211,7 +212,7 @@ innerFunc(); // 1 출력
 
 ```
 // "inner"의 env record 내부에서 "id"의 바인딩을 확인함
--- inner.[[LexicalEnvironment]].[[Record]] --> not found
+--- inner.[[LexicalEnvironment]].[[Record]] --> not found
 // 만약 찾지 못하면, "inner"의 외부 환경을 확인함
 --- outer[[LexicalEnvironment]][[Record]] --> found 1
 // 식별자 id의 값을 1으로 확인함

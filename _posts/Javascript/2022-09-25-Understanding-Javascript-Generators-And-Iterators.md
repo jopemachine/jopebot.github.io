@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 번역 - Understanding Javascript Generators and Iterators
+title: 번역 - Javascript Generators와 Iterators 이해하기
 subtitle: 자바스크립트 세부사항 스터디
 author: jopemachine
 original-author: Diego Martinez
@@ -9,10 +9,10 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 29, 2022
+last-update: September 30, 2022
 ---
 
-# 번역 - Understanding Javascript Generators and Iterators
+# Javascript Generators와 Iterators의 이해하기
 
 당신의 가장 친한 친구가 매우 창의적인 화가라고 생각해보세요. 이 친구는 매일 그림을 그립니다. 매일 다른 아름답고 화려한 그림들을 창조합니다. 그러나 그녀의 창의성은 항상 일관적이지는 않습니다. 그래서 가끔은 더 많은 그림을 그리기도 하고, 다른 날은 좀 덜 그리기도 합니다. 매일 그리는 그림의 양은 확실하지 않고, 그녀의 영감과 창의성에 의존할 것입니다.
 

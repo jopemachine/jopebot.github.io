@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 번역 - Goodbye Node JS
+title: 번역 - 굿 바이, Node.JS
 subtitle: 자바스크립트 생태계
 author: jopemachine
 original-author: Appiahyoofi
@@ -9,10 +9,10 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: September 29, 2022
+last-update: September 30, 2022
 ---
 
-# 번역 - Goodbye Node JS
+# 굿 바이, Node.JS
 
 2009년 5월 27일 한 오픈소스 런타임 환경이 출시되었습니다.
 
