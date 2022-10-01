@@ -8,7 +8,7 @@ tags:
   - React
   - Javascript
   - Translation
-header-img: img/header-img/frontend.jpg
+header-img: img/header-img/react.png
 header-mask: 0.3
 last-update: October 01, 2022
 ---
@@ -126,7 +126,7 @@ export default UseHookFirst;
 
 ### 무한 루프
 
-> [https://stackoverflow.com/questions/53070970/infinite-loop-in-useeffect](https://stackoverflow.com/questions/53070970/infinite-loop-in-useeffect), 이 문제는 11개월 전에 올라왔으며 175,000명의 개발자가 봤습니다.
+> [https://stackoverflow.com/questions/53070970/infinite-loop-in-useeffect](https://stackoverflow.com/questions/53070970/infinite-loop-in-useeffect), 이 문제는 11개월 전에 올라왔으며 175,000명의 개발자가 조회했습니다.
 
 무한 루프를 수행하는 가장 간단한 방법은 일부 상태가 변경될 때 `useEffect`를 트리거하고 변경될 때 정확히 그 상태 변경을 트리거하는 코드를 실행하는 것입니다.
 
