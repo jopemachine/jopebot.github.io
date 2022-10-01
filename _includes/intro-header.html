@@ -46,7 +46,7 @@
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                     {% if page.original-author %}
                       <span style="margin-top: 4px; font-size: 100%; height: 0px;" class="meta">Original Posted by {{ page.original-author }}</span>
-                      <span style="margin-top: 32px; font-size: 100%; height: 0px;" class="meta">Updated on {% if page.last-update %}{{ page.last-update }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}</span>
+                      <span style="margin-top: 36px; font-size: 100%; height: 0px;" class="meta">Updated on {% if page.last-update %}{{ page.last-update }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}</span>
                     {% else %}
                       <span style="margin-top: 8px; font-size: 100%; height: 0px;" class="meta">Updated on {% if page.last-update %}{{ page.last-update }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}</span>
                     {% endif %}
