@@ -84,6 +84,7 @@ useEffect(() => {
 렌더링하려는 각 hook에 대해 두 개 이상의 컴포넌트를 만들어야 합니다. 각 컴포넌트에서 해당 논리를 추가할 수 있습니다.
 
 ```js
+// 조건부 렌더링 로직
 const { userId } = useParams();
 
 if (userType === 'someType') {
@@ -95,9 +96,8 @@ if (userType === 'someType') {
 }
 ```
 
-<sub>조건부 렌더링 로직</sub>
-
 ```js
+// 조건부로 렌더링 되는 hook
 import React from 'react'
 
 const UseHookFirst = ({ userId }) => {
@@ -107,8 +107,6 @@ const UseHookFirst = ({ userId }) => {
 
 export default UseHookFirst;
 ```
-
-<sub>조건부로 렌더링 되는 hook.</sub>
 
 이런 식으로 `userId` 변수를 기반으로 두 개의 다른 hook를 렌더링할 수 있습니다.
 
