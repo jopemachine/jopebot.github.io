@@ -8,14 +8,14 @@ tags:
   - Typescript
 header-img: img/header-img/typescript.jpg
 header-mask: 0.3
-last-update: October 01, 2022
+last-update: October 02, 2022
 ---
 
 # 번역 - 당신의 코드 베이스를 향상시키기 위한 5개의 TypeScript 라이브러리
 
-TypeScript 언어는 지난 몇 년 동안 성장한 것 외에는 아무 것도 하지 않았습니다. 많은 웹 개발자들이 가장 좋아하는 언어로 평가되었습니다. Plain JavaScript 코드베이스에서 작업해야 하는 빈도는 점점 줄어들고 있습니다.
+TypeScript 언어는 지난 몇 년 동안 계속해서 성장해왔습니다. 많은 웹 개발자들이 가장 좋아하는 언어로 평가되었습니다. Plain JavaScript 코드베이스에서 작업해야 하는 빈도는 점점 줄어들고 있습니다.
 
-그러나 때로는 TypeScript는 충분히 가능한만큼 활용되지 않습니다. 너무 많은 casting이나 `any`를 사용하는 것이 가장 빈번한 실수들 중 하나입니다.
+그러나 때로는 TypeScript는 충분히 가능한만큼 활용되지 않습니다. 너무 많은 casting이나 `any`를 사용하는 것은 가장 빈번한 실수들 중 하나입니다.
 
 이 기사에서는 TypeScript 경험을 향상시키고 정적 타이핑에 대한 자신감을 높여주는 라이브러리 목록을 볼 것입니다. 이러한 최소한의 라이브러리들이 모든 개발자들을 인간 공학적으로 향상시켜 줄 겁니다.
 
@@ -23,7 +23,7 @@ TypeScript 언어는 지난 몇 년 동안 성장한 것 외에는 아무 것도
 
 TypeScript의 약한 점은 컴파일 시간에만 유효성이 검사된다는 것입니다. 한 번 파싱되고, 빌드되고 나면, 모든 타입들이 제거됩니다. 아래 상황에서 이 점은 의도치 않은 버그로 이어질 수 있습니다.
 
-* 컴파일러가 몇 가지 가정을 통해 개발자를 신뢰하는 경우 (`any`, `ts-expect-error`, 캐스팅 등...)
+* 컴파일러가 몇 가지 가정을 통해 개발자를 신뢰하는 경우 (`any`, `ts-expect-error`, casting 등...)
 
 * 네트워크가 예상과 다른 REST 스키마를 반환하는 경우
 
@@ -42,7 +42,7 @@ async function fetchUser(id: string): User {
 }
 ```
 
-위의 코드에서 컴파일러는 네트워크가 `name`과 `email` 속성을 가진 JSON `User` 객체를 반환할 것이라고 믿고 있습니다. 만약 이게 사실이 아닌 경우, 우린 production에서 여러 문제에 직면하게 될 것입니다. 불행하게도, 이것은 런타임에만 발견 될 수 있습니다.
+위의 코드에서 컴파일러는 네트워크가 `name`과 `email` 속성을 가진 JSON `User` 객체를 반환할 것이라고 믿고 있습니다. 만약 이게 사실이 아닌 경우, 우린 production에서 여러 문제에 직면하게 될 것입니다. 불행하게도, 이것은 런타임에만 발견될 수 있습니다.
 
 `zod`를 사용하면 런타임에도 유효성이 검사되는 스키마를 정의할 수 있습니다.
 
@@ -64,7 +64,7 @@ async function fetchUser(id: string) {
 
 우리는 오류를 어떻게 처리할 지 선택할 수 있습니다. 위의 예에서 `UserSchema.parse`는 런타임에 오류를 발생시킵니다.
 
-`safeParse` 메서드를 사용하여 오류를 발생시키지 않도록 할 수 있습니다. 사용자 경험을 방해하지 않고 센트리에 문제만 기록하는 데 이상적입니다.
+`safeParse` 메서드를 사용하여 오류를 발생시키지 않도록 할 수 있습니다. 사용자 경험을 방해하지 않고 Sentry에 문제만 기록하는 데 이상적입니다.
 
 `zod`는 상당히 강력하며 `z.infer`를 사용하여 스키마에서 타입을 추출할 수도 있습니다. 해당 스키마를 코드 전체에 전파할 수도 있습니다.
 
@@ -83,7 +83,7 @@ export type User = z.infer<typeof UserSchema>;
 
 * 매우 작은 사이즈: minified + zipped 되었을 때 8kb
 
-* 제로 디펜던시
+* 의존성 없음
 
 * 불변성
 
@@ -107,7 +107,7 @@ npm install --save-dev zod
 
 ## tiny invariant
 
-때로는 코드에서 `nullable`이 아닌 것이 확실한 위치들이 있습니다. TypeScript의 strict 모드에서, null 체크를 하지 않으면 오류가 발생합니다. 이것을 우회하기 위한 네이티브 `!` 연산자가 있습니다.
+때로는 코드에서 `nullable`이 아닌 것이 확실한 위치들이 있습니다. TypeScript의 strict 모드에서, null 체크를 하지 않으면 오류가 발생합니다. 이것을 우회하기 위해 타입스크립트에는 `!` 연산자가 내장되어 있습니다.
 
 아래 예제를 봅시다,
 
@@ -125,9 +125,9 @@ console.log(u.name.toUpperCase());
 console.log(u.name!.toUpperCase());
 ```
 
-위의 내용은 때때로 개발자의 가정이 틀릴 수 있으므로 나쁜 습관입니다.
+위 코드처럼 코딩하는 것은 때때로 개발자의 가정이 틀릴 수 있으므로 나쁜 습관입니다.
 
-TypeScript에는 `Assertion Functions`라는 기본 기능이 있습니다. 그 위에 `tiny-invariant` 라이브러리가 구축됩니다. 당신은 `tiny-invariant`에 가정과, 가정이 사실이 아니었을 경우 던질 에러 메시지를 제공할 수 있습니다. 이러한 가정이 충족되지 않을 때마다 런타임에 예외가 발생합니다. 던져진 에러는 나중에 Sentry나 다른 provider에서 잡을 수 있습니다. 그러면 코드베이스에 대한 신뢰도가 높아지고 비일관성을 감지할 수 있게 됩니다.
+TypeScript에는 `Assertion Functions`라는 기본 기능이 있습니다. `tiny-invariant` 라이브러리는 그 위에 구축됩니다. 당신은 `tiny-invariant`에 가정과, 가정이 사실이 아니었을 경우 던질 에러 메시지를 제공할 수 있습니다. 이러한 가정이 충족되지 않을 때마다 런타임에 예외가 발생합니다. 던져진 에러는 나중에 Sentry나 다른 provider에서 잡을 수 있습니다. 그러면 코드베이스에 대한 신뢰도가 높아지고 비일관성을 감지할 수 있게 됩니다.
 
 아래 예제를 봅시다,
 
@@ -164,15 +164,15 @@ npm install --save-dev tiny-invariant
 
 TypeScript의 가장 강력한 기능 중 하나는 `mapped-type`입니다. 자세히 알아보려면, [여기](https://betterprogramming.pub/mastering-typescripts-mapped-types-5fa5700385eb) 기사를 살펴보세요.
 
-TypeScript는 일부 유틸리티와 함께 ​​제공되지만 이것은 제한적이며, 시작점일 뿐입니다. 결과적으로 아마도 당신은 코드베이스에 유틸리티 모음이 있을 것 입니다. 아마도 프로젝트 별로 관리할 수 있는 utils.d.ts에 있을 것입니다. 물론 이건 완전히 괜찮습니다, 다만 여기 이 문제를 해결할 수 있는 다른 방법이 있습니다.
+TypeScript는 일부 유틸리티와 함께 ​​제공되지만 이것은 제한적이며, 단지 시작점일 뿐입니다. 결과적으로 아마도 당신은 코드베이스에 유틸리티 모음이 있을 것 입니다. 아마도 프로젝트 별로 관리할 수 있는 `utils.d.ts`에 있을 것입니다. 물론 이건 완전히 괜찮습니다, 다만 여기 이 문제를 해결할 수 있는 다른 방법이 있습니다.
 
-사용할 수 있는 타입 라이브러리 유틸리티가 많이 있습니다. 일부는 이제 `ts-toolbet`처럼 죽었습니다. 새로운 매핑을 작성하는 데 낭비되는 시간을 줄이는 battle-test를 거친 타입들을 제공합니다. npm 트렌드를 살펴보면 `type-fest`가 시장을 어떻게 지배하고 있는지 알 수 있습니다.
+사용할 수 있는 타입 라이브러리 유틸리티가 많이 있습니다. 일부는 이제 `ts-toolbet`처럼 죽었습니다. 새로운 매핑을 작성하는 데 낭비되는 시간을 줄이는 battle-test들을 거친 타입들을 제공합니다. npm 트렌드를 살펴보면 `type-fest`가 시장을 어떻게 지배하고 있는지 알 수 있습니다.
 
 ![](/img/posts/Typescript/2022-10-01-5-Type-Script/1_tABIwNix_hF0qWSa-pJP5Q.png)
 
-예를 들어 보겠습니다. TypeScript에 내장된 Optional 유틸리티는 상당히 제한적입니다. 이것은 모든 속성들을 optional로 단순히 표시할 수 있게 해 줍니다. 세분화가 부족합니다.
+예를 들어 보겠습니다. TypeScript에 내장된 `Optional` 유틸리티는 상당히 제한적입니다. 이것은 모든 속성들을 optional로 단순히 표시할 수 있게 해 줍니다. 세분화가 부족합니다.
 
-해당 사용 사례와 관련하여 type-fest가 어떤 기능을 제공하는지 살펴보겠습니다.
+해당 사용 사례와 관련하여 `type-fest`가 어떤 기능을 제공하는지 살펴보겠습니다.
 
 ```ts
 import {SetOptional, OptionalKeysOf } from 'type-fest';
@@ -224,7 +224,7 @@ npm install --save-dev type-fest
 
 코드에 대한 정적 분석을 수행하는 것이 유용한 다양한 시나리오가 있습니다. 이를 위해 `jscodeshift` 또는 `babel`을 사용할 수 있습니다. 그러나 타이핑에 대해 더 많은 통찰력을 갖는 것이 유용할 수 있습니다.
 
-이런 목적을 위해, 당신은 가파른 학습 곡선을 지닌 타입스크립트 컴파일러를 사용해야 합니다. 다행히도, `ts-morph` 프로젝트가 오래 전 시작되었습니다. 프로그래밍 방식으로 TypeScript 코드를 탐색하고 조작하는 더 쉬운 방법을 제공합니다.
+이런 목적을 위해, 당신은 가파른 학습 곡선을 지닌 타입스크립트 컴파일러를 사용해야 합니다. 다행히도, `ts-morph` 프로젝트가 오래 전 시작되었습니다. 프로그래밍 API로 TypeScript 코드를 탐색하고 조작하는 더 쉬운 방법을 제공합니다.
 
 어떻게 이걸 달성할 수 있었을까요?
 
@@ -282,7 +282,7 @@ npx ts-node example.ts
 
 문서화 프로세스는 API를 구축할 때 핵심적인 측면입니다. 다른 개발자가 귀하의 애플리케이션이 무엇을 노출하는지 빠르게 파악하는 데 도움이 됩니다. 일반적으로 각 언어에는 자체 문서 작성 프로세스가 있습니다.
 
-TypeScript에는 도구가 내장되어 있지 않기 때문에 TypeDoc이 탄생했습니다. 코드 주석을 사용해 HTML 또는 JSON으로 문서를 작성합니다. Type-docs는 확장 가능하며 다양한 설정을 지원합니다.
+TypeScript에는 도구가 내장되어 있지 않기 때문에 `TypeDoc`이 탄생했습니다. 코드 주석을 사용해 HTML 또는 JSON으로 문서를 작성합니다. `TypeDoc`은 확장 가능하며 다양한 설정을 지원합니다.
 
 Type-docs는 [https://typedoc.org](https://typedoc.org)에서 찾을 수 있는 편리한 문서와 함께 제공됩니다.
 
@@ -310,7 +310,7 @@ export function sqrt(x: number): number {
 
 * 깨끗한 인터페이스
 
-* breadcrumbs
+* Breadcrumb
 
 * 사이드 네비게이션 바
 
@@ -334,7 +334,7 @@ typedoc src/index.ts
 typedoc src/package1/index.ts src/package2/index.ts
 ```
 
-파일을 전달하는 대신 폴더를 전달할 수 있으며 TypeDoc은 `index` 파일을 찾는 `entryPointStrategy`를 사용합니다.
+파일을 전달하는 대신 폴더를 전달할 수 있으며 `TypeDoc`은 `index` 파일을 찾는 `entryPointStrategy`를 사용합니다.
 
 이 전략은 작업 공간에 대한 문서를 쉽게 생성할 수 있게 해 줍니다.
 
