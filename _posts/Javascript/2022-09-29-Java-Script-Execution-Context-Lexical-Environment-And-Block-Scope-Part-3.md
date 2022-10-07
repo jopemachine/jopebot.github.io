@@ -9,7 +9,7 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: October 03, 2022
+last-update: October 07, 2022
 ---
 
 # JavaScript 실행 컨텍스트 — lexical environment와 block scope (part 3)
@@ -34,7 +34,7 @@ ES6에서 도입된 `Block scope`는 두 형제와 다릅니다.
 
 `Block scope`를 이해하는 가장 쉬운 방법은 다른 두 scope와 비교해 보는 것입니다.
 
-변수는 `Global scope, Function scope` 두 스코프에서 유사하게 작동하므로 이 게시물에서는 `Global scope`와 `Block scope`의 차이에 대해서만 설명합니다.
+변수는 `Global scope`, `Function scope`에서 유사하게 작동하므로 이 게시물에서는 `Global scope`와 `Block scope`의 차이에 대해서만 설명합니다.
 
 ![](/img/posts/Javascript/2022-09-29-Java-Script-Execution-Context-Lexical-Environment-And-Block-Scope-Part-3/1_uCEaJre_zhDS8F4FnB3Tsw.png)
 
@@ -156,7 +156,7 @@ Scope 외에 `let` 및 `const`와 관련해 뭔가 추가로 이해하신 점이
 
 ![](/img/posts/Javascript/2022-09-29-Java-Script-Execution-Context-Lexical-Environment-And-Block-Scope-Part-3/1_1HakEnjygGFe3mYW-eqfvg.png)
 
-콘솔은 무엇을 기록합니까? `apple`인가요? 또는 `banana`입니까?
+콘솔은 무엇을 기록할까요? `apple`일까요? 또는 `banana`일까요?
 
 놀랍게도, `Cannot access apple before initialization.` 라는 에러를 출력합니다.
 
@@ -168,7 +168,7 @@ Scope 외에 `let` 및 `const`와 관련해 뭔가 추가로 이해하신 점이
 
 * `function`의 경우, 생성, 초기화, 할당은 모두 동시에 호이스팅 됩니다.
 
-사람들은 변수 초기화 이전의 코드 영역을 **temporal dead zone**이라고 명명했습니다.
+사람들은 변수 초기화 이전의 코드 영역을 **Temporal dead zone** (TDZ) 이라고 명명했습니다.
 
 * 변수 생성 전 이 변수에 접근하려 하면, `[variable name] is not defined.`란 에러 메세지를 보게 됩니다.
 
@@ -186,7 +186,7 @@ Scope와 `Lexical environment`에 대해 알아야 할 모든 것을 살펴보�
 
 * 이 변수들은 `Lexical environment`에 저장됩니다.
 
-* 여러 `block scope`들은 스택 구조로 `Lexical environment`에 저장, 유지됩니다.
+* 여러 `block scope`들은 스택 구조로 `Lexical environment`에 저장됩니다.
 
 * 자바스크립트 엔진이 `block scope` 내의 모든 코드들을 실행시키고 나면, 관련된 `let`과 `const` 변수들은 모두 제거됩니다.
 
