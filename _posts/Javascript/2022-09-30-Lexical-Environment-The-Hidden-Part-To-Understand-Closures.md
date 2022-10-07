@@ -9,7 +9,7 @@ tags:
   - Translation
 header-img: img/header-img/javascript.png
 header-mask: 0.3
-last-update: October 04, 2022
+last-update: October 07, 2022
 ---
 
 # Lexical Environment, 클로저를 이해하기 위한 숨겨진 조각
@@ -154,13 +154,13 @@ fooContext.VariableEnvironment = {
 
 ## Identifier Resolution (aka. 스코프 체인 검색(Scope chain lookup))
 
-클로저를 이해하기 전에 실행 컨텍스트에서 스코프 체인이 생성되는 방식을 이해합시다. 앞에서 보았듯이 각 실행 컨텍스트는 Identifier Resolution에 사용되는 *LexicalEnvironment*가 있습니다. 컨텍스트에 대한 모든 로컬 바인딩은 environment record 테이블에 저장됩니다. 현재 environmentRecord에서 식별자가 조회되지 않으면 프로세스는 외부(상위) 환경 레코드 테이블로 계속 진행됩니다. 이 패턴은 식별자가 확인될 때까지 계속되며, 찾을 수 없으면 *ReferenceError*가 발생합니다.
+클로저를 이해하기 전에 실행 컨텍스트에서 스코프 체인이 생성되는 방식을 이해합시다. 앞에서 보았듯이 각 실행 컨텍스트는 Identifier Resolution에 사용되는 *LexicalEnvironment*가 있습니다. 컨텍스트에 대한 모든 로컬 바인딩은 environment record 테이블에 저장됩니다. 현재 environmentRecord에서 식별자가 조회되지 않으면 프로세스는 외부(부모) 환경 레코드 테이블로 계속 진행됩니다. 이 패턴은 식별자가 확인될 때까지 계속되며, 찾을 수 없으면 *ReferenceError*가 발생합니다.
 
 이것은 prototype lookup chain과 매우 유사합니다. 이제 여기서 기억해야 할 핵심은 *LexicalEnvironment*가 컨텍스트 생성 단계에서 외부 바인딩을 어휘적으로(정적으로) 캡처하고 실행 중인 컨텍스트에서 그대로 사용한다는 것입니다. (실행 단계).
 
 ## 클로저
 
-이전 섹션에서 함수 생성 단계에서 내부 컨텍스트의 *LexicalEnvironment*에 외부 바인딩을 정적으로 저장하면 함수가 나중에 활성화되는지 여부에 관계없이 클로저가 발생한다는 것을 보았 습니다. 예를 들면 다음과 같습니다.
+이전 섹션에서 함수 생성 단계에서 내부 컨텍스트의 *LexicalEnvironment*에 외부 바인딩을 정적으로 저장하면 함수가 나중에 활성화되는지 여부에 관계없이 클로저가 발생한다는 것을 보았습니다. 예를 들면 다음과 같습니다.
 
 ### 예제 1
 
