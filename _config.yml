@@ -91,9 +91,9 @@ tipue_search:
       tags: []
 
 # Friends
-friends: [
-    {
-        title: "Haru",
-        href: "https://toitoitoi79.tistory.com/"
-    },
-]
+# friends: [
+#     {
+#         title: "Haru",
+#         href: "https://toitoitoi79.tistory.com/"
+#     },
+# ]
