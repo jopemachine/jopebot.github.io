@@ -17,6 +17,10 @@ last-update: November 17, 2022
 
 # 오픈소스 컨트리뷰션 아카데미 2022 참가 후기 (RustPython 팀)
 
+<!-- ## 프로그램 참가 이유
+
+개인적으로 오픈 소스 -->
+
 ## RustPython을 선택한 이유
 
 사실 개인적으로 참가 신청할 당시에는 RustPython 팀에 참가해 보게 될 것이라고는 전혀 생각하지 못했다.
@@ -53,13 +57,13 @@ CPython의 새 기능을 포팅하는 일은 경우에 따라 작업 양이 크�
 
 최종 발표 영상은 아래 유튜브 링크에서 다시 볼 수 있다. RustPython 팀 발표자님께서 너무 발표를 잘 해 주셔서 더 좋은 결과가 있지 않았나 싶다.
 
-https://www.youtube.com/watch?v=LyYXwuAD6_w
+[https://www.youtube.com/watch?v=LyYXwuAD6_w](https://www.youtube.com/watch?v=LyYXwuAD6_w)
 
 ## 수상
 
 팀원 분들이 모두 열심히 참여해주셨고, 결과적으로 좋은 결과를 받을 수 있었다.
 
-오픈소스 활동 결과는 [해당 링크](https://github.com/RustPython/RustPython/pulls?q=is%3Apr+is%3Aopen+label%3Azca-2022)에서 볼 수 있다.
+오픈소스 활동 결과는 [Github 링크](https://github.com/RustPython/RustPython/pulls?q=is%3Apr+is%3Aopen+label%3Azca-2022)에서 볼 수 있다.
 
 ![](/img/posts/Review/2022-11-17-OSSCA-Review/20221014164159008929b38f2acb7872840eaaa961f64f2467a1f2.png)
 
