@@ -59,14 +59,6 @@ const handleCreate = (selectedFilePath) => {
   ) {
     handleCreate(config.get('last-selection'));
   } else {
-    inquirer.prompt([
-      {
-        type: 'confirm',
-        name: 'yes',
-        message: 'Writing ' + path.basename(config.get('last-selection'))
-      }
-    ]);
-
     handleCreate((await inquirer.prompt([
       {
         root: postRootPath,
