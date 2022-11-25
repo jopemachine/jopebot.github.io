@@ -1,13 +1,14 @@
 ---
 layout: post
 title: 오픈소스 컨트리뷰션 아카데미 2022 참가 후기 (RustPython 팀)
-subtitle: 리뷰
+subtitle: 후기
 author: jopemachine
 tags:
   - OSSCA
+  - Review
 header-img: img/header-img/study.jpg
 header-mask: 0.3
-last-update: November 18, 2022
+last-update: November 25, 2022
 ---
 
 # [오픈소스 컨트리뷰션 아카데미 (OSSCA)](https://www.oss.kr/contribution_academy)란?
@@ -78,7 +79,11 @@ CPython의 새 기능을 포팅하는 일은 경우에 따라 작업 양이 크�
 
 <!-- ## 사연 있는 코드 -->
 
-<!-- ## 굿즈 -->
+## 굿즈
+
+OSSCA 최종 수료를 마친 멘티들에게 귀여운 굿즈를 나눠 주셨다.
+
+![](/img/posts/Review/2022-11-17-OSSCA-Review/IMG_3460.png)
 
 ## 인턴십
 
