@@ -17,8 +17,8 @@ RSS: false
 #weibo_username:     jopemachine
 #zhihu_username:     jopemachine
 github_username:    jopemachine
-#twitter_username:   jopemachine
-#facebook_username:  jopemachine
+twitter_username:   jopemachine
+facebook_username:  jopemachine
 linkedin_username:  gyu-bong-lee-a1a76b197
 
 # Build settings
