@@ -16,6 +16,8 @@ last-update: December 20, 2022
 
 해당 포스팅은 [Raft 논문 - In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)을 개인적인 공부 목적으로 번역하고 정리한 것이다.
 
+해당 포스팅의 본문의 순서는 논문의 순서와 일치하지 않을 수 있다.
+
 <!-- [aioraft-ng](https://github.com/lablup/aioraft-ng)에 Log replication, Membership change 기능을 추가 구현하기 위해 해당 논문을 공부해보게 되었다. -->
 
 계속 공부하면서 업데이트 중...
@@ -122,9 +124,11 @@ Raft는 heartbeat이라는 메커니즘을 통해 리더를 선출한다. 서버
 
 후보자는 아래 세 가지 일들 중 하나가 일어날 때 까지 후보자 상태를 유지한다.
 
-1) 해당 후보자가 선거에 승리해 리더가 됨.
-2) 다른 후보자가 리더로 선출됨.
-3) 선거 시간이 끝났지만 어떤 서버도 리더로 선출되지 못함.
+1. 해당 후보자가 선거에 승리해 리더가 됨.
+
+2. 다른 후보자가 리더로 선출됨.
+
+3. 선거 시간이 끝났지만 어떤 서버도 리더로 선출되지 못함.
 
 후보자는 클러스터 내 같은 `term` 값을 가진 다수의 서버들에게 투표를 받게 되면 리더로 선출된다. 리더로 선출된 후엔 추가적인 선거를 방지하기 위해 다른 모든 서버들에게 heartbeat를 보낸다.
 
@@ -174,7 +178,7 @@ Raft는 커밋된 로그 엔트리들에 안전함, 견고함을 보장하며, �
 
 ### Log Matching Property
 
-래프트 로그 메커니즘은 서로 다른 서버들 사이에 높은 응집성을 갖도록 설계되었다. 이 점은 단지 시스템의 행동을 단순화하고 예측 가능하게 만들어 줄 뿐 아니라, 안정성을 보장해주는 중요한 요인이다.
+래프트 로그 메커니즘은 서버들 간에 높은 응집성을 갖도록 설계되었다. 이 점은 단지 시스템의 행동을 단순화하고 예측 가능하게 만들어 줄 뿐 아니라, 안정성을 보장해주는 중요한 요인이다.
 
 Raft는 아래 특징들을 보장함으로써, **Log Matching Property**가 가능하도록 만들어준다.
 
@@ -184,7 +188,7 @@ Raft는 아래 특징들을 보장함으로써, **Log Matching Property**가 가
 
 첫 번째 성질은 리더가 주어진 로그 인덱스와 `term`에 대해 기껏해야 1개의 엔트리를 만들어내며, 로그 엔트리들은 절대 그들의 위치를 바꾸지 않는다는 점에서 유도할 수 있다.
 
-두 번째 성질은 `AppendEntries` RPC를 수행할 때 간단한 일관성 검사를 수행함으로써 만족될 수 있다. `AppendEntries` RPC를 보낼 때 리더는 새 엔트리의 바로 앞 엔트리의 인덱스 및 `term` 값을 포함시킨다. 팔로워가 그들의 로그에서 같은 인덱스와 `term` 값을 갖는 엔트리를 찾지 못하면 해당 `AppendEntries` RPC는 거절된다. 이 일관성 검사가 `Log Matching Property`를 유도한다.
+두 번째 성질은 `AppendEntries` RPC를 수행할 때 간단한 *일관성 검사*를 수행함으로써 만족될 수 있다. `AppendEntries` RPC를 보낼 때 리더는 새 엔트리의 바로 앞 엔트리의 인덱스 및 `term` 값을 포함시킨다. 팔로워가 그들의 로그에서 같은 인덱스와 `term` 값을 갖는 엔트리를 찾지 못하면 해당 `AppendEntries` RPC는 거절된다. 이 일관성 검사가 `Log Matching Property`를 유도한다.
 
 로그의 초기 상태는 `Log Matching Property`를 만족한다. 그리고 위 일관성 검사에 의해 로그가 늘어날 때 마다 `Log Matching Property`가 보존된다. 결과적으로 `AppendEntries`가 성공적으로 리턴될 때 마다 리더는 각 팔로워들의 로그가 자신의 로그와 추가된 새 엔트리 항목까지 동일할 것이라는 것을 알 수 있다.
 
@@ -228,9 +232,9 @@ Raft는 대부분의 서버들이 가용중인 한 새로운 로그 엔트리들
 
 이 정보들로, 리더는 `nextIndex`를 해당 `term`에 해당하는 모든 충돌 엔트리들을 건너뛰도록 조정 할 수 있다.
 
-이런 최적화를 통해 한 개의 RPC로 한 개의 엔트리를 건너뛰는 것에서 해당 `term`에 해당하는 엔트리들을 모두 건너뛰도록 최적화 할 수 있다.
+이런 최적화를 통해 한 개의 RPC로 한 개의 엔트리를 건너뛰는 것에서 해당 `term`에 해당하는 엔트리들을 모두 건너뛰는 방식으로 최적화 할 수 있다.
 
-실제 시스템에서 장애는 이렇게 빈번하게 일어나지 않고, 여러 엔트리에 비일관성이 나타날 가능성이 희박하기 때문에 이러한 최적화가 필요한 것인지는 의문이다.
+다만 실제 시스템에서 장애는 이렇게 빈번하게 일어나지 않고, 여러 엔트리에 비일관성이 나타날 가능성이 희박하기 때문에 이러한 최적화가 필요한 것인지는 의문이다.
 
 ## 안정성 보장
 
@@ -385,3 +389,108 @@ C_new까지 커밋되고 나면 구식 설정은 무관한 설정으로 간주�
 이것은 각 서버들이 선거를 시작하기 전 적어도 `Minimum election timeout` 동안 기다리기 때문에, 일반적인 선거에 영향을 끼치지 않는다.
 
 그러나 이것은 제거된 서버들로부터의 방해를 피하도록 도와준다: 만약 리더가 클러스터에 heartbeat를 가져올 수 있다면, 더 큰 `term` 값에 의해 제거되지 않을 것이다.
+
+## Log compaction
+
+WIP
+
+## 알고리즘 구현 요약
+
+### 상태
+
+#### 모든 서버들의 상태
+
+아래 상태들은 RPC에 응답하기 전 안정적 저장소에 업데이트 된다.
+
+- `currentTerm`: 서버가 관측했던 가장 최신의 term값.
+- `votedFor`: 현재 term에서 투표한 후보자의 Id. 없는 경우 null.
+- `log`: 로그 엔트리들의 배열. 각 로그 엔트리들은 상태 머신을 위한 명령어 및 엔트리가 리더에게 수신되었을 때의 term 값을 포함하고 있다.
+
+#### 모든 서버들의 휘발성 상태
+
+- `commitIndex`: 커밋된 것으로 알려진 로그 엔트리들 중 가장 높은 인덱스 값.
+- `lastApplied`: 상태 머신에 적용된 로그들 중 가장 높은 인덱스 값.
+
+#### 리더의 휘발성 상태
+
+아래 상태들은 리더 선거 이후 재초기화 된다.
+
+- `nextIndex`: 각각의 서버에 대해 갖고 있는, 다음에 보내줘야 하는 로그 엔트리의 인덱스 값.
+- `matchIndex`: 각각의 서버들에 갖고 있는, 복제된 것으로 알려진 가장 높은 인덱스 값.
+
+### AppendEntries RPC
+
+로그 엔트리들을 복제하기 위해 리더에 의해 호출된다. 또한 heartbeat 목적으로도 사용된다.
+
+#### 인자 (Arguments)
+
+- `term`: 리더의 term 값.
+- `leaderId`: 리더에게 요청을 리다이렉트 할 수 있도록 전달해주어야 하는 리더의 Id 값.
+- `prevLogIndex`: 새 로그 엔트리 바로 앞 인덱스.
+- `prevLogTerm`: 새 로그 엔트리 바로 앞 엔트리(prevLogIndex 엔트리)의 term 값.
+- `entries`: 저장할 로그 엔트리들 (heartbeat인 경우 빈 배열.)
+- `leaderCommit`: 리더의 커밋 인덱스.
+
+#### 리턴 값 (Results)
+
+- `term`: 리더가 자기 자신을 업데이트 하기 위한 currentTerm 값.
+- `success`: 팔로워가 모든 매칭되는 prevLogIndex와 prevLogTerm을 포함할 경우 True.
+
+#### 구현
+
+1. term < currentTerm 인 경우 False를 리턴.
+2. 로그에 prevLogTerm과 매칭되는 prevLogIndex에 엔트리를 포함하고 있지 않은 경우 False를 리턴.
+3. 기존의 엔트리가 새로운 엔트리와 충돌(같은 인덱스를 갖지만 term이 다른 경우)을 일으키는 경우, 기존의 엔트리를 지운다.
+4. 로그에 존재하지 않는 모든 엔트리들을 더한다.
+5. leaderCommit > commitIndex인 경우, commitIndex 값을 `min(leaderCommit, 새 엔트리의 인덱스)`값으로 정한다.
+
+### RequestVote RPC
+
+투표를 위해 후보자에 의해 호출된다.
+
+#### 인자 (Arguments)
+
+- `term`: 후보자의 term 값.
+- `candidateId`: 투표를 요청하는 후보자의 Id.
+- `lastLogIndex`: 후보자의 마지막 로그 엔트리의 인덱스.
+- `lastLogTerm`: 후보자의 마지막 로그 엔트리의 term 값.
+
+#### 리턴 값 (Results)
+
+- `term`: 후보자가 자기 자신을 업데이트 하기 위한 currentTerm 값.
+- `voteGranted`: 후보자가 투표를 받았다면 True.
+
+#### 구현
+
+1. term < currentTerm 인 경우 False를 리턴.
+2. 만약 votedFor이 null이거나 candidateId이라면, 후보자의 로그는 적어도 수신자의 로그와 업데이트된 상태이고, 투표한다.
+
+### 서버들을 위한 규칙
+
+#### 모든 서버들
+
+- commitIndex > lastAppied인 경우, lastApplied를 증가시키고 상태 머신에 log[lastApplied]를 적용한다.
+- RPC 요청이나 응답에 포함된 term 값이 currentTerm보다 높은 경우, currentTerm을 term 값으로 설정하고 팔로워 상태로 돌아간다.
+
+#### 팔로워
+
+- 후보자와 리더들의 RPC에 응답한다.
+- election timeout 동안 리더와 후보자에게 AppendEntries 요청을 받지 못한 경우 후보자가 된다.
+
+#### 후보자
+
+- 후보자로 전환되면 아래 절차를 거쳐 선거를 시작한다
+1. currentTerm을 증가시킨다.
+2. 자기 자신에게 투표한다.
+3. 선거 타이머를 초기화한다.
+4. 다른 모든 서버들에게 RequestVote RPC를 보낸다.
+- 다수의 서버들에게 득표를 받게 되면 리더가 된다.
+- 리더에게 AppendEntries RPC를 받게 되면 팔로워가 된다.
+- Election timer만큼 시간이 지나면 새 투표를 시작한다.
+
+#### 리더
+
+- 선거를 마치자마자 각 서버들에게 비어 있는 AppendEntries RPC를 보내고, Idle 상태일 동안 election timeout을 막기 위해 지속적으로 heartbeat을 보낸다.
+- 만약 클라이언트에게 명령을 받게 되면, 엔트리를 로컬 로그에 추가하고, 상태 머신에 엔트리를 적용한 후 응답한다.
+- nextIndex 배열을 순회하며, last log index >= nextIndex[i]인 팔로워들에 대해 nextIndex에서 시작하는 로그 엔트리들의 배열을 AppendEntries로 보낸다. 성공하는 경우, 해당 팔로워의 nextIndex와 matchIndex를 업데이트 한다. 만약 AppendEntries가 로그 비일관성으로 인해 실패하는 경우, nextIndex를 낮추고 Retry 한다.
+- N > commitIndex, 대다수 서버들에 대해 matchIndex[i] >= N, log[N].term == currentTerm을 만족하는 N이 존재하는 경우, commitIndex에 N을 대입한다.
