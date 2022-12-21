@@ -8,12 +8,10 @@ tags:
   - Security
 header-img: img/header-img/security.jpg
 header-mask: 0.3
-last-update: December 21, 2022
+last-update: December 22, 2022
 ---
 
-# [Backend.AI Jail](https://github.com/lablup/backend.ai-jail) 삽질 / 디버깅 경험기
-
-비록 아직 `Backend.AI Jail`에 대해 모두 이해하진 못했지만, 내 이해를 토대로 간단하게 설명하면 `Backend.AI Jail`은 시스템 콜을 후킹해 특정 시스템 콜이 호출되었을 때 로그를 남기거나, 아예 프로세스를 종료시켜 버리도록 만들어주는 샌드박스이다.
+비록 아직 [Backend.AI Jail](https://github.com/lablup/backend.ai-jail)에 대해 모두 이해하진 못했지만, 내 이해를 토대로 간단하게 설명하면 `Backend.AI Jail`은 시스템 콜을 후킹해 특정 시스템 콜이 호출되었을 때 로그를 남기거나, 아예 프로세스를 종료시켜 버리도록 만들어주는 샌드박스이다.
 
 좀 더 자세한 (그리고 정확한) 내용은 해당 [ppt](https://files.speakerdeck.com/presentations/e2f4e4e1127d4f478406d53c7af9428a/SPARCS_TeaParty_-_SornaJail.pdf)를 참고하면 좋을 것 같다.
 
@@ -149,7 +147,7 @@ exit_group: 1
 
 위 시스템 콜들과 Default policy의 Allowed list를 대조해 본 결과, 이 중 4개의 시스템 콜이 Allowed list에 명시되어 있지 않다는 것을 확인할 수 있었고, 단지 이것들을 추가해주니 Jail에서 python이 실행되지 않는 문제를 간단히 해결할 수 있었다! 🎊
 
-## `seccomp` Default policy 업데이트 자동화
+### `seccomp` Default policy 업데이트 자동화
 
 문제의 발생한 근본적인 원인은 결국 시간이 지나면서 seccomp의 Default policy 시스템 콜 Allowed list가 노후화 되었었다는 것이었고, 나중에 같은 이유로 또 알 수 없는 에러 메세지로 실패하는 것을 방지하기 위해, Github action을 통해 [docker seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json)을 가져와 자동으로 업데이트 하도록 변경했다.
 
