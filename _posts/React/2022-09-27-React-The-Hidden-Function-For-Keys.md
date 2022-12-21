@@ -10,7 +10,7 @@ tags:
   - Translation
 header-img: img/header-img/react.png
 header-mask: 0.3
-last-update: October 04, 2022
+last-update: December 22, 2022
 ---
 
 # 번역 - React — The hidden function for keys
@@ -35,7 +35,7 @@ React가 당신에게 화를 내지 않도록, 리스트들에 `key`를 전달�
 
 당신은 서로 다른 레벨에 있는 **동일한** `key` 값들을 줄 수 있습니다. (심지어 동일한 컴포넌트 내에서도요.)
 
-```js
+```jsx
 function ThisIsOk(){
   return (
     <div key="this is ok!">
