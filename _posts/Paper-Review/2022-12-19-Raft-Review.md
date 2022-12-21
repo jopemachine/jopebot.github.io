@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raft 논문 번역 및 정리
+title: Raft Paper (In Search of an Understandable Consensus Algorithm) 번역 및 정리
 subtitle: Paper Study
 author: jopemachine
 tags:
@@ -11,6 +11,8 @@ header-img: img/header-img/network.jpg
 header-mask: 0.3
 last-update: December 20, 2022
 ---
+
+# Raft Paper 스터디
 
 해당 포스팅은 [Raft 논문 - In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)을 개인적인 공부 목적으로 번역하고 정리한 것이다.
 

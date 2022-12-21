@@ -11,7 +11,7 @@ header-mask: 0.3
 last-update: December 22, 2022
 ---
 
-## Backend.AI Jail이란?
+# Backend.AI Jail이란?
 
 비록 아직 [Backend.AI Jail](https://github.com/lablup/backend.ai-jail)에 대해 모두 이해하진 못했지만, 내 이해를 토대로 간단하게 설명하면 `Backend.AI Jail`은 시스템 콜을 후킹해 특정 시스템 콜이 호출되었을 때 로그를 남기거나, 아예 프로세스를 종료시켜 버리도록 만들어주는 샌드박스이다.
 
