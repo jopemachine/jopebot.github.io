@@ -9,7 +9,7 @@ tags:
   - Distributed System
 header-img: img/header-img/network.jpg
 header-mask: 0.3
-last-update: December 20, 2022
+last-update: December 22, 2022
 ---
 
 # Raft Paper 스터디
