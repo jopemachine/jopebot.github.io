@@ -594,8 +594,12 @@ Raft는 로그 사용 없이 이것을 보장하기 위해 두 가지 추가적�
 7. 전체 로그를 삭제.
 8. 스냅샷 컨텐츠를 사용해 상태 머신을 리셋. (그리고 스냅샷의 클러스터 설정을 로드)
 
-## 참고 링크
+## 관련 링크
+
+- [Paxos보다 쉬운 Raft Consensus](https://medium.com/curg/raft-consensus-%EC%9D%B4%ED%95%B4-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%97%AC%EC%A0%95-f7ecb9f450ab)
 
 - [분산 시스템의 내결함성을 높이는 뗏목 합의 알고리즘(Raft Consensus Algorithm)과 정족수(Quorum) 개념 알아보기](https://seongjin.me/raft-consensus-algorithm/)
 
 - [Raft 알고리즘의 성능 향상을 위한 연합학습 기반 지도자 선출 기법](https://journal-home.s3.ap-northeast-2.amazonaws.com/site/2020kics/presentation/0407.pdf)
+
+- [The Secret Lives of Data](http://thesecretlivesofdata.com/raft/)
