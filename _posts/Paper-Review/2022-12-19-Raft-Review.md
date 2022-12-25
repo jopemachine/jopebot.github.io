@@ -426,7 +426,7 @@ Raft는 또한 스냅샷에 작은 양의 메타 데이터를 포함시킨다.
 
 `Cluster Membership change`를 위해, 스냅샷은 로그안에 마지막으로 포함된 인덱스의 최신 설정도 포함한다.
 
-서버가 스냅샷을 모두 쓰고난 후엔 last included index까지의 모든 로그 엔트리들과 이전 스냅샷들을 제거할 수 있다.
+서버가 스냅샷을 모두 쓰고난 후엔 `Last included index`까지의 모든 로그 엔트리들과 이전 스냅샷들을 제거할 수 있다.
 
 ### 스냅샷 동기화 문제
 
@@ -567,7 +567,7 @@ Raft는 로그 사용 없이 이것을 보장하기 위해 두 가지 추가적�
 
 #### 모든 서버들
 
-- `commitIndex` > `lastAppied`인 경우, `lastApplied`를 증가시키고 상태 머신에 log[lastApplied]를 적용한다.
+- `commitIndex` > `lastAppied`인 경우, `lastApplied`를 증가시키고 상태 머신에 `log[lastApplied]`를 적용한다.
 - RPC 요청이나 응답에 포함된 `term` 값이 `currentTerm`보다 높은 경우, `currentTerm`을 `term` 값으로 설정하고 팔로워 상태로 돌아간다.
 
 #### 팔로워
@@ -614,7 +614,7 @@ Raft는 로그 사용 없이 이것을 보장하기 위해 두 가지 추가적�
 #### InstallSnapshot 구현
 
 1. `term` < `currentTerm`인 경우 즉시 응답.
-2. 만약 첫 번째 청크라면 (오프셋이 0) 새 스냅샷을 생성
+2. 만약 첫 번째 청크라면 (오프셋이 0) 새 스냅샷을 생성.
 3. 주어진 오프셋에서 스냅샷으로 데이터를 씀.
 4. 응답하고, 만약 `done`이 False인 경우 더 많은 데이터 청크를 기다림.
 5. 스냅샷을 저장. 기존에 존재하는 인덱스가 작은 부분들은 모두 삭제.
