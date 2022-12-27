@@ -54,16 +54,6 @@ Raft는 다른 분산 시스템 알고리즘들과 비슷하게 작동하지만 
 
 ![](/img/posts/Paper-Review/2022-12-19-Raft-Review/1.png)
 
-### 합의 알고리즘으로서 만족해야 하는 조건들
-
-합의 알고리즘은 전형적으로 다음의 조건들을 만족해야 한다.
-
-- 모든 [*Non-Byzantine* 조건](https://ko.wikipedia.org/wiki/%EB%B9%84%EC%9E%94%ED%8B%B0%EC%9B%80_%EC%9E%A5%EC%95%A0_%ED%97%88%EC%9A%A9)에서 안전성을 보장해야 한다. (예를 들어, 네트워크 패킷 딜레이, 패킷 로스, 파티션, 중복, reordering 등...)
-
-- 다수의 서버들이 운용되고 있는 한, Fully functional available 해야 하며, 각각의 서버들은 클라이언트와 통신할 수 있어야 한다.
-
-- 로그의 일관성을 보장하기 위해 타이밍에 의존하면 안 된다. 잘못된 타이밍 설정은 지연을 유발하거나 최악의 경우 가용성 문제를 일으킬 수 있다.
-
 ## 서버의 상태
 
 - 특정 시각에 서버들은 `Leader`(리더), `Follower`(팔로워), `Candidate`(후보자) 셋 중 하나의 상태에 속하게 된다.
@@ -92,7 +82,7 @@ Raft는 다른 분산 시스템 알고리즘들과 비슷하게 작동하지만 
 
 ## Raft 구현에 사용되는 RPC
 
-- 기본적인 Raft 알고리즘에서의 서버들의 통신에는 오직 `AppendEntries`(AE), `RequestVote`(RV)라는 두 종류의 RPC만 필요하다. `AppendEntries`는 리더가 로그 엔트리들을 복제하도록 만들고, heartbeat를 위해 필요하다.
+- 기본적인 Raft 알고리즘에서의 서버들의 통신에는 오직 `AppendEntries`(*AE*), `RequestVote`(*RV*)라는 두 종류의 RPC가 필요하다.
 
 - 만약 RPC가 타임 아웃되면 재요청(Retry)하게 되며 최적의 성능을 위해 RPC를 병렬로 요청한다.
 
@@ -541,7 +531,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 #### AppendEntries 구현
 
 1. `term` < `currentTerm` 인 경우 *False*를 리턴.
-2. 로그 `prevLogIndex` 엔트리가 `prevLogTerm`에 매칭되지 않는 경우 *False*를 리턴.
+2. `prevLogIndex`의 로그 엔트리가 `prevLogTerm`에 매칭되지 않는 경우 *False*를 리턴.
 3. 기존의 엔트리가 새로운 엔트리와 충돌(같은 인덱스인데 `term` 값이 다른 경우)을 일으키는 경우, 기존의 엔트리를 지운다.
 4. 기존 로그에 존재하지 않는 모든 새 엔트리들을 추가한다.
 5. `leaderCommit` > `commitIndex`인 경우 `commitIndex` 값을 `min(leaderCommit, 새 엔트리의 인덱스)`값으로 정한다.
