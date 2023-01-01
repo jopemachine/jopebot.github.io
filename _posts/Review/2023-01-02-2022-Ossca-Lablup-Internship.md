@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lablup Internship 후기 / 회고
+title: 2022 Lablup Internship 후기 / 회고
 subtitle: 인턴십 회고
 author: jopemachine
 tags:
