@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lablup Internship 후기 / 회고
-subtitle: 2022 OSSCA 인턴십
+subtitle: 인턴십 회고
 author: jopemachine
 tags:
   - OSSCA
