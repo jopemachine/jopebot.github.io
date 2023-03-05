@@ -9,7 +9,7 @@ tags:
   - Distributed System
 header-img: img/header-img/network.jpg
 header-mask: 0.3
-last-update: December 27, 2022
+last-update: March 06, 2023
 ---
 
 # In Search of an Understandable Consensus Algorithm 번역 및 스터디
@@ -17,10 +17,6 @@ last-update: December 27, 2022
 해당 포스팅은 [Raft 논문 - In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)을 개인적인 공부 목적으로 번역하고 정리한 것이다.
 
 포스팅 내 본문의 순서는 논문의 순서와 일치하지 않을 수 있다.
-
-<!-- [aioraft-ng](https://github.com/lablup/aioraft-ng)에 Log replication, Membership change 기능을 추가 구현하기 위해 해당 논문을 공부해보게 되었다. -->
-
-계속 공부하면서 업데이트 중...
 
 ## Raft란?
 
