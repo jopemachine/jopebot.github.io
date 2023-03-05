@@ -71,9 +71,9 @@ CPython의 새 기능을 포팅하는 일은 경우에 따라 작업 양이 크�
 
 ### 수상
 
-팀원 분들이 모두 열심히 참여해주셨고, 결과적으로 대상 수상이란 좋은 결과를 받을 수 있었다.
+팀원 분들이 모두 열심히 참여해주셔서 너무나 감사하게도 결과적으로 대상 수상이란 좋은 결과를 받을 수 있었다.
 
-팀원분 들의 오픈소스 활동 결과는 [해당 Github 링크](https://github.com/RustPython/RustPython/pulls?q=is%3Apr+is%3Aopen+label%3Azca-2022)에서 볼 수 있다.
+해당 프로그램 기간 내에서 진행되었던 팀원 분들의 오픈소스 활동 결과는 [해당 Github 링크](https://github.com/RustPython/RustPython/pulls?q=is%3Apr+is%3Aopen+label%3Azca-2022)에서 확인할 수 있다.
 
 ![](/img/posts/Review/2022-11-17-OSSCA-Review/IMG_3633.JPG)
 
