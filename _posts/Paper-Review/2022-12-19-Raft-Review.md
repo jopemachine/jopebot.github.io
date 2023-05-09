@@ -461,7 +461,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 아래 상태들은 RPC에 응답하기 전 안정적 저장소에 업데이트 된다.
 
 - `currentTerm`: 서버가 관측했던 가장 최신의 `term`값.
-- `votedFor`: 현재 `term`에서 투표한 후보자의 Id. 없는 경우 *null*.
+- `votedFor`: `currentTerm`에서 투표한 후보자의 Id. 없는 경우 *null*.
 - `log[]`: 로그 엔트리들의 배열. 각 로그 엔트리들은 상태 머신을 위한 명령어 및 엔트리가 리더에게 수신되었을 때의 `term` 값을 포함하고 있다.
 
 #### 모든 서버들의 휘발성(volatile) 상태
@@ -504,7 +504,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 - 선거를 마치자마자 각 서버들에게 비어 있는 `AppendEntries` RPC를 호출하고, Idle 상태일 동안 `Election timeout`을 막기 위해 지속적으로 heartbeat을 보낸다.
 - 만약 클라이언트에게 명령을 받게 되면 엔트리를 로컬 로그에 추가하고, 상태 머신에 엔트리를 적용한 후 응답한다.
 - `nextIndex[]` 배열을 순회하며 `last log index >= nextIndex[i]`인 팔로워들에 대해 `nextIndex`에서 시작하는 로그 엔트리들의 배열을 `entries` 인자에 넘겨 `AppendEntries` RPC를 호출한다. 성공하는 경우 해당 팔로워의 `nextIndex`, `matchIndex`를 업데이트 한다. 만약 `AppendEntries`가 로그 비일관성으로 인해 실패한다면 `nextIndex`를 낮추고 Retry 요청을 보낸다.
-- `N > commitIndex`, 대다수 서버들(Majority)에 대해 `matchIndex[i] >= N`, `log[N].term == currentTerm`을 만족하는 `N`이 존재하는 경우, `commitIndex`에 `N`을 대입한다.
+- `N > commitIndex`, 대다수 서버들(*Majority*)에 대해 `matchIndex[i] >= N`, `log[N].term == currentTerm`을 만족하는 `N`이 존재하는 경우, `commitIndex`에 `N`을 대입한다.
 
 ### AppendEntries RPC
 
@@ -539,7 +539,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 #### RequestVote 인자 (Arguments)
 
 - `term`: 후보자의 `term` 값.
-- `candidateId`: 투표를 요청하는 후보자의 Id.
+- `candidateId`: 투표를 요청하는 후보자의 `id`.
 - `lastLogIndex`: 후보자의 마지막 로그 엔트리의 인덱스.
 - `lastLogTerm`: 후보자의 마지막 로그 엔트리의 `term` 값.
 
@@ -580,7 +580,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 5. 스냅샷을 저장. 기존에 존재하는 인덱스가 작은 부분들은 모두 삭제.
 6. 기존 로그 엔트리의 인덱스 및 `term`이 스냅샷의 인덱스 및 `term`과 동일하다면 로그에 마지막으로 포함된 엔트리와 해당 엔트리 뒤의 로그 엔트리들을 유지하고 응답.
 7. 전체 로그를 삭제.
-8. 스냅샷 컨텐츠를 사용해 상태 머신을 리셋. (그리고 스냅샷의 클러스터 설정을 로드)
+8. 스냅샷을 사용해 상태 머신을 리셋. (그리고 스냅샷의 클러스터 설정을 로드)
 
 ## 관련 링크
 
