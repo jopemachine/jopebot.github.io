@@ -14,10 +14,6 @@ last-update: April 07, 2024
 
 # In Search of an Understandable Consensus Algorithm 번역 및 스터디
 
-해당 포스팅은 [Raft 논문 - In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)을 개인적인 공부 목적으로 번역하고 정리한 것이다.
-
-포스팅 내 본문의 순서는 논문의 순서와 일치하지 않을 수 있다.
-
 ## Raft란?
 
 [Raft](https://raft.github.io/)는 tikv, etcd, MongoDB 등 다양한 분산 시스템에서 사용되는 실용적인 [합의 알고리즘](https://ko.wikipedia.org/wiki/%ED%95%A9%EC%9D%98_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99))이다.
@@ -36,7 +32,7 @@ Raft는 다른 분산 시스템 알고리즘들과 비슷하게 작동하지만 
 
 - `Strong Leader`: Raft는 다른 합의 알고리즘들에 비해 리더에게 더 많은 권한을 부여한다. 예를 들어 로그 엔트리들은 리더에서 다른 팔로워 서버들로 단방향으로 흐르게 된다. 이러한 단방향 흐름은 복제된 로그들을 관리하기 수월하고 이해하기 쉽게 만들어준다.
 
-- `Leader Selection`: Raft는 리더를 선출할 때 무작위 타이머를 사용한다. 무작위 타이머는 아주 약간의 구현 추가로 충돌 문제를 단순하고 빠르게 해결해준다.
+- `Leader Election`: Raft는 리더를 선출할 때 무작위 타이머를 사용한다. 무작위 타이머는 아주 약간의 구현 추가로 충돌 문제를 단순하고 빠르게 해결해준다.
 
 - `Membership Changes`: Raft의 메커니즘은 클러스터 내 서버들을 변경할 때, 업데이트 기간 동안 서로 다른 설정들이 overlap 되는 `Joint consensus`라는 새로운 접근 방식을 사용한다. 이러한 접근 방식은 클러스터가 운영 중일 동안 설정 업데이트를 가능하도록 만들어준다.
 
