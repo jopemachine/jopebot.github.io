@@ -252,7 +252,7 @@ Raft는 두 로그 중 어떤 로그가 최신인지를 `index` 및 로그 마�
 
 Raft는 리더가 이전 `term`의 엔트리들을 복제할 때 원래 `term` 값을 유지하도록 만들기 때문에 커밋 규칙에 이런 추가적인 복잡성이 유발된다.
 
-#### 안정성 증명 (Safety Argument)
+### 안정성 증명 (Safety Argument)
 
 여기서는 `Leader Completeness`가 False라고 가정한 후 모순을 증명한다.
 
