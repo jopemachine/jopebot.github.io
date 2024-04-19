@@ -446,7 +446,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 
 2. 리더는 읽기 전용 요청을 처리하기 전에 해당 요청이 폐기된 요청인지 확인해야 한다. (새로운 리더가 선출되었을 경우 해당 요청은 폐기되어야 한다.) Raft는 이것을 리더가 읽기 전용 요청에 응답하기 전 heartbeat 메세지를 클러스터 내 다수의 서버들(*Majority*)과 교환하게 만들어 처리한다.
 
-## Raft 알고리즘 구현 요약
+## Raft 알고리즘 구현
 
 ### 상태 (States)
 
@@ -518,7 +518,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 - `term`: 리더를 업데이트 하기 위한 `currentTerm` 값.
 - `success`: 팔로워가 `prevLogIndex`, `prevLogTerm`에 매칭되는 엔트리를 포함할 경우 *True*.
 
-#### AppendEntries 구현
+#### AppendEntries 메시지 수신부 구현
 
 1. `term` < `currentTerm` 인 경우 *False*를 리턴.
 2. `prevLogIndex`의 로그 엔트리가 `prevLogTerm`에 매칭되지 않는 경우 *False*를 리턴.
@@ -542,7 +542,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 - `term`: 후보자를 업데이트 하기 위한 `currentTerm` 값.
 - `voteGranted`: 후보자가 표를 받았다면 *True*.
 
-#### RequestVote 구현
+#### RequestVote 메시지 수신부 구현
 
 1. `term` < `currentTerm` 인 경우 *False*를 리턴.
 2. 만약 `votedFor`이 *null*이거나 `candidateId`이라면 후보자의 로그는 적어도 수신자의 로그와 업데이트된 상태이며, 투표한다.
@@ -565,7 +565,7 @@ Raft는 로그를 쓸 필요 없이 이것을 보장하기 위해 아래 두 가
 
 - `term`: 리더를 업데이트 하기 위한 `currentTerm` 값.
 
-#### InstallSnapshot 구현
+#### InstallSnapshot 메시지 수신부 구현
 
 1. `term` < `currentTerm`인 경우 즉시 응답.
 2. 만약 첫 번째 청크라면 (오프셋이 0) 새 스냅샷을 생성.
