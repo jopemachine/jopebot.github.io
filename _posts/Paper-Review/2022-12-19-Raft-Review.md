@@ -12,7 +12,7 @@ header-mask: 0.3
 last-update: April 07, 2024
 ---
 
-# In Search of an Understandable Consensus Algorithm 번역 및 스터디
+# In Search of an Understandable Consensus Algorithm 번역 및 정리
 
 ## Raft란?
 
