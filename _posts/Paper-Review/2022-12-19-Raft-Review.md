@@ -78,7 +78,7 @@ Raft는 다른 분산 시스템 알고리즘들과 비슷하게 작동하지만 
 
 - 만약 RPC가 타임 아웃되면 재요청(Retry)하게 되며 최적의 성능을 위해 RPC를 병렬로 요청한다.
 
-## Key Safety Properties
+## Safety Properties
 
 Raft는 아래와 같은 성질들이 항상 성립됨을 보장한다.
 
@@ -90,7 +90,7 @@ Raft는 아래와 같은 성질들이 항상 성립됨을 보장한다.
 
 - `Leader Completeness`: 만약 한 로그 엔트리가 어떤 `term` 값에 커밋된다면 해당 엔트리는 더 높은 `term` 값들을 갖는 리더들의 로그에 존재하게 될 것이다.
 
-- `Safety Machine Safety`: 어떤 서버가 로그 엔트리를 주어진 `index`에 그 서버의 상태 머신에 적용할 경우 다른 서버들은 같은 `index`에 다른 로그 엔트리를 적용할 수 없다.
+- `State Machine Safety`: 어떤 서버가 로그 엔트리를 주어진 `index`에 상태 머신에 적용할 경우 다른 서버들은 해당 `index`에 다른 로그 엔트리를 적용할 수 없다. 해당 Property는 Raft의 안정성을 위한 Key Property이다.
 
 ## 리더 선출 (Leader Election)
 
@@ -252,9 +252,32 @@ Raft는 두 로그 중 어떤 로그가 최신인지를 `index` 및 로그 마�
 
 Raft는 리더가 이전 `term`의 엔트리들을 복제할 때 원래 `term` 값을 유지하도록 만들기 때문에 커밋 규칙에 이런 추가적인 복잡성이 유발된다.
 
-#### 관련 성질들의 증명 (Safety Argument)
+#### 안정성 증명 (Safety Argument)
 
-참고: 5.4.3절에서 귀류법을 통해 `Leader Completeness`가 성립함을 증명하며, `Leader Completeness`를 통해 `State Machine Safety Property`도 증명할 수 있다고 한다.
+여기서는 `Leader Completeness`가 False라고 가정한 후 모순을 증명한다.
+
+리더가 term T 에서 로그 엔트리를 커밋했고, 해당 로그 엔트리가 미래의 term U에서 리더에 저장되지 않았다고 가정해보자. (term T의 리더를 leaderT, term U의 리더를 leaderU라고 지칭)
+
+1. 리더는 결코 엔트리들을 지우거나 덮어쓰지 않으므로 해당 로그 엔트리는 leaderU의 로그에 누락되어 있어야 한다.
+2. leaderT는 클러스터 대다수에 로그를 복제했고 leaderU는 클러스터 대다수에서 투표를 받았다. 따라서 **적어도 한 노드(voter)는 leaderT로 부터 로그 엔트리를 받아들이고 leaderU에 투표했을 것이다.** 이 voter가 모순에 도달하는 키이다.
+
+![](/img/posts/Paper-Review/2022-12-19-Raft-Review/9.jpeg)
+
+3. 투표자는 leaderU에 투표하기 전에 leaderT로부터 커밋된 엔트리를 받아들였어야 한다. 그렇지 않았다면 투표자의 term이 T 보다 높기 때문에 leaderT의 AppendEntries 요청이 거절되었을 것이다.
+4. 투표자는 leaderU에 투표할 때 까지 해당 로그 엔트리를 저장하고 있었다. 왜냐하면 그 사이의 모든 리더가 해당 로그 엔트리를 포함했기 때문이다. 리더는 엔트리를 절대 덮어쓰지 않고 팔로워는 리더와 충돌하는 경우에는 엔트리를 제거한다.
+5. 투표자는 leaderU에게 투표했으므로 leaderU의 로그는 투표자의 로그만큼 최신이어야 하며 이것은 아래 두 모순 중 하나로 이어진다.
+6. 첫째로, *만약 투표자와 leaderU가 같은 마지막 term이 같다면* leaderU의 로그는 투표자의 로그만큼 길어야 한다. 따라서 투표자의 로그에 있는 모든 항목은 leaderU에 포함되어야 하는데 이는 term U에 해당 로그 엔트리가 저장되지 않았다는 가정과 모순된다.
+7. 둘째로, *투표자 보다 leaderU의 term이 길다면* 투표자의 최소 term 값은 T일 것이다 (term이 T인 커밋된 엔트리를 포함하고 있으므로). leaderU의 마지막 로그 엔트리를 커밋한 리더는 그 로그에 커밋된 항목을 포함해야 하므로, `Log Matching Property`에 의해 leaderU의 로그 또한 커밋된 항목을 포함해야 한다. 즉 이 역시 가정과 모순된다.
+8. 따라서, T보다 큰 모든 term의 리더들은 T에서 커밋된 모든 엔트리를 포함해야 한다.
+9.  `Log Matching Property`는 미래의 리더들도 간접적으로 커밋된 항목들을 포함할 것임을 보장한다.
+
+Leader completeness를 통해 `State Machine Safety Property`를 증명할 수 있다.
+
+`State Machine Safety Property`에 따르면 주어진 인덱스에서 서버가 로그 엔트리를 상태 머신에 적용했다면 다른 서버는 그 인덱스에 대해 다른 로그 엔트리를 절대 적용하지 않을 것이다.
+
+서버가 로그 엔트리를 상태 머신에 적용할 때 그 로그는 해당 엔트리를 포함해 리더의 로그와 동일해야 합니다. 이제 주어진 로그 인덱스를 적용하는 서버가 있는 가장 낮은 term 값을 고려해보자. `Log Completeness` 속성은 모든 더 높은 임기의 리더들이 동일한 로그 엔트리를 적용할 것임을 보장한다. 따라서 나중 임기에서 로그를 적용하는 서버들은 같은 로그를 적용할 것이다. 따라서 `State Machine Safety Property`가 유지된다
+
+마지막으로 Raft는 서버가 로그 인덱스 순서대로 엔트리를 적용하도록 요구한다. 이것은 `State Machine Safety Property`과 결합되어, 모든 서버가 동일한 로그 엔트리 세트를 자신의 상태 기계에 적용하게 될 것임을 의미한다.
 
 ### 팔로워, 후보자 서버 장애 핸들링
 
