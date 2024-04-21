@@ -9,7 +9,7 @@ tags:
   - Distributed System
 header-img: img/header-img/network.jpg
 header-mask: 0.3
-last-update: April 07, 2024
+last-update: April 21, 2024
 ---
 
 # In Search of an Understandable Consensus Algorithm 번역 및 정리
