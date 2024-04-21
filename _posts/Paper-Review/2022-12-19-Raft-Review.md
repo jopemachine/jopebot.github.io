@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raft Paper (In Search of an Understandable Consensus Algorithm) 번역 및 정리
+title: In Search of an Understandable Consensus Algorithm 번역 및 정리
 subtitle: Paper Study
 author: jopemachine
 tags:
@@ -16,7 +16,7 @@ last-update: April 21, 2024
 
 ## Raft란?
 
-[Raft](https://raft.github.io/)는 tikv, etcd, MongoDB 등 다양한 분산 시스템에서 사용되는 실용적인 [합의 알고리즘](https://ko.wikipedia.org/wiki/%ED%95%A9%EC%9D%98_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99))이다.
+[Raft](https://raft.github.io/)는 tikv, etcd, MongoDB 등 다양한 분산 시스템에서 사용되는 실용적인 합의 알고리즘이다.
 
 기존의 [Paxos](https://ko.wikipedia.org/wiki/팩소스_(컴퓨터_과학)) 같은 합의 알고리즘에 비해 훨씬 이해하거나 구현하기 쉬우면서 이에 필적할만한 성능을 제공한다. 특히 *이해 가능성*(*Understandability*)은 Raft 알고리즘의 가장 중요한 목표이기도 하다.
 
